@@ -1,8 +1,3 @@
-Your first java program
-===
-
-`
-```java
 import java.util.*;
 
 public class Hello {
@@ -14,4 +9,3 @@ public class Hello {
         System.out.println("Hello "+name);
     }
 }
-```
