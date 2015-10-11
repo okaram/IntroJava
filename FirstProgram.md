@@ -1,9 +1,15 @@
 Your first java program
 ===
 
-`
+Most programs involve processing some *inputs* and producing some *outputs*. In simple programs, we normally read the input from the user directly (from the keyboard), and produce the ouputs directly to the screen as simple text. This is what we will do in this program. Many times we want to store some information temporarily to be used later in the program; we say we store the information in *variables*, which have a name (so we can refer to them later), a type (which determines which kind of information we can store in it), and a value (which may change over time).
+
+Traditionally, the first program just writes "Hello world" on the screen; I don't like this program because it doesn't have any inputs; so we will write a program that asks the user for its name, reads it (and stores it in a variable) and then  writes "Hello" followed by that name. One small problem with java is that it requires a lot of 'noise' even for the simplest programs; we will see what it all means, but for now just look at it as noise :)
+
+Wihout furhter ado, here's the program:
+
+
 ```java
-import java.util.*;
+import java.util.Scanner; // import the scanner class
 
 public class Hello {
     public static void main(String[] args) {
