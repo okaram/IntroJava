@@ -13,3 +13,4 @@ hs_err_pid*
 
 # vim backup files
 *~
+*.swp
