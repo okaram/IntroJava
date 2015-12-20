@@ -15,8 +15,8 @@ The Java compiler is called *javac*. Usually we name our java files with the .ja
 ## IDEs
 Many times, you want a program that does more than a simple text editor; we many times use an Integrated Development Environment, or IDE, which understands our programming langugage and can help us with syntax highlighting and auto-completing options.
 
-There are many IDEs available for java; the most popular educational IDE is [DrJaba](http://drjava.org) , and the most popular professional IDEs are [Eclipse](http://www.eclipse.org), [Netbeans](https://netbeans.org/) and [IntelliJ Idea](https://www.jetbrains.com/idea/). I will be using Eclipse in this class, but you're free to use whichever IDE or text editor you prefer.
+There are many IDEs available for java; the most popular educational IDEs are [DrJava](http://drjava.org) and JGrasp, and the most popular professional IDEs are [Eclipse](http://www.eclipse.org), [Netbeans](https://netbeans.org/) and [IntelliJ Idea](https://www.jetbrains.com/idea/). I will be using Eclipse in this class, but you're free to use whichever IDE or text editor you prefer.
 
 ## make and gradle
-    Many times you end up with more than one file, and you need to compile them in a certain order and bundle them. One of the first programs to do so (for unix and the C language) was *make*, and it is commonly used as a generic term for all those programs. In the Java world, we normally use ant, maven or gradle. In this class, I will be using [gradle](http://gradle.org).
+Many times you end up with more than one file, and you need to compile them in a certain order and bundle them. One of the first programs to do so (for unix and the C language) was *make*, and it is commonly used as a generic term for all those programs. In the Java world, we normally use ant, maven or gradle. In this class, I will be using [gradle](http://gradle.org).
 
