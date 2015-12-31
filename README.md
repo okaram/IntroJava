@@ -16,3 +16,7 @@ Materials for an Intro to Programming with java class
 ## Week 3
 
 ## Week 4
+
+## Other Resoources
+* [Resources](Resources.md)
+* How to succeed
