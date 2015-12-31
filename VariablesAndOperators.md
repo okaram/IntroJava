@@ -28,3 +28,55 @@ We can use more complicated expressions on the right-hand side of the assignment
 a=3+4;
 ```
 
+Notice we can change the value of a variable as many times as we want, although we must always store values of the same type.
+
+Also, although it looks like we're doing algebra, the assignment operator here means 'put the value into the variable'; in algebra, once we declare a variable has a certain value or property, it has to keep it forever.
+
+In Java we can do things like this, which would be atrocious in math:
+```java
+int a;
+int b;
+a=10;
+b=a+1; // b is now 11
+a=b+9 // since b is 11, a is 11+9=20
+```
+### Declaring and initializing
+
+We can declare a variable and give it an initial value (initialize it) in one statement, like this:
+```java
+int c=10;
+```
+
+And we can also declare several variables of the same type and initialize them at the same time, like this:
+```java
+int x=10,y,z=x+1;
+```
+
+### Variable names
+Variables in java are composed of letters, numbers (digits), dollar sign ($) and underscore (_). Variable names cannot start with a digit. Java distinguishes between lowecase and uppercase letters, so *a* is a different variable than *A*. 
+
+There's no specific limit to the lenght of variable names (you'll get tired before the compiler does :). 
+
+There's a strong convention to start variables with a lowecase letter, and use capitalization to separate words, so we have variable names like: *gearRatio*, *numberOfSides* etc.
+
+## Basic Integer operators
+
+In Java we have the standard mathematical operators, with slight variations:
+* +, - (and unary minus) behave as in elementary school, with the operators being evaluated from left to right (in the order in which we read them). So, for example, 3+4-1-2 yields 4 (3+4=7, 7-1=6, 6-2=4)
+* * is the multiplication operator (instead of the x symbol, since it would be confused with the letter x)
+* / is the integer division operator (it calculates the integer value, like in elementary school :), so 3/4 yields 0, and 4/3 yields 1, NOT 1.333)
+* % is the integer remainder or modulo operator, so 5%2 is 1, since 5 divided by 2 is 2 with a remainder of 1.
+
+We can mix and match this, with the usual order (PEMDAS, except there's no operator for exponents :), and use parenthesis to modify the order of operations. If you can't remember the apropriate order, it is perfectly ok to use extra parenthesis.
+
+# Exercises 
+* hint: feel free to use [JavaRepl](http://javarepl.com) to verify these. Make sure you understand why they work; try other combinations
+
+1. What would be the value of *x* at the end of this code fragment ?
+```java
+int a=10;
+int b=3*a;
+int x=b-5;
+```
+
+2. What would be the value of *ans* at the end of this code fragment ?
