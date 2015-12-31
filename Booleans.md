@@ -32,7 +32,43 @@ boolean earthIsRoundAndSquare= earthIsRound && earthIsSquare; // what would be t
 
 ## Relational operators
 
+We also have operators that allow us to compare two values, and yield a boolean (we call these *relational* operators, since they allow us to establish relationships among values). Notice that, as a rule, we can only compare objects of the same type.
+
+The relational operators are:
++ == : which tests whether its operands are equal (notice this is two equal signs, ==, very close to the assignment operator, =, which is a constant source of confusion and grief :)
++  != : not equal
++ <, > : less than, greater than 
++ \>= : greater than, or equal
++ <= : less than, or equal 
+
 ### Examples
 
+```java
+int a=9;
+
+boolean isA10 = a==10;
+
+boolean isAGreaterThanOrEqualTo10 = a>=10;
+boolean isALessThanOrEqualTo20 = a<=20;
+
+boolean isABetween10And20 =  isAGreaterThanOrEqualTo10 && isALessThanOrEqualTo20;
+// we can also write as
+isABetween10And20 =  (a>=10) && (a<=20);
+```
 ## Exercises
+Remember, you can check with [JavaRepl](http://javarepl.com)
+ 
+1. What would be the value of *ans* at the end of the following code fragment ?
+    ```java
+    
+    ```
+ 
+2. What would be the value of *ans* at the end of the following code fragment ?
+    ```java
+    
+    ```
+3. What would be the value of *ans* at the end of the following code fragment ?
+    ```java
+    
+    ```
  

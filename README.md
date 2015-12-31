@@ -12,7 +12,8 @@ Materials for an Intro to Programming with java class
 * [First full program](FirstProgram.md)
 * Strings
 * Machine Setup
-* Assignment 1
+* more codingbat
+* Project 1: super simple, gradle, output
 
 ## Week 3
 
