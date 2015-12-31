@@ -73,10 +73,10 @@ We can mix and match this, with the usual order (PEMDAS, except there's no opera
 * hint: feel free to use [JavaRepl](http://javarepl.com) to verify these. Make sure you understand why they work; try other combinations
 
 1. What would be the value of *x* at the end of this code fragment ?
-```java
-int a=10;
-int b=3*a;
-int x=b-5;
-```
-
+    ```java
+    int a=10;
+    int b=3*a;
+    int x=b-5;
+    ```
+    
 2. What would be the value of *ans* at the end of this code fragment ?
