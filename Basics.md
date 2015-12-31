@@ -12,6 +12,8 @@ Your program is just a bunch of text, so you use a **text editor** (like Notepad
 
 The Java compiler is called *javac*. Usually we name our java files with the .java extension, so you'd use a command like javac Hello.java , which would generate a Hello.class file. You'd then be able to execute that file with java Hello.
 
+Notice that at the very beginning we will use web sites like [JavaRepl](http://javarepl.com) and [CodingBat](http://codingbat.org) which directly interpret and print the results for java code. This is quite useful, but not the usual way.
+
 ## IDEs
 Many times, you want a program that does more than a simple text editor; we many times use an Integrated Development Environment, or IDE, which understands our programming langugage and can help us with syntax highlighting and auto-completing options.
 
@@ -22,7 +24,7 @@ Many times you end up with more than one file, and you need to compile them in a
 
 ## Version control and git
 
-When you work on a program, you will make many revisions; in order to keep track of all your revision (and if you work as a team, to keep track of who changed what), you normally use a version control system. One of the most popular ones is git, and we will use it in this class. I will ask you to create an account on bitbucket to share your code with me, and I will use github to share my code with everybody (they are both git servers; github is free only for public repositories, but is very popular, while bitbucket allow for provate repositories also for free).
+When you work on a program, you will make many revisions; in order to keep track of all your revision (and if you work as a team, to keep track of who changed what), you normally use a version control system. One of the most popular ones is git, and we will use it in this class. I will ask you to create an account on [BitBucket](http://bitbucket.org) to share your code with me, and I will use bitbucket to share my code with everybody. Bitbucket is a free git server, which allows for private and public repositories.
 
 # Getting started
 
@@ -30,5 +32,6 @@ You need to install a few programs for this class:
 * The Java Development Kit - JDK (from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Make sure to install the JDK, not just the JRE. Java 8 is the current version, so just install the latest minor number for java 8.
 * A Git client (you can find good ones at [http://www.git-scm.com/downloads](http://www.git-scm.com/downloads)).
 * [Eclipse](http://www.eclipse.org/). This is an IDE, and all my videos etc will use it; if you prefer to use a different one it is OK.
+* You need to create an account on [Bitbucket](http://bitbucket.org).
 
     

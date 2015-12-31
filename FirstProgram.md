@@ -21,3 +21,8 @@ public class Hello {
     }
 }
 ```
+Now let's go over the program
+
+```Java
+import java.util.Scanner; // import the scanner class
+```
