@@ -7,6 +7,7 @@ Materials for an Intro to Programming with java class
 * [Boolean variables](Booleans.md)
 * [Functions](Functions.md)
 * Exercises (on CodingBat)
+
 ## Week 2
 * [First full program](FirstProgram.md)
 * Strings
