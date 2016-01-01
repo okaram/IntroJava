@@ -47,12 +47,14 @@ We can declare a variable and give it an initial value (initialize it) in one st
 int c=10;
 ```
 
-And we can also declare several variables of the same type and initialize them at the same time, like this:
+Although JavaRepl does not support this syntax, in Java we can also declare several variables of the same type and initialize them at the same time, like this:
 ```java
 int x=10, y, z=x+1;
 ```
 
 ### Variable names
+We should always name our variables to denote their meaning (although i sometimes use short names like a or x in these notes :).
+
 Variables in java are composed of letters, numbers (digits), dollar sign ($) and underscore (_). Variable names cannot start with a digit. Java distinguishes between lowecase and uppercase letters, so *a* is a different variable than *A*. 
 
 There's no specific limit to the lenght of variable names (you'll get tired before the compiler does :). 

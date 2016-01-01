@@ -60,7 +60,8 @@ Remember, you can check with [JavaRepl](http://javarepl.com)
  
 1. What would be the value of *ans* at the end of the following code fragment ?
     ```java
-    int a=10, b=20;
+    int a=10;
+    int b=20;
     boolean isAGreaterThanB=a>b;
     boolean isBGreaterThanA=b>a;
     
@@ -69,7 +70,9 @@ Remember, you can check with [JavaRepl](http://javarepl.com)
  
 2. What would be the value of *ans* at the end of the following code fragment ?
     ```java
+    int x=10;
     
+    boolean ans= (x%2)==1; // remember, % is the modulo/remainder operator
     ```
 3. What would be the value of *ans* at the end of the following code fragment ?
     ```java
