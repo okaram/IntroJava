@@ -60,7 +60,11 @@ Remember, you can check with [JavaRepl](http://javarepl.com)
  
 1. What would be the value of *ans* at the end of the following code fragment ?
     ```java
+    int a=10, b=20;
+    boolean isAGreaterThanB=a>b;
+    boolean isBGreaterThanA=b>a;
     
+    boolean ans= isAGreaterThanB || isBGreaterThanA;    
     ```
  
 2. What would be the value of *ans* at the end of the following code fragment ?
