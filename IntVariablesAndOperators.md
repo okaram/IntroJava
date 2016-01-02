@@ -1,5 +1,6 @@
 Variables and Operators
 ===
+## Video - [Int variables and Operators](https://youtu.be/1JEtmEthcS4)
 
 One of the most important concepts in programming is that of a *variable*, which is a named location in memory. Variables in Java have a name, a type and a value. We can change the value of a variable as our program runs.
 
