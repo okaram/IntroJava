@@ -3,7 +3,7 @@ Boolean Variables and Operators
 
 Another important type of values in programming is that of *boolean*, which contains only the values *true* and *false*. Although we use logic and booleans in our daily life, non-programmers don't tend to see them as values having operators.
 
-## Boolean variables
+## Boolean variables ([Video](https://youtu.be/h7ss6NgYB5M))
 
 We can declare variables with the type *boolean*; we can put the values 'true' or 'false' into them; for example:
 ```java
@@ -30,7 +30,9 @@ boolean earthIsRoundAndSquare= earthIsRound && earthIsSquare; // what would be t
 
 ### Short circuiting
 
-## Relational operators
+Although it is not important right now, you should know that binary boolean operators in java do NOT evaluate both sides, unless needed; so if we're using an && operator, the first side is evaluated and, if we get false, we know the end result is false, so the compiler will NOT evaluate the other side. This might be important later, when the expressions on each side can be complex and have side effects.
+ 
+## Relational operators ([Video](https://www.youtube.com/ZIjRLlcHL4w))
 
 We also have operators that allow us to compare two values, and yield a boolean (we call these *relational* operators, since they allow us to establish relationships among values). Notice that, as a rule, we can only compare objects of the same type.
 

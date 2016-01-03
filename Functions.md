@@ -1,3 +1,4 @@
++ [Video](https://www.youtube.com/watch?v=Wg1zXRuZUck)
 One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.
 
 For example, imagine that we need to find whether numbers are even; we can easily do the calculation, using % ; however, it will be much nicer if we encapsulate this into itw own function. We could write the function as follows:
@@ -34,7 +35,7 @@ boolean isEven(int number)
 
 The local variable, `remainderBy2`, can only be accessed within the function, and every call to the function gets its own copy of the variable; each function call gets its own independent context (or *activation frame*) in which it is executed.
 
-## Function composition
+## Nested Function calls
 We can define functions that take as many parameters as we need (although they can only return one value), and you can include and combine the function calls in any ways you want; for example (although it would be overkill in real life), let us define the following function:
 
 ```java
@@ -59,6 +60,17 @@ int n3=add( add(2,3), add(5,7));
 ```
 Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.
  
+## Function composition
+We can also call functions within other functions; for example, we can define the following function:
+```java
+boolean isSumEven(int number1, int number2)
+{
+    return isEven( add(number1, number2) );   
+}
+```
+
+Here a call to it, say `sumEven(3,4)`, would start an activation frame, with number1=3 and number2=4; then, inside an activation frame is created, for add, and another for isEven.
+
 ## Exercises (assume we have the functions above)
 
 1. What would be the value of `ans` at the end of the following code fragment:
