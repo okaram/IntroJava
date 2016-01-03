@@ -4,7 +4,7 @@ Variables and Operators
 
 One of the most important concepts in programming is that of a *variable*, which is a named location in memory. Variables in Java have a name, a type and a value. We can change the value of a variable as our program runs.
 
-Although you'd normally use variables in the context of full programs, you can play with variables and operators using [JavaRepl](http://javarepl.com).
+Although you'd normally use variables in the context of full programs, you can play with variables and operators using [JavaRepl](http://www.javarepl.com), a web site that allows you to instantly evaluate simple java expressions.
 
 ## Declaring variables
 
@@ -47,6 +47,7 @@ We can declare a variable and give it an initial value (initialize it) in one st
 ```java
 int c=10;
 ```
+This line both declares a variable c, of type int, and assigns to it the value 10.
 
 Although JavaRepl does not support this syntax, in Java we can also declare several variables of the same type and initialize them at the same time, like this:
 ```java
@@ -73,7 +74,7 @@ In Java we have the standard mathematical operators, with slight variations:
 We can mix and match this, with the usual order (PEMDAS, except there's no operator for exponents :), and use parenthesis to modify the order of operations. If you can't remember the apropriate order, it is perfectly ok to use extra parenthesis.
 
 ### Shorthand operators
-Java supports several shorthand operators; we write the operator followed by the = sign, to avoid repeating a variable; so instead of:
+To save you some typing, Java supports several shorthand operators; we write the operator followed by the = sign, to avoid repeating a variable; so instead of:
 ```java
 a=a+5;
 ```
@@ -87,6 +88,8 @@ b*=3; // instead of b=b+3
 b++; // instead of b+=1, meaning b=b+1
 b--; // instead of b-=1, meaning b=b-1
 ```
+Notice you do not need to use the shorthand operators, but since many people use them, you want to make sure you can read them.
+
 # Exercises 
 * hint: feel free to use [JavaRepl](http://javarepl.com) to verify these. Make sure you understand why they work; try other combinations
 
