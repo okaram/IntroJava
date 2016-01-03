@@ -32,7 +32,7 @@ boolean isEven(int number)
 } 
 ```
 
-The local variable, `remainderBy2`, can only be accessed within the function, and every call to the function gets its own copy of the variable (this is done by using the *execution stack*); each function call gets its own independent context in which it is executing.
+The local variable, `remainderBy2`, can only be accessed within the function, and every call to the function gets its own copy of the variable; each function call gets its own independent context (or *activation frame*) in which it is executed.
 
 ## Function composition
 We can define functions that take as many parameters as we need (although they can only return one value), and you can include and combine the function calls in any ways you want; for example (although it would be overkill in real life), let us define the following function:
@@ -57,7 +57,7 @@ OK, everything seems normal here; lets look at the next one:
 ```java
 int n3=add( add(2,3), add(5,7));
 ```
-Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own context, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own independent context, returnung 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.
+Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.
  
 ## Exercises (assume we have the functions above)
 
