@@ -26,3 +26,12 @@ Now let's go over the program
 ```Java
 import java.util.Scanner; // import the scanner class
 ```
+In Java, we organize our code in *packages* (think folders in your computer :), and separate the names with . ; many standard Java classes live in the java.util package; however, to avoid typing the full name we can import a class, and then just type the last part of its name, Scanner, instead of the full name, java.util.Scanner.
+
+After that, we define our class:
+```java 
+public class Hello {
+```
+
+In Java, all of our code lives in classes; we will learn much more about classes and objects later; for now, just assume that you have to define a class :). Our class name is Hello (you could )
+
