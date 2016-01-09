@@ -33,5 +33,9 @@ After that, we define our class:
 public class Hello {
 ```
 
-In Java, all of our code lives in classes; we will learn much more about classes and objects later; for now, just assume that you have to define a class :). Our class name is Hello (you could )
+In Java, all of our code lives in classes; we will learn much more about classes and objects later; for now, just assume that you have to define a class :). Our class name is Hello (you could name your class anything you want; it is customary in java to have one file per class, and to name your file with the same name as the class).
+
+
+
+
 
