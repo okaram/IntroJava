@@ -15,4 +15,3 @@ Week 1 - Basics and simple functions
 
 Assignments:
 * [Exercises (on CodingBat)](Assignments/A1.md)
-* 
