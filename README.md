@@ -9,4 +9,4 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
 
 
 ## Other Resoources
-* [Resources](../content/Resources.md)
+* [Resources](content/Resources.md)
