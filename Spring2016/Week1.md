@@ -1,6 +1,7 @@
 Week 1 - Basics and simple functions
 ===
 
+This 'week' is actually two calendar weeks :)
 ## Materials
 * [Basics](../content/Basics.md)
 * [Basic (int) Variables and Operators](../content/IntVariablesAndOperators.md)
