@@ -35,6 +35,39 @@ public class Hello {
 
 In Java, all of our code lives in classes; we will learn much more about classes and objects later; for now, just assume that you have to define a class :). Our class name is Hello (you could name your class anything you want; it is customary in java to have one file per class, and to name your file with the same name as the class).
 
+Then we define our main method; Java programs always start on the main method, which has to be defined exactly as follows (except for naming the arguments):
+
+```java
+    public static void main(String[] args) {
+```
+
+Inside main, we create a variable of the Scanner class:
+
+```java
+        Scanner input=new Scanner(System.in);
+```
+
+The System class is part of the standard library, and it has an instance variable calle `in`, which represents the standard input (the keyboard :). Java defined several Stream classes for input and Output (I/O), but has later defined more classes; the Scanner class is relatively new, and it allows for fairly easy input, as we will see below. Our variable of type Scanner is called input.
+
+We then print a message (we have System.out, similar to System.in)
+```java
+        System.out.println("Please enter your name");
+```
+
+And read from the user:
+```java
+        String name=input.nextLine();
+```
+Here we use the nextLine method of the Scanner class, to get a String ; this method will read a whole line (until the user enters a newline, usually by pressing the enter key). The Scanner class has other methods, like nextInt, which read values of different types.
+
+Finally, we print the `"Hello "` concatenated with the value we got from the user.
+
+```java
+        System.out.println("Hello "+name);
+``` 
+
+
+
 
 
 
