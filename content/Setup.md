@@ -21,4 +21,14 @@ Eclipse doesn't really come with an installer; just open the zip file (double-cl
 
 # Installing a git client
 
-We will use BitBucket as our code repository, but you still need a 
+We will use BitBucket as our code repository, but you still need a git client. The command line client is available at [www.git-scm.com](http://www.git-scm.com/downloads). You can also get a GUI client; I've used [SourceTree](https://www.sourcetreeapp.com/). I assume you have a command line client.
+
+# BitBucket setup
+
+Go to [Bitbucket.org](https://bitbucket.org/) and create an account. Then create a repository (there's a create button on the top bar). You can name the repository any way you want, but I suggest a name like CS5000 (notice different users can have repos with the same name); make sure the repo is private and uses git.
+
+![Creating a repository](pics/BitbucketNewRepo.png)
+
+After you create the repository, give me read access so I can see your code (go onto settings, there's an icon at the bottom of the left-hand bar). My account name is okaram; I only need read access.
+
+![Giving me access](pics/BitbucketAccess.png)
