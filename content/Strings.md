@@ -32,4 +32,11 @@ char letter='b';
 
 # escaping
 
+Sometimes we need to use weird characters (like the tab character, or the double quotation mark) inside a String; in Java we use a slash, `\` to escape the weird characters; for example, \t is the tab character (and we'd use \" if we need to include " in a String constant).
+
 # Some string methods
+
+Strings have many methods; some of the most important ones are:
++ .length() - returns the length of the string
++ .equals(anotherString) - compares two strings for equality
++ .compareTo and .compareToIgnoreCase, return -1, 0 or 1 after comparing the Strings
