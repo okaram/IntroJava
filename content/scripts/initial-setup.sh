@@ -2,6 +2,8 @@
 reponame=$1;
 username=$2;
 password=$3;
+echo "reponame=$reponame";
+echo "username=$username";
 
 if [ "$reponame" == "" ]
 then
