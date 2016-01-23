@@ -1,10 +1,4 @@
 #!/usr/bin/bash
-reponame=$1;
-username=$2;
-password=$3;
-echo "reponame=$reponame";
-echo "username=$username";
-
 if [ "$reponame" == "" ]
 then
     read -p "Please enter the repository name: " reponame
