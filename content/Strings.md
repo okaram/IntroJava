@@ -38,5 +38,8 @@ Sometimes we need to use weird characters (like the tab character, or the double
 
 Strings have many methods; some of the most important ones are:
 + .length() - returns the length of the string
-+ .equals(anotherString) - compares two strings for equality
++ .equals(anotherString) - compares two strings for equality (== compares for identity, might work the same)
 + .compareTo and .compareToIgnoreCase, return -1, 0 or 1 after comparing the Strings
++ concat - allows you to concatenate two strings; can also use +
++ substring - allows you to select a piece of the string (another string)
++ charAt - returns the character at a given space (indexing starts at 0)
