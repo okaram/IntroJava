@@ -3,7 +3,7 @@ Week 2 - Full programs
 
 ## Materials
 + [First full program](../content/FirstProgram.md)
-+ [Machine Setup](../content/Setup.md)
++ [Machine Setup](../content/Setup.md) and [Repo setup](../content/RepoSetup.md)
 + [Strings](../content/Strings.md)
 + Videos
     + [Basic IO](https://www.youtube.com/watch?v=W1oA5kOdqXQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
