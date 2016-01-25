@@ -2,6 +2,48 @@ package okaram.samples;
 
 public class IfSamples {
 
+	public static String booleanToYesNo(boolean b)
+	{
+	    if( b ) {
+	        return "Yes";
+	    } else {
+	        return "No";
+	    }
+	}
+	
+	public static int abs(int number)
+	{
+		if(number<0) {
+			return -number;
+		} else {
+			return number;
+		}
+	}
+	
+	public static int sign(int number)
+	{
+		if( number<0 ) {
+			return -1;
+		} else {
+			if ( number>0 ) {
+				return 1;
+			} else {
+				return 0;
+			}
+		}
+	}
+
+	public static int sign_chained(int number)
+	{
+		if( number<0 ) {
+			return -1;
+		} else if ( number>0 ) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
 	/**
 	 * Ages above 60 are old. Returns "Old" or "Young" depending on the age
 	 */
@@ -12,6 +54,7 @@ public class IfSamples {
 			return "Young";
 		}
 	}
+	
 	
 	/** 
 	 * If the number is divisible by 3 return "Fizz"
@@ -57,16 +100,29 @@ public class IfSamples {
 	}
 
 	/** 
-	 * @return the bigger of its two parameters
+	 * @return the biggest of its two parameters (or the value of both if there's a tie)
 	 */
 	public static int max2(int n1, int n2) {
 		if(n1>=n2) {
-			return n2;
-		} else {
 			return n1;
+		} else {
+			return n2;
 		}
 	}
 	
+	/** 
+	 * Implementing using chained if statements
+	 * @return the biggest of its three parameters. 
+	 */
+	public static int max3_chained(int n1, int n2, int n3) {
+		if(n1>=n2 && n1>=n3){
+			return n1;
+		} else if (n2>=n1 && n2>=n3) {
+			return n2;
+		} else {
+			return n3;
+		}
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -35,11 +35,71 @@ A few highlights about the syntax:
     + tabs vs spaces is a thing (yeah, is what we geeks do)
     + Whether the { goes on a new line is also subject to debate :(
     + be consistent !
-    
-# chained if statements
+## another example
 
+Let us define the abs function, which returns the absolute value of an int (the absolute value is always positive).
+
+```java
+	public static int abs(int number)
+	{
+		if(number<0) {
+			return -number;
+		} else {
+			return number;
+		}
+	}
+```
+    
 # nested if statements
 
-# switch statement
+Inside the braces for an if/else, we can put any statements, including another if statement. We call an if inside another if a *nested* if statement. As far as Java is concerned, we can nest at any level, although if our conditions are too complicated, chances are we're approaching the problem wrong.
 
+As an example, let us defne the `sign` function, which takes a number and returns -1 if the number is negative, 1 if positive and 0 if 0.
+
+```java
+	public static int sign(int number)
+	{
+		if( number<0 ) {
+			return -1;
+		} else {
+			if ( number>0 ) {
+				return 1;
+			} else {
+				return 0;
+			}
+		}
+	}
+```
+
+# chained if statements
+
+Many times we have more than two mutually exclusive possibilities; in that case, we normally write them as a chained if statement (tecnically, this are nested if statements, with the nesting happening in the else part, but we format them with all options at the same level, which makes more sense).
+
+For example, we could write the sign function as follows:
+```java
+	public static int sign(int number)
+	{
+		if( number<0 ) {
+			return -1;
+		} else if ( number>0 ) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+```
+
+# Ternary operator
+
+Java has an operator that works similar to an if statement, but it yields a value (as it is an operator). It syntax is like this:
+```java
+condition ? valueForTrue : valueForFalse
+```
+For example, we could write the abs function as follows:
+```java
+	public static int abs(int number)
+	{
+		return number<0 ? -number : number;
+	}
+```
 # Exercises
