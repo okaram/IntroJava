@@ -8,8 +8,8 @@ This 'week' is actually two calendar weeks :)
 * [Boolean variables](../content/Booleans.md)
 * [Functions](../content/Functions.md)
 * Book chapters
-    + [Chapter 1 - The way of the program](http://greenteapress.com/thinkapjava/html/thinkjava003.html)
-    + [Chapter 2 - Variables and types](http://greenteapress.com/thinkapjava/html/thinkjava004.html)
+    + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava5/html/thinkjava003.html)
+    + [Chapter 2 - Variables and types](http://greenteapress.com/thinkjava5/html/thinkjava004.html)
 * Videos
     + [Java Bootcamp](https://www.youtube.com/watch?v=8nOg6mtH-oo&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine, 20 minutes or so
     + [Int variables and Operators](https://youtu.be/1JEtmEthcS4)
