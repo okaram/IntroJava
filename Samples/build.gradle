@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "okaram.samples.Main"
+
+repositories {
+	mavenCentral()
+    	maven {
+        	url  "https://github.com/okaram/grading/raw/master/artifacts/" 
+    	}
+}
+
+dependencies {
+	testCompile 'junit:junit:4.12'
+    	testCompile 'okaram:junit-grading:1.0'
+}
+
+run {
+    	standardInput = System.in
+}
+
+task run2(type:JavaExec) {
+	main = mainClass
+	classpath = sourceSets.main.runtimeClasspath
+  	standardInput=System.in
+}
