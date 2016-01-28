@@ -6,6 +6,7 @@ Week 2 - Full programs
 + [Machine Setup](../content/Setup.md) and [Repo setup](../content/RepoSetup.md)
 + [Strings](../content/Strings.md)
 + Videos
+    + [Jan 25 Lecture](https://www.youtube.com/watch?v=SXe5dPM8N5A)
     + [Basic IO](https://www.youtube.com/watch?v=W1oA5kOdqXQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Shortcut Operators](https://www.youtube.com/watch?v=6z5pvttt31k&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Simple Eclipse project](https://www.youtube.com/watch?v=RBlFk61eQX4) - very simple project in eclipse
