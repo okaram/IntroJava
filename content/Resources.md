@@ -11,3 +11,8 @@ Java Learning Resources
 ## Sites
 * [CodingBat](http://codingbat.com)
 * [Java Repl](http://www.javarepl.com/console.html)
++ [/r/learnJava](https://www.reddit.com/r/learnjava), [/r/java](https://www.reddit.com/r/java), [/r/learnprogramming](https://www.reddit.com/r/learnprogramming) - reddit (message boards) for java-related topics
+
+## Online courses and MOOCs
++ [Java tutorial for Complete Beginners](https://www.udemy.com/java-tutorial/) - seems great, uses Eclipse too, follows roughly the same order
++ [U of Helsinki's MOOCs](http://mooc.fi/english.html) - Seem good, very different order 

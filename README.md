@@ -6,7 +6,7 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
     
 ## [Module 2](Spring2016/Week2.md) - Full programs and setup
 
+## Module 3 - Conditionals and Recursion
 
-
-## Other Resoources
+## Other Resources
 * [Resources](content/Resources.md)
