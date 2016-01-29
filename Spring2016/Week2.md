@@ -14,6 +14,9 @@ Week 2 - Full programs
 + Some codingbat problems (not required; just if you want extra practice; feel free to substitute for others)
     + [LastDigit](http://codingbat.com/prob/p125339)
     + [icyHot](http://codingbat.com/prob/p192082)
+    + [posNeg](http://codingbat.com/prob/p159227)
+    + [frontBack](http://codingbat.com/prob/p123384)
+    + [hasTeen](http://codingbat.com/prob/p178986)
 + Book Chapters
     + [Chapter 3 - Void methods](http://greenteapress.com/thinkjava5/html/thinkjava005.html)
 + Assignment

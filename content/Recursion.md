@@ -28,13 +28,13 @@ Imagine that we try to calculate factorial(4), the execution will go as follows:
 + factorial(1) => is n>=0 ? no (it is 1), so return 3*factorial(0) ; ok, let's calculate factorial(0) ...
 + factorial(0) => is n>=0 ? yes ! so return 1 (and the whole stack unravels)
 
-# Power
+## Power
 
 As another example, let's define the power function, that raises a base to an exponent; raising 2 to the 3rd power would be 2x2x2=8 (we're multiplying 2 three times).
 
-We can define it recursively as: power(base, exponent)=
+We can define it recursively as: pow(base, exponent)=
 + 1 if exponent = 0 (anything to the 0th power is 1 by convention)
-+ base * power(base, exponent-1) otherwise
++ base * pow(base, exponent-1) otherwise
 
 Or in Java:
 ```java
@@ -45,3 +45,30 @@ Or in Java:
 			return base*pow(base,exponent-1);
 	}
 ```
+
+### Quick check
++ Can you trace how would we calculate pow(3,2) ? How about pow(4,3) ?
+
+## Counting and printing
+
+As another example, let's define a function that prints all numbers counting down to 0; it takes one parameter, so if we call it with 10 it would do the standard countdown: 10,9,8,7,6,5,4,3,2,1,0.
+
+```java
+	public static void printCountDown(int from)
+	{
+		if(from<0)
+			return;
+		else {
+			System.out.println(from);
+			printCountDown(from-1);
+		}
+	}
+```
+
+## Accumulators
+
+## Characters in a string
+
+## Exercises
++ Define a function printCountDown that takes two integers, say `from` and `to` (assuming from is bigger than to), and prints all the numbers between from and to (including both from and to). 
++ Define a function printCountUp that takes two integers, say `from` and `to` (now assuming from is smaller than to), and prints all the numbers between from and to (including both from and to).

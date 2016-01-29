@@ -56,5 +56,4 @@ public class RecursionSamples {
 		printCountUp(5,10);
 
 	}
-
 }
