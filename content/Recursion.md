@@ -30,7 +30,7 @@ Imagine that we try to calculate factorial(4), the execution will go as follows:
 
 # Power
 
-As another example, let's define the power function, that raises a base to an exponent; raising 2 to the 3rd power would be 2*2*2=8 (we're multiplying 2 three times).
+As another example, let's define the power function, that raises a base to an exponent; raising 2 to the 3rd power would be 2x2x2=8 (we're multiplying 2 three times).
 
 We can define it recursively as: power(base, exponent)=
 + 1 if exponent = 0 (anything to the 0th power is 1 by convention)
