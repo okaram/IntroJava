@@ -43,3 +43,5 @@ Strings have many methods; some of the most important ones are:
 + concat - allows you to concatenate two strings; can also use +
 + substring - allows you to select a piece of the string (another string)
 + charAt - returns the character at a given space (indexing starts at 0)
+
+# String.format
