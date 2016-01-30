@@ -29,10 +29,31 @@ public class RecursionSamples {
 		else
 			return n*factorial(n-1);
 	}
+
+	public static void printCountDown(int from)
+	{
+		if(from<0)
+			return;
+		else {
+			System.out.println(from);
+			printCountDown(from-1);
+		}
+	}
+	
+	public static void printCountUp(int from, int to)
+	{
+		if(from>to)
+			return;
+		else {
+			System.out.println(from);
+			printCountUp(from+1,to);
+		}
+	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		printCountDown(10);
+		System.out.println("\n\nNow up" );
+		printCountUp(5,10);
 
 	}
-
 }
