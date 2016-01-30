@@ -144,7 +144,6 @@ Or with chained if statements:
 	}
 ```
 
-## max2 and max3
 
 
 # Exercises
