@@ -1,7 +1,7 @@
 Conditionals and Recursion
 ===
 
-# Materials
+## Materials
 
 + [Conditionals](../content/Conditionals.md)
 + [Recursion](../content/Recursion.md)
