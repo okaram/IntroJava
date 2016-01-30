@@ -102,4 +102,49 @@ For example, we could write the abs function as follows:
 		return number<0 ? -number : number;
 	}
 ```
+
+# More examples 
+
+## [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz)
+
+A now popular interview question asks for printing numbers in sequence, but printing Fizz if the number is divisible by 3, Buzz if it is divisible by 5, FizzBuzz if it is divisible by both (and the number if neither :). We will define a similar problem; we will define a function that, given an int, will return a String; either Fizz, Buzz, FizzBuzz, or the number (as a String), according to the rules. It is a simple problem, but can be error-prone.
+
+We can do it with nested ifs:
+```java
+	public static String FizzBuzzNested(int number) {
+		if(number % 3 ==0) {
+			if(number % 5 == 0) {
+				return "FizzBuzz";
+			} else {
+				return "Fizz";
+			}
+		} else {
+			if(number % 5 ==0) {
+				return "Buzz";
+			} else {
+				return ""+number;
+			}
+		}
+	}
+```
+
+Or with chained if statements:
+```java
+	public static String FizzBuzzChained(int number) {
+		if( (number%3==0) && (number%5==0)) { // or if (number%15==0), but ...
+			return "FizzBuzz";
+		}
+		else if( number%3 == 0 ) {
+			return "FizzBuzz";
+		} else if( number%5 == 0 ) {
+			return "Buzz";
+		} else {
+			return ""+number;
+		}
+	}
+```
+
+## max2 and max3
+
+
 # Exercises
