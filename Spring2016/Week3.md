@@ -2,7 +2,6 @@ Conditionals and Recursion
 ===
 
 ## Materials
-
 + [Conditionals](../content/Conditionals.md)
 + [Recursion](../content/Recursion.md)
 
