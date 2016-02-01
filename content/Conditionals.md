@@ -135,7 +135,7 @@ Or with chained if statements:
 			return "FizzBuzz";
 		}
 		else if( number%3 == 0 ) {
-			return "FizzBuzz";
+			return "Fizz";
 		} else if( number%5 == 0 ) {
 			return "Buzz";
 		} else {
