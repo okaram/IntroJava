@@ -143,7 +143,7 @@ Or with chained if statements:
 		}
 	}
 ```
-## Max and Min
+## Max 
 
 
 
@@ -158,8 +158,10 @@ Or with chained if statements:
 |   28      |   $ 90,751    |   $189,300    |
 |   33      |   $189,301    |   $411,500    |
 |   35      |   $411,501    |   $413,200    |
-|   39.6    |   $413,201    |       +       |
+|   39.6    |   $413,201    |    no limit   |
 
 Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
 
-+ ...
++ Write a function called taxAmountForSingles, that takes an int and returns a double; this function returns the *amount* owed in taxes for  the corresponding input (use the table above).
+
++
