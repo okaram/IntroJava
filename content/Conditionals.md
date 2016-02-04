@@ -148,9 +148,18 @@ Or with chained if statements:
 
 
 # Exercises
-+ The taxes for 
++ The marginal income tax rates for a certain country (OK, the USA in 2015 according to wikipedia :), for people filing as single, are: 
 
 | Tax Rate  | Min income    | Max Income    |
-| --------- |---------| ----------    |
+| --------- |---------      | ----------    |
 |   10      |   $  0        |   $  9,225    |
 |   15      |   $  9,226    |   $ 37,450    |
+|   25      |   $ 37,451    |   $ 90,750    |
+|   28      |   $ 90,751    |   $189,300    |
+|   33      |   $189,301    |   $411,500    |
+|   35      |   $411,501    |   $413,200    |
+|   39.6    |   $413,201    |       +       |
+
+Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
+
++ ...
