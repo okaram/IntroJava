@@ -149,6 +149,7 @@ Or with chained if statements:
 
 # Exercises
 + The taxes for 
+
 | Tax Rate  | Min income    | Max Income    |
 | --------- | ----------    | ----------    |
 |   10      |   $  0        |   $  9,225    |
