@@ -151,6 +151,6 @@ Or with chained if statements:
 + The taxes for 
 
 | Tax Rate  | Min income    | Max Income    |
-| --------- |: ----------:| ----------    |
+| --------- |---------| ----------    |
 |   10      |   $  0        |   $  9,225    |
 |   15      |   $  9,226    |   $ 37,450    |
