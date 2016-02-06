@@ -6,7 +6,7 @@ Conditionals and Recursion
 + [Switch statement](../content/Switch.md)
 * [Recursion](../content/Recursion.md)
 * Videos
-    + [Recorded Lecture](https://www.youtube.com/edit?video_referrer=watch&video_id=y4fTxQ125Kc) - Our Feb 1 lecture, we talked about A2 and bitbucket at the beginning, and then about conditionals (if and switch) and recursion.
+    + [Recorded Lecture](https://youtu.be/y4fTxQ125Kc) - Our Feb 1 lecture, we talked about A2 and bitbucket at the beginning, and then about conditionals (if and switch) and recursion.
     + [Conditionals](https://www.youtube.com/watch?v=dlwcV3WPtsc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Switch Statement](https://www.youtube.com/watch?v=LizCC2SD_Pc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine 
     + [The Function Stack]( https://www.youtube.com/watch?v=jRcll9qY6b0&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
