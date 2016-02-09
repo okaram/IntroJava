@@ -12,8 +12,8 @@ Conditionals and Recursion
     + [The Function Stack]( https://www.youtube.com/watch?v=jRcll9qY6b0&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Recursion](https://www.youtube.com/watch?v=PORo1ut9kMs&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
 * Book Chapters
-    + [Chapter 4 - Conditionals and Recursion](http://greenteapress.com/thinkapjava/html/thinkjava006.html)
-    + [Chapter 6 - Value methods](http://greenteapress.com/thinkapjava/html/thinkjava008.html)
+    + [Chapter 4 - Conditionals and Recursion](http://greenteapress.com/thinkjava5/html/thinkjava006.html)
+    + [Chapter 6 - Value methods](http://greenteapress.com/thinkjava5/html/thinkjava008.html)
     + Notice we're skipping chapter 5, but you may still find it interesting.
 + Assignment
     + [Assignment 3 - Conditionals and Recursion](Assignments/A3.md)
