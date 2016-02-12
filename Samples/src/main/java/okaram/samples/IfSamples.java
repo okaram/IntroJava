@@ -123,6 +123,30 @@ public class IfSamples {
 			return n3;
 		}
 	}
+
+	/** 
+	 * Implementing using nested if statements
+	 * @return the biggest of its three parameters. 
+	 */
+	public static int max3_nested(int n1, int n2, int n3) {
+		if(n1>=n2)  { // we know it's either n1 or n3
+			if(n1>=n3)
+				return n1;
+			else
+				return n3;
+		} else { // not n1, so n2 or n3 
+			if (n2>=n3) {
+				return n2;
+			} else {
+				return n3;
+			}
+		}
+	}
+	// it is easier when we build in pieces :)
+	public static int max3(int n1, int n2, int n3)
+	{
+		return max2(max2(n1,n2), n3);
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
