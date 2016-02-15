@@ -79,6 +79,18 @@ public class LoopSamples {
 		return false;
 	}
 
+	public static int readAndSum(Scanner in)
+	{
+		int sum=0;
+		int input;
+		do {
+			System.out.println("Please enter a number (0 to stop)");
+			input=in.nextInt();
+			sum+=input;
+		} while(input!=0);
+		return sum;
+	}
+
 	// other examples
 	// readAndSum - ask whether you have more numbers
 	//		readAndAverage, readAnd...

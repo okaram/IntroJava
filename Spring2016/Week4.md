@@ -2,6 +2,7 @@ Module 4 - Loops
 ===
 
 ## Materials
++ [Loops](../content/Loops.md)
 + Book Chapters:
     + [Ch 7 - Iteration and loops](http://greenteapress.com/thinkjava5/html/thinkjava009.html)
 + From Oracle's tutorial:
