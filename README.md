@@ -8,6 +8,7 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
 
 ## [Module 3](Spring2016/Week3.md) - Conditionals and Recursion
 
-## [Module 4]((Spring2016/Week4.md) - loops
+## [Module 4](Spring2016/Week4.md) - loops
+
 ## Other Resources
 * [Resources](content/Resources.md)
