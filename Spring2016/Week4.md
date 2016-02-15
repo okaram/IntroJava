@@ -15,4 +15,4 @@ Module 4 - Loops
 + Coding Bat exercises
     + [everyNth](http://codingbat.com/prob/p196441)
 + Assignment
-    + [Assignment 4](Assignments/a4.md)
+    + [Assignment 4](Assignments/A4.md)
