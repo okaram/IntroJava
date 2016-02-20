@@ -1,5 +1,7 @@
 package okaram.samples;
 
+import java.util.Scanner;
+
 public class LoopSamples {
 
 	/*
