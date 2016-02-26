@@ -3,6 +3,8 @@ Module 4 - Loops
 
 ## Materials
 + [Loops](../content/Loops.md)
++ [Lecture](https://youtu.be/t5fZQSt_PTg) - recorder lecture from Feb 15
++ [Sample code](../Samples/src/main/java/okaram/samples/LoopSamples.java)
 + Book Chapters:
     + [Ch 7 - Iteration and loops](http://greenteapress.com/thinkjava5/html/thinkjava009.html)
 + From Oracle's tutorial:
