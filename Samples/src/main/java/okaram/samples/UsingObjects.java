@@ -11,9 +11,11 @@ public class UsingObjects {
 		Point pt3=new Point(10,10);
 		
 		System.out.println(pt1.x);
+		pt1.x=12;
 		System.out.println(pt1.getX());
 		System.out.println(pt1.toString());
 		System.out.println(pt1);
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
