@@ -1,23 +1,28 @@
 package okaram.samples;
 
 public class Person {
-	public String firstName, lastName;
-	public int age;
-	public String getFullName() {
-		return firstName+" "+lastName;
+	private String firstName, lastName;
+	private int age;
+
+	public Person(String firstName, String lastName, int age) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
 	}
-	
+
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public int getAge() {
+		return age;
+	}
+
+	@Override
 	public String toString() {
-		return "Person - "+firstName+" "+lastName+" "+age;
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
 	}
 	
-	public static void main(String args[]){
-		Person p1=new Person();
-		p1.firstName="Orlando";
-		p1.lastName="Karam";
-		p1.age=30;
-		
-		System.out.println(p1.getFullName());
-		System.out.println(p1);
-	}
 }
