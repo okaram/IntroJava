@@ -1,7 +1,7 @@
 Module 5 - Using Objects
 
 Materials
-+ [Using objects](../content/UsingObjects.md) - TODO
++ [Using objects](../content/UsingObjects.md) 
 + Book chapters
     + [Chapter 8 - Strings and things](http://greenteapress.com/thinkjava5/html/thinkjava010.html)
     + [Chapter 9 - Mutable objects](http://greenteapress.com/thinkjava5/html/thinkjava010.html)
