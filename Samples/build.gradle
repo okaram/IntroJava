@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = "okaram.samples.Main"
+mainClassName = "HelloWorld"
 
 repositories {
 	mavenCentral()
@@ -20,8 +20,3 @@ run {
     	standardInput = System.in
 }
 
-task run2(type:JavaExec) {
-	main = mainClass
-	classpath = sourceSets.main.runtimeClasspath
-  	standardInput=System.in
-}
