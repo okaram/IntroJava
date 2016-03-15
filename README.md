@@ -12,5 +12,7 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
 
 ## [Module 5](Spring2016/Week5.md) - using objects
 
+## [Module 6](Spring2016/Week6.md) - creating classes
+
 ## Other Resources
 * [Resources](content/Resources.md)
