@@ -4,9 +4,15 @@ import java.awt.Point;
 public class ArrayExamples {
 
 	public static void useArrays1() {
-		int arr[]={1,2,3,4,5}; // declare and initialize, we can use {}
-		Point pointArr[]={new Point(1,2), new Point(3,4)};
+		int[] arr={1,2,3,4,5}; // declare and initialize, we can use {}
 		
+		int[] arr2=new int[10]; // 50 cells, but what's their value ?
+		for(int i=0; i<arr2.length; ++i) {
+			arr[i]=i; // we are initializing here
+		}
+		
+		Point []pointArr={new Point(1,2), new Point(3,4)}; // we can have arrays of objects
+				
 	}
 	
 
@@ -31,6 +37,17 @@ public class ArrayExamples {
 		for(int elem: arr) {
 			System.out.println(elem);
 		}
+	}
+
+	
+	public static int min(int[] arr) {
+		// we assume the array is not empty
+		int theMin=arr[0];
+		for(int i=1; i<arr.length; ++i) {
+			if(arr[i]<theMin)
+				theMin=arr[i];
+		}
+		return theMin;
 	}
 	
 	public static void main(String args[]) {
