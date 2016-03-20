@@ -70,5 +70,32 @@ Most of our loops over arrays, end up looking like those above; using a variable
 		}
 	}
 ```
-
+# More examples
+```java
+	public static int min(int[] arr) {
+		// we assume the array is not empty
+		int theMin=arr[0];
+		for(int i=1; i<arr.length; ++i) {
+			if(arr[i]<theMin)
+				theMin=arr[i];
+		}
+		return theMin;
+	}
+```
+```java
+	public static boolean isSorted(int[] arr) {
+		for(int i=1; i<arr.length; ++i) {
+			if(arr[i]>arr[i-1])
+				return false;
+		}
+		return true;
+	}
+```
 # Array Problem patterns
++ do something with all the elements
++ do something to all the elements
++ use an accumulator
+
+# Common problems
++ min / max
++ sorting
