@@ -14,5 +14,11 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
 
 ## [Module 6](Spring2016/Week6.md) - creating classes
 
+## [Module 7](Spring2016/Week7.md) - Arrays
+
+## Module 8 - Inheritance and interfaces
+## Module 9 - Collections and generics
+## Module 10 - Files and I/O
+
 ## Other Resources
 * [Resources](content/Resources.md)
