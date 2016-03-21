@@ -70,7 +70,11 @@ Most of our loops over arrays, end up looking like those above; using a variable
 		}
 	}
 ```
+
 # More examples
+Here are a couple of examples which do not quite have the typical loop:
+
+The first one, is a function to calculate the minimum value in an array of ints;  
 ```java
 	public static int min(int[] arr) {
 		// we assume the array is not empty
@@ -82,6 +86,7 @@ Most of our loops over arrays, end up looking like those above; using a variable
 		return theMin;
 	}
 ```
+
 ```java
 	public static boolean isSorted(int[] arr) {
 		for(int i=1; i<arr.length; ++i) {
@@ -91,6 +96,7 @@ Most of our loops over arrays, end up looking like those above; using a variable
 		return true;
 	}
 ```
+
 # Array Problem patterns
 + do something with all the elements
 + do something to all the elements
