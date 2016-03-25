@@ -8,7 +8,7 @@ Materials
     + [Chapter 14 - Objects of Arrays](http://greenteapress.com/thinkjava5/html/thinkjava016.html)
     
 + Videos
-    + Recorded lecture- coming Monday
+    + [Recorded lecture](https://youtu.be/b-7-Rj0qfiM)
     + [Intro to arrays](https://youtu.be/qUtyWGWvHFE) 
 + Assignment
     + [Assignment 7](Assignments/A7.md)
