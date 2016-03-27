@@ -1,7 +1,6 @@
 package okaram.samples;
 
-
-public class Circle {
+public class Circle1 {
 	public static final double PI=3.14159;
 	private double radius;
 	public double getRadius() {
