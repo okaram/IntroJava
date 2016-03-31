@@ -8,6 +8,7 @@ Materials
     + [Oracle Java tutorial - OO Concepts](http://docs.oracle.com/javase/tutorial/java/concepts/index.html)
     + [Oracle java tutorial - Inheritance and Interfaces](http://docs.oracle.com/javase/tutorial/java/IandI/index.html)
 + Videos
+    + [Lecture](https://youtu.be/eqZGT2ADm7U)
     + [Inheritance](https://www.youtube.com/watch?v=LA1InXN0hgQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Polymorphism](https://www.youtube.com/watch?v=v_ZBH1RsJqU&list=UUSH2TieRlco7uQOGU8Vppnw) = From Dr Chastine
 + Assignment
