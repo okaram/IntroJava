@@ -1,5 +1,7 @@
 Module 8 - Inheritance, Interfaces and Polymorphism
 
+Kennesaw State has Spring break on the week from April 2 (Sa)  to April 8 (F). There will be no new material on that week, and Assignment 8 will be due on Sun Apr 10.
+ 
 Materials
 + [Interfaces and Polymorphism](../content/InterfacesAndPolymorphism.md)
 + [Class inheritance](../content/ClassInheritance.md)
