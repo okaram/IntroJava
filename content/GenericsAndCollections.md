@@ -49,4 +49,29 @@ Although java doesn't provide a nice syntax for initializing lists, it does prov
 
 ## Maps
 
+Maps are like arrays, but we can use any kind of objects as the key. To use a Map we need to provide two type parameters, the type for the key and the type for the value.
+
+For example, to represent a map from Strings to ints (well, Integer; we need to use the boxed version) we would declare it as `Map<String,Integer>`. The main implementation class is HashMap.
+
+### Example
+
+```java
+		Map<String, Integer> digitValues=new HashMap<String,Integer>();
+		digitValues.put("Zero",0);
+		digitValues.put("One",1);
+		digitValues.put("Two",2);
+
+		System.out.println(digitValues.get("One"));
+```
+
+Some of the map operations are:
++ get(key) - to retrieve the value stored at a given key
++ containsKey(key) - returns true if the map has a value  for the given key
++ put(key,value) -sets the value for the given key
++ remove(key) - removes the value for the given key
++ size(), isEmpty() - as in collections
++ keySet(), entrySet(), values() - return collections of keys, values or entries
+
 ## Other collections
+
+Besides these collections, Java supports [Set](http://docs.oracle.com/javase/7/docs/api/java/util/Set.html), [Queue](http://docs.oracle.com/javase/7/docs/api/java/util/Queue.html), [Stack](http://docs.oracle.com/javase/7/docs/api/java/util/Queue.html), [Dequeue](http://docs.oracle.com/javase/7/docs/api/java/util/Deque.html) and many others. 
