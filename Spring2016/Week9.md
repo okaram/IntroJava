@@ -8,5 +8,7 @@ Materials
     + [Oracle Java tutorial - Collections trail](https://docs.oracle.com/javase/tutorial/collections/)
 + Videos
     + [Lecture](https://youtu.be/e9-F0wG81fQ) 
+    + [Boxed values](https://youtu.be/gldyTRi0ODA)
+    + [Lists](https://youtu.be/PwPCKGuSUNg)
 + Assignment
     + [Assignment 9](Assignments/A9.md)
