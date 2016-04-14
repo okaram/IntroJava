@@ -3,7 +3,7 @@ Module 9 - Collections
  
 Materials
 + [Boxed Values](../content/BoxedValues.md)
-+ [Collections](../content/Collections.md)
++ [Collections](../content/GenericsAndCollections.md)
 + 
     + [Oracle Java tutorial - Collections trail](https://docs.oracle.com/javase/tutorial/collections/)
 + Videos
