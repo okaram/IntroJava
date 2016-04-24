@@ -12,5 +12,5 @@ Materials
     + [Lecture](https://youtu.be/QUPKpNGf8BU)
     + [Exceptions](https://www.youtube.com/watch?v=iaPqtwA32Xk&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [File I/O](https://www.youtube.com/watch?v=BwSUN--Fyl4&list=UUSH2TieRlco7uQOGU8Vppnw) - File I/O
-+ Assignment
-    + [Assignment 10](Assignments/A10.md)
+
+There is no assignment, but you should know how to throw and catch exceptions. I will not ask any questions about files in the final exam.
