@@ -17,8 +17,8 @@ This module is actually for two calendar weeks, as there's no class on Monday Ja
 ## [Module 7](Spring2016/Week7.md) - Arrays
 
 ## [Module 8](Spring2016/Week8.md) - Inheritance and interfaces
-## Module 9 - Collections and generics
-## Module 10 - Exceptions and I/O
+## [Module 9](Spring2016/Week9.md) - Collections and generics
+## [Module 10](Spring2016/Week10.md) - Exceptions and I/O
 ## Module 11 - Unit testing and JUnit
 
 ## Other Resources
