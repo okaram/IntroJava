@@ -14,4 +14,4 @@ Materials
 + Some codingbat problems (I can't find any for classes :(
     + [Simple recursion](http://codingbat.com/java/Recursion-1)
     + [Arrays](http://codingbat.com/java/Array-2)
-    + [Harder Arrays](
+    + [Harder Arrays](http://codingbat.com/java/Array-3)
