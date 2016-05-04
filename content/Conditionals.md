@@ -143,9 +143,74 @@ Or with chained if statements:
 		}
 	}
 ```
-## Max 
+## Max and abstraction
 
+Say we want to define a function, called max2, which returns the biggest of two ints; we can do it simply as:
+```java
+	public static int max2( int n1, int n2 )
+	{
+		if(n1>n2) {
+			return n1;
+		} else {
+			return n2;
+		}
+	}
+```
 
+Now we want to define max3, that takes 3 integers and returns the biggest of those 3 integers. We can use a series of nested ifs; the code would look complicated and somewhat unbalanced, but works. 
+```java
+	public static int max3_nested( int n1, int n2, int n3 )
+	{
+		if(n1>=n2) {
+			if(n1>=n3)
+				return n1;
+			else 
+				return n3;
+		} else {
+			if (n2>=n3)
+				return n2;
+			else
+				return n3;
+		}
+	}
+```
+
+We could also use a series of chained if statemens. Notice we need to be careful and use >= or we may return the wrong answer if some of the numbers are equal.
+```java
+public static int max3_chained(int n1, int n2, int n3)
+{
+	if(n1>=n2 && n1>=n3) 
+			return n1;
+	else if (n2>=n1 && n2>=n3)
+			return n2;
+	else 
+		return n3; 
+}
+```
+
+We could also use a sequence of if statments and a temporary variable, for a reasonably clean solution
+```java
+public static int max3_sequence(int n1, int n2, int n3)
+{
+	int max=n1;
+
+	if(n2>=max) 
+		max=n2;
+
+	if(n3>=max) 
+		max=n3;
+
+	return max;
+}
+```
+
+However, if we notice we already have max2, we can use it to arrive at the cleanest solution: 
+```java
+public static int max3(int n1, int n2, int n3)
+{
+	return max2( max2(n1,n2), n3 );		
+}
+```
 
 # Exercises
 + The marginal income tax rates for a certain country (OK, the USA in 2015 according to wikipedia :), for people filing as single, are: 
@@ -160,8 +225,12 @@ Or with chained if statements:
 |   35      |   $411,501    |   $413,200    |
 |   39.6    |   $413,201    |    no limit   |
 
-Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
++ Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
 
 + Write a function called taxAmountForSingles, that takes an int and returns a double; this function returns the *amount* owed in taxes for  the corresponding input (use the table above).
 
-+
++ Define a max4 function that takes 4 integers and returns the largest one, by calling max2 several times.
+
++ Define a max4 function that takes 4 integers and returns the largest one, by using a sequence of if statements, like in max3_sequence.
+
+
