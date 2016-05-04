@@ -76,4 +76,8 @@ As another example, consider another function that would tell us how many days a
 + [The switch statement](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html) - From Oracle's Java tutorial
 
 # Exercises
+
 + If you look at most phone numeric keyboards, you'll notice there are small letters next to the numbers; each number corresponds to 3 or 4 letters. Write a function called letterToNumber that takes a char and returns the corresponding number (or 0 if the character is not a letter or doesn't correspond to a number).
+
++ Write a function called digitToWord that takes an int (from 0 to 9) and returns a String, the corresponding name for the digit (Zero, or One, or ...). Return "Invalid Number" if the parameter is not between 0 and 9.
+
