@@ -213,7 +213,7 @@ public static int max3(int n1, int n2, int n3)
 ```
 
 # Exercises
-+ The marginal income tax rates for a certain country (OK, the USA in 2015 according to wikipedia :), for people filing as single, are: 
+1. The marginal income tax rates for a certain country (OK, the USA in 2015 according to wikipedia :), for people filing as single, are: 
 
 | Tax Rate  | Min income    | Max Income    |
 | --------- |---------      | ----------    |
@@ -225,12 +225,12 @@ public static int max3(int n1, int n2, int n3)
 |   35      |   $411,501    |   $413,200    |
 |   39.6    |   $413,201    |    no limit   |
 
-+ Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
+2. Write a function, called taxRateForSingles, that takes an int and returns a double; the function uses if statements and returns the corresponding tax rate.
 
-+ Write a function called taxAmountForSingles, that takes an int and returns a double; this function returns the *amount* owed in taxes for  the corresponding input (use the table above).
+3. Write a function called taxAmountForSingles, that takes an int and returns a double; this function returns the *amount* owed in taxes for  the corresponding input (use the table above).
 
-+ Define a max4 function that takes 4 integers and returns the largest one, by calling max2 several times.
+4. Define a max4 function that takes 4 integers and returns the largest one, by calling max2 several times.
 
-+ Define a max4 function that takes 4 integers and returns the largest one, by using a sequence of if statements, like in max3_sequence.
+5. Define a max4 function that takes 4 integers and returns the largest one, by using a sequence of if statements, like in max3_sequence.
 
 
