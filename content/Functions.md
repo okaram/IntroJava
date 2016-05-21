@@ -1,3 +1,6 @@
+Introduction to Functions
+===
+
 + [Video](https://www.youtube.com/watch?v=Wg1zXRuZUck) - Intro to functions
 
 One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.
@@ -23,11 +26,14 @@ boolean is*Even=isEven(8);
 
 When we call a function, with an expression like `isEven(7)`, the function gets executed; first the actual parameter (7 in this case) gets evaluated, then the code for the function gets executed, with the formal parameter (number) replaced with the actual value (you can imagine the formal parameter, number, is like a variable inside the function; finally, the return value gets substituted instead of the function call. 
 
+## Java overhead when defining functions
+Unfortunately, Java does not actually supports functions; it supports *methodss*, which are attached to a class; Java requires you to always declare a class, and declare your functions as static methods; due to this, we normally will put the keywords 'public static' before our function definitions; we will study more in depth what those things mean; for now, just put them before your functions :)
+
 ## Local variables and scope
 
 Within a function, we can define variables if we need them; this variables are only visible within the function (and only keep their value within that function call), so we could also define isEven as follows:
 ```java
-boolean isEven(int number)
+public static boolean isEven(int number)
 {
     int remainderBy2=number%2;
     return remainderBy2==0;   
@@ -86,3 +92,59 @@ Here a call to it, say `sumEven(3,4)`, would start an activation frame, with num
     int x=add(10,5);
     boolean ans=isEven(add(x,1));
     ```
+## More function examples
+
+### Boolean expressions and functions
+One skill you need to master as a programmer is to think of bolean values (true or false) as values that can be combined by operators; just as numbers can be added, subtracted etc, booleans can be 'or-ed' and 'and-ed' and negated ('not-ed' :). Let's practice some examples
+### isInBetween
+
+Let's define a function that takes 3 ints, and returns a boolean; it returns true if the first number is between the other two; let's call our parameters number, high, and low; we can define the function as:
+```java
+    public static boolean isInBetween(int number, int high, int low) {
+        return number>=high && number<=low;
+    }
+```
+
+### allTrue
+```java
+boolean allTrue(boolean b1, boolean b2, boolean b3, boolean b4){
+    return b1 && b2 && b3 && b4;
+}
+```
+
+### anyTrue
+```java
+boolean anyTrue(boolean b1, boolean b2, boolean b3, boolean b4){
+    return b1 || b2 || b3 || b4;
+}
+```
+
+### exclusiveOr
+```java
+boolean exclusiveOr(boolean b1, boolean b2){
+    return b1 || b2 && !( b1 && b2 )
+}
+```
+
+```java
+boolean exclusiveOr2(boolean b1, boolean b2){
+    return b1 || b2 && (!b1 || !b2 )
+}
+```
+
+### Movies Bob likes
+```java
+boolean bobWouldLike(String category, int length, int rating){
+    return (category=="Drama" || category=="Murder") && length<=90 && rating>3;  
+}
+```
+
+
+### Movies Alice likes
+```java
+boolean bobWouldLike(String category, int length, int rating){
+    return (category=="Drama" || category=="Action" || category=="Romantic") && length<=120 ;  
+}
+```
+
+
