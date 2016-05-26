@@ -86,7 +86,26 @@ public static int pow_accum(int base, int exponent)
 }
 ```
 ## Characters in a string
-
+We saw that we can obtain a string's lenght by using the .lenght method, and we can use charAt to get the character at a given place. Given this, we can create functions that go over all the characters in a string; for example ...
+```java
+	// returns true if the string contains the character
+	// we start looking at the char with index from (so if from is 3, we just care whether the string
+	// contains the c in its 4th through last characters
+	private static boolean stringContains(String s, char c, int from)
+	{
+		if(from>=s.length())
+			return false;
+		else if (s.charAt(from)==c)
+			return true;
+		else
+			return stringContains(s,c,from+1);
+	}
+	
+	public static boolean stringContains(String s, char c)
+	{
+		return stringContains(s,c,0);
+	}
+```
 ## Exercises
 + Define a function printCountDown that takes two integers, say `from` and `to` (assuming from is bigger than to), and prints all the numbers between from and to (including both from and to). 
 + Define a function printCountUp that takes two integers, say `from` and `to` (now assuming from is smaller than to), and prints all the numbers between from and to (including both from and to).

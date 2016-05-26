@@ -1,9 +1,9 @@
 Required Setup
 ===
 
-These instructions are written for Windows (and tested on a Windows 10 machine). Please ask if you're using a different OS.
+These instructions are written for Windows (and tested on a Windows 10 machine), mostly, but instructions would be similar for other OSs. Please ask if you're using a different OS, or if you have any problems.
 
-For the first couple of weeks we will use web applications instead of requiring you to install software, giving you a little time to install everything. It is OK to feel stressed, as you need to install several things, and the instructions cannot be perfect since we don't know which specific versions of things you get; take a deap breath .... and anohter ... and ask if you need help (both in D2L and directly emailing me). 
+It is OK to feel stressed, as you need to install several things, and the instructions cannot be perfect since we don't know which specific versions of things you get; take a deap breath .... and another ... and ask if you need help (both in D2L and directly emailing me). 
 
 # Installing JDK
 
@@ -21,14 +21,9 @@ Eclipse doesn't really come with an installer; just open the zip file (double-cl
 
 # Installing a git client
 
-We will use BitBucket as our code repository, but you still need a git client. The command line client is available at [www.git-scm.com](http://www.git-scm.com/downloads). You can also get a GUI client; I've used [SourceTree](https://www.sourcetreeapp.com/). I assume you have a command line client.
+We will use BitBucket as our code repository, but you still need a git client. The command line client is available at [www.git-scm.com](http://www.git-scm.com/downloads). I assume you have a command line client, like git-bash.
 
 # BitBucket setup
 
-Go to [Bitbucket.org](https://bitbucket.org/) and create an account. Then create a repository (there's a create button on the top bar). You can name the repository any way you want, but I suggest a name like CS5000 (notice different users can have repos with the same name); make sure the repo is private and uses git.
+Go to [Bitbucket.org](https://bitbucket.org/) and create an account. After that, email me the account from your kennesaw email; I will create a repo for the assignments and give you access, so you can create pull requests.
 
-![Creating a repository](pics/BitbucketNewRepo.png)
-
-After you create the repository, give me read access so I can see your code (go onto settings, there's an icon at the bottom of the left-hand bar). My account name is okaram; I only need read access.
-
-![Giving me access](pics/BitbucketAccess.png)
