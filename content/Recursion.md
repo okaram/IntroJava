@@ -66,7 +66,25 @@ As another example, let's define a function that prints all numbers counting dow
 ```
 
 ## Accumulators
+Many times, when we use recursive functions to calculate values, we can pass our function an extra parameter, and use it to accumulate the current value (we call this extra parameter an accumulator). For example, we could write the power function with an accumulator as follows (changing the name so we can distinguish between them):
+```java
+public static int pow_accum(int base, int exponent, int current) {
+	if(exponent<=0)
+		return current;
+	else
+		return pow_accum(base,exponent-1, current*base);
+}
+```
 
+In this case, if the exponent is 0, we are done, and we return the current accumulated value; otherwise, we call ourselves, decrementing the exponent, and multiplying the accumulator by the base. In the end, we would have multiplied that accumulator by the base the required number of times.
+
+Notice this function takes three arguments, instead of two, and would need to be called with an initial value of 1 for current. We can make sure it is called the right way, by defining a *wrapper* function, that just calls our function with the appropriate initial value, as follows:
+```java
+public static int pow_accum(int base, int exponent)
+{
+	return pow_accum(base, exponent, 1);
+}
+```
 ## Characters in a string
 
 ## Exercises

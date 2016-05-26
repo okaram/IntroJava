@@ -16,18 +16,36 @@ public class RecursionSamples {
 			return stringTimesAccum(base, times-1, base+Accum);
 	}
 	
-	public int pow(int base, int exponent) {
+	public static int pow(int base, int exponent) {
 		if(exponent<=0)
 			return 1;
 		else
 			return base*pow(base,exponent-1);
 	}
-	
+
+	public static int pow_accum(int base, int exponent, int current) {
+		if(exponent<=0)
+			return current;
+		else
+			return pow_accum(base,exponent-1, current*base);
+	}
+
+	public static int pow_accum(int base, int exponent)
+	{
+		return pow_accum(base, exponent, 1);
+	}
+
 	public int factorial(int n) {
 		if(n<=0)
 			return 1;
 		else
 			return n*factorial(n-1);
+	}
+	public static int gcd(int a, int b)
+	{
+		if(b==0)
+			return a;
+		return gcd(b, a%b);
 	}
 
 	public static void printCountDown(int from)
@@ -88,8 +106,7 @@ public class RecursionSamples {
 	}
 
 	public static void main(String[] args) {
-		printCountDown(10);
-		System.out.println("\n\nNow up" );
-		printCountUp(5,10);
+		System.out.println(gcd(9,132));
+		System.out.println(pow_accum(3,4));
 	}
 }

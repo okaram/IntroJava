@@ -3,6 +3,8 @@ apply plugin: 'eclipse'
 apply plugin: 'application'
 
 mainClassName = "HelloWorld"
+if (project.hasProperty('mainClass'))
+	mainClassName=mainClass
 
 repositories {
 	mavenCentral()
