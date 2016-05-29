@@ -1,4 +1,4 @@
-Module 1: Introduction, variable and functions(methods)
+Module 1: Introduction, variables and functions(methods)
 ===
 
 ## Materials
@@ -40,6 +40,9 @@ Module 1: Introduction, variable and functions(methods)
     + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
     
 Assignments:
+If you haven't done so, the first thing is to create a [bitbucket](http://bitbucket.org) account and email your instructor with it immediately.
+
+* [Assignment 0- Setup](Assignments/A0.md)
 * [Assignment 1- Simple functions](Assignments/A1.md)
 * [Assignment 2- IO, main](Assignments/A2.md)
 
