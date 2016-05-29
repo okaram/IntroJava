@@ -1,4 +1,4 @@
-Variables and Operators
+Numeric Variables and Operators
 ===
 ## Video - [Int variables and Operators](https://youtu.be/1JEtmEthcS4)
 
@@ -107,3 +107,19 @@ Notice you do not need to use the shorthand operators, but since many people use
     int ans=a*b;
     ans++;
     ```
+    
+# Floating point numbers
+
+Computers also allow us to represent 'decimal' numbers; we call them floating point numbers (and they are represented in something similar to scientific notation). In Java, we have `double` and `float` variables. Doubles use more memory but have a bigger range and precission. For now, use `double` when you want to represent numbers that are not integers.
+
+Another thing to keep in mind is that the computer represent the number internally in a slightly imprecise manner; even though it prints 0.3, internally it may represent it as 0.2999998 ; the main thing to remember is that you **cannot** use == to coompare two floats, but need to use >= and <= and a small precission value.
+
+All the arithmetic and relational operators work as for ints, with the exception of == and division, where / does regular division and % doesn't make sense.
+
+## Example
+
+```java
+double a=1.22;
+a+=1;
+a/=2; // what's the value of a ?
+```

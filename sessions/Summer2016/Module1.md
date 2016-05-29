@@ -5,8 +5,7 @@ Module 1: Introduction, variable and functions(methods)
 + Notes
     * [Basics](../content/Basics.md)
     * Variables and operators
-        + [Basic (int) Variables and Operators](../content/IntVariablesAndOperators.md) - and [Video](https://youtu.be/1JEtmEthcS4)
-        + Floating point variables
+        + [Numeric Variables and Operators](../content/IntVariablesAndOperators.md) - and [Video](https://youtu.be/1JEtmEthcS4)
         + [Boolean variables](../content/Booleans.md) 
             + [Boolean variables and Operators](https://youtu.be/h7ss6NgYB5M)
             + [Relational (comparison) operators](https://youtu.be/ZIjRLlcHL4w)
@@ -17,7 +16,7 @@ Module 1: Introduction, variable and functions(methods)
     * IO and full programs
         + [First full program](../content/FirstProgram.md)
     + Setup
-        + [Machine Setup](../content/Setup.md) and [Repo setup](../content/RepoSetup.md)
+        + [Machine Setup](../content/Setup.md) 
         + Repo setup    
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
