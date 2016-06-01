@@ -3,20 +3,20 @@ Module 1: Introduction, variables and functions(methods)
 
 ## Materials
 + Notes
-    * [Basics](../content/Basics.md)
+    * [Basics](../../content/Basics.md)
     * Variables and operators
-        + [Numeric Variables and Operators](../content/IntVariablesAndOperators.md) - and [Video](https://youtu.be/1JEtmEthcS4)
-        + [Boolean variables](../content/Booleans.md) 
+        + [Numeric Variables and Operators](../../content/IntVariablesAndOperators.md) - and [Video](https://youtu.be/1JEtmEthcS4)
+        + [Boolean variables](../../content/Booleans.md) 
             + [Boolean variables and Operators](https://youtu.be/h7ss6NgYB5M)
             + [Relational (comparison) operators](https://youtu.be/ZIjRLlcHL4w)
-        + [Strings](../content/Strings.md)
-    * [Functions](../content/Functions.md)
+        + [Strings](../../content/Strings.md)
+    * [Functions](../content/../Functions.md)
         + [Intro - add](https://youtu.be/Wg1zXRuZUck)
         + [isEven in CodingBat](https://youtu.be/IHFXy_5Zp68)
     * IO and full programs
         + [First full program](../content/FirstProgram.md)
     + Setup
-        + [Machine Setup](../content/Setup.md) 
+        + [Machine Setup](../../content/Setup.md) 
         + Repo setup    
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
