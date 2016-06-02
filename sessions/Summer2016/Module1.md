@@ -17,7 +17,7 @@ Module 1: Introduction, variables and functions(methods)
         + [First full program](../../content/FirstProgram.md)
     + Setup
         + [Machine Setup](../../content/Setup.md) 
-        + Repo setup    
+        + [Repo setup](../../content/RepoSetup.md)    
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
     + [Chapter 2 - Variables and types](http://greenteapress.com/thinkjava6/html/thinkjava6003.html)

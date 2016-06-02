@@ -27,7 +27,7 @@ boolean is*Even=isEven(8);
 When we call a function, with an expression like `isEven(7)`, the function gets executed; first the actual parameter (7 in this case) gets evaluated, then the code for the function gets executed, with the formal parameter (number) replaced with the actual value (you can imagine the formal parameter, number, is like a variable inside the function; finally, the return value gets substituted instead of the function call. 
 
 ## Java overhead when defining functions
-Unfortunately, Java does not actually supports functions; it supports *methodss*, which are attached to a class; Java requires you to always declare a class, and declare your functions as static methods; due to this, we normally will put the keywords 'public static' before our function definitions; we will study more in depth what those things mean; for now, just put them before your functions :)
+Unfortunately, Java does not actually supports functions; it supports *methods*, which are attached to a class; Java requires you to always declare a class, and declare your functions as static methods; due to this, we normally will put the keywords 'public static' before our function definitions; we will study more in depth what those things mean; for now, just put them before your functions :)
 
 ## Local variables and scope
 
