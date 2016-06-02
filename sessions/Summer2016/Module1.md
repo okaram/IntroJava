@@ -10,7 +10,7 @@ Module 1: Introduction, variables and functions(methods)
             + [Boolean variables and Operators](https://youtu.be/h7ss6NgYB5M)
             + [Relational (comparison) operators](https://youtu.be/ZIjRLlcHL4w)
         + [Strings](../../content/Strings.md)
-    * [Functions](../content/../Functions.md)
+    * [Functions](../../content/../Functions.md)
         + [Intro - add](https://youtu.be/Wg1zXRuZUck)
         + [isEven in CodingBat](https://youtu.be/IHFXy_5Zp68)
     * IO and full programs
