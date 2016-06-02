@@ -14,7 +14,7 @@ Module 1: Introduction, variables and functions(methods)
         + [Intro - add](https://youtu.be/Wg1zXRuZUck)
         + [isEven in CodingBat](https://youtu.be/IHFXy_5Zp68)
     * IO and full programs
-        + [First full program](../content/FirstProgram.md)
+        + [First full program](../../content/FirstProgram.md)
     + Setup
         + [Machine Setup](../../content/Setup.md) 
         + Repo setup    
