@@ -14,7 +14,7 @@ This assignment is due Wednesday, June 8 @ 6:00 pm. You will lose 10%, but still
 
 
 ### Navigate to project folder
-```cd Documents/projects/cs5000```
+```cd ~Documents/projects/cs5000```
 
 ### load any changes
 ```git checkout master```
