@@ -12,7 +12,7 @@ Your program is just a bunch of text, so you use a **text editor** (like Notepad
 
 The Java compiler is called *javac*. Usually we name our java files with the .java extension, so you'd use a command like javac Hello.java , which would generate a Hello.class file. You'd then be able to execute that file with java Hello.
 
-Notice that at the very beginning we will use web sites like [JavaRepl](http://javarepl.com) and [CodingBat](http://codingbat.org) which directly interpret and print the results for java code. This is quite useful, but not the usual way.
+Notice that at the very beginning we will use web sites like [JavaRepl](http://www.javarepl.com) and [CodingBat](http://codingbat.com) which directly interpret and print the results for java code. This is quite useful, but not the usual way.
 
 ## IDEs
 Many times, you want a program that does more than a simple text editor; we many times use an Integrated Development Environment, or IDE, which understands our programming langugage and can help us with syntax highlighting and auto-completing options.
