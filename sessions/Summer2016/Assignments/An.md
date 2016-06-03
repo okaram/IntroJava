@@ -5,13 +5,15 @@ Assignment #n
 
 # Instructions
 
-Open the a#n project in eclipse, and modify the file in src/main/java/assignment/Assignment#n.java so it complies with the instructions. Use src/main/java/test/Grader.java (and src/main/java/test/DetailedTests.java if present) to guide your testing, making sure you eventually pass the unit test.
+Open the a#n project in eclipse, and modify the file in src/main/java/assignment/Assignment#n.java so it complies with the instructions. Use src/test/java/assignment/Grader.java (and src/test/java/assignment/DetailedTests.java if present) to guide your testing, making sure you eventually pass the unit test.
 
-### Submitting
+### Submissions
 Assignments are submitted by pull-request.
 
 This assignment is due Wednesday, June 8 @ 6:00 pm. You will lose 10%, but still get credit if you submit before Monday June 13 @ 11:59 pm.
 
+# Verifying and submitting
+Open git-bash, and then
 
 ### Navigate to project folder
 ```cd ~Documents/projects/cs5000```
@@ -20,11 +22,6 @@ This assignment is due Wednesday, June 8 @ 6:00 pm. You will lose 10%, but still
 ```git checkout master```
 
 ```git pull origin master```
-
-
-# Verifying and submitting
-
-Open git-bash, and then
 
 ### Navigate to assignment folder
 ```cd ~/Documents/projects/cs5000/a#n```   (or simply ```cd a#n``` if you're already in cs5000)
