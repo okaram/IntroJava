@@ -13,7 +13,7 @@ Assignments are submitted by pull-request.
 This assignment is due Wednesday, June 8 @ 6:00 pm. You will lose 10%, but still get credit if you submit before Monday June 13 @ 11:59 pm.
 
 # Verifying and submitting
-Open git-bash, and then
+Open git-bash (or your terminal), and then
 
 ### Navigate to project folder
 ```cd ~Documents/projects/cs5000```
