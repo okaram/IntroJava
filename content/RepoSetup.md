@@ -45,4 +45,8 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
 
-Aftere this, continue onto Assignment 0.
+We will be using eclipse as our IDE; you need to recreate the eclipse projects in your machine, so they get a reference to the right compiler etc for your machine. I provided a script that will do it for all our projects; type:
+```
+./mkeclipse.sh
+```
+After this, continue onto Assignment 0.

@@ -5,7 +5,7 @@ Introduction to Functions
 
 One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.
 
-For example, imagine that we need to find whether numbers are even; we can easily do the calculation, using % ; however, it will be much nicer if we encapsulate this into itw own function. We could write the function as follows:
+For example, imagine that we need to find whether numbers are even; we can easily do the calculation, using % ; however, it will be much nicer if we encapsulate this into its own function. We could write the function as follows:
 
 ```java
 boolean isEven(int number)
