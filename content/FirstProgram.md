@@ -65,8 +65,58 @@ Finally, we print the `"Hello "` concatenated with the value we got from the use
 ```java
         System.out.println("Hello "+name);
 ``` 
+## Now with functions
 
+We could want to encapsulate how do we say Hello; so we can later change the actual phrasing; we could create a function, let's call it sayHi; we would pass it the name, and, to make it able to write to other places rather than the screen, we will pass it the PrintStream to write to, rather than write to System.out; we could define the function as follows:
 
+```java
+	public static void sayHi(String name, PrintStream out){
+		out.println("Hello " + name);
+	}
+```
+
+And we could also replace the first part, when we ask for the name and read it; those two lines are related (we wouldn't do one without the other), so let's define a function that writes the message, then reads and *returns* the name read. It would look like this:
+
+```java
+	public static void sayHi(String name, PrintStream out){
+		out.println("Hello "+name +"");
+	}
+```
+
+And main would now look like this:
+```java
+	public static void sayHi(String name, PrintStream out){
+		out.println("Hello "+name +"");
+	}
+```
+
+## Full program with functions
+Just for reference, here's the full program with functions
+
+```java
+import java.io.PrintStream; // System.out is a PrintStream
+import java.util.Scanner; // import the scanner class
+
+public class Hello{
+	public static void sayHi(String name, PrintStream out){
+		out.println("Hello "+name +"");
+	}
+	
+	public static String getNameFromUser(PrintStream out, Scanner in){
+        System.out.println("Please enter your name");
+        String name=in.nextLine();
+		return name;
+	}
+	
+	
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        String name=getNameFromUser(System.out, input);
+        sayHi(name,System.out);
+    }
+}
+```
 
 
 
