@@ -25,6 +25,7 @@ Module 1: Introduction, variables and functions(methods)
     + [Chapter 4 - Void methods](http://greenteapress.com/thinkjava6/html/thinkjava6005.html)
     + [Chapter 5 - Value methods](http://greenteapress.com/thinkjava6/html/thinkjava6005.html) - until 6.6
 * Longer Videos
+	+ [Lecture 1 Playlist](https://www.youtube.com/playlist?list=PLK5RwQeVk5YwszV6P2rCkNWabgpS89Hy-)
     + [Java Bootcamp](https://www.youtube.com/watch?v=8nOg6mtH-oo&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine, 20 minutes or so
     + [Basic IO](https://www.youtube.com/watch?v=W1oA5kOdqXQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Shortcut Operators](https://www.youtube.com/watch?v=6z5pvttt31k&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
