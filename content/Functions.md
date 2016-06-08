@@ -1,7 +1,7 @@
 Introduction to Functions
 ===
 
-+ [Video](https://www.youtube.com/watch?v=Wg1zXRuZUck) - Intro to functions
++ [Video](https://youtu.be/65cSKj8FpHA) - Intro to functions
 
 One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.
 
@@ -92,6 +92,7 @@ Here a call to it, say `sumEven(3,4)`, would start an activation frame, with num
     int x=add(10,5);
     boolean ans=isEven(add(x,1));
     ```
+    
 ## More function examples
 
 ### Boolean expressions and functions
@@ -133,6 +134,7 @@ boolean exclusiveOr2(boolean b1, boolean b2){
 ```
 
 ### Movies Bob likes
+Assuming Bob likes movies that are not long (90 minutes or less), are either Drama or Murder, and have decent ratings.
 ```java
 boolean bobWouldLike(String category, int length, int rating){
     return (category=="Drama" || category=="Murder") && length<=90 && rating>3;  
@@ -141,6 +143,7 @@ boolean bobWouldLike(String category, int length, int rating){
 
 
 ### Movies Alice likes
+Alice likes movies in Drama, Action or Romantic, and that are not too long (120 minutes or less)
 ```java
 boolean bobWouldLike(String category, int length, int rating){
     return (category=="Drama" || category=="Action" || category=="Romantic") && length<=120 ;  
