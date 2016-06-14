@@ -39,7 +39,7 @@ You may already be in this branch; if this branch already exists but you are on 
 ### add and commit
 type
 
-	```git add a#n/src/main/java/assignment/Assignment#n.java```
+```git add a#n/src/main/java/assignment/Assignment#n.java```
 
 to add the file (you can also do ```git status``` to check nothing else needs to be added) 
 
