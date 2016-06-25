@@ -21,6 +21,14 @@ class Person {
 }
 ```
 
+Once we have defined a class, we can use it as a type, and can create instances with the keyword `new`. For example, we could create a variable of type Person, and assign values to its fields as follows:
+```java
+Person p = new Person();
+p.firstName="Joe";
+p.lastName="Smith";
+p.age=30;
+```
+
 ## Defining methods
 
 We can also define *methods*; operations that are defined within our class, and have access to the object's instance variables. 
@@ -55,7 +63,10 @@ We have seen we can pass arguments to a constructor; to define such a constructo
 	}
 ```
 
+Constructors allow us to define how instances of our classes are initialized. If we do not define *any* constructors at all, Java will define an empty constructor that takes no parameters and does nothing; however, if we define one or more constructors, Java will *not* define any, so instances would need to be created through our constructors. We can *overload* constructors, just like methods, by defining several constructors that take different parameters.
+
 ## Access Modifiers
 
+By default, fields and methods in a class have *package* access, meaning only classes within the same package can access them; we can also explicitly specify what kind of access we want; if we specify a field is `private`, then it can 
 
 ## getters and setters
