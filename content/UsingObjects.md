@@ -19,12 +19,28 @@ and then we can refer to them just as Point, Rectangle and Dimension.
 
 We create new objects with the keyword  `new`. We normally assign this newly created object to a variable. For example, the following statement:
 ```java
-		Point pt1=new Point(10,10);
-        Point pt2=new Point(5,7);
+	Point p1=new Point(3,4);
+        Point p2=new Point(5,6);
 ```
-creates two new points, and assigns them to the variables pt1 and pt2 (which are also being declared here).
+creates two new points, and assigns them to the variables p1 and p2 (which are also being declared here).
 
 Notice each point object is independent of each other (although they come from the same *class*, which works as a template for the object).
+
+
+### Primitive vs Object variables 
+
+When we create a variable for primitive values, like int or boolean, the value is actually stored in the variable; for example, for 
+```java
+int i=3;
+int j=4;
+```
+We would end up with something like this:
+![Primitive variables in memory](pics/IntVariables.png)
+
+the variables directly contain the values.
+
+When we create object variables, we have to create them with `new`; the variable contains a *reference* to the object, and the objects are created in a different location in memory; so, for the code above, where we created two points, p1 and p2, our memory looks more like this:
+![Object variables are references to objects in memory](pics/ObjectVariables.png)
 
 ### Constructor arguments
 
@@ -51,6 +67,7 @@ We can also call some methods on the object using also the . operator. The metho
 ```java
 		System.out.println(pt1.getX());
 ```
+
 Other classes have setX kind of methods, that allow us to change the variables, but Point does not.
 
 ## Aliasing 
@@ -58,13 +75,20 @@ Objects have *identity* independently of the variables; we say the variables *re
 
 For example, if we have:
 ```java
-		Point pt1=new Point(10,10);
-        Point pt2=pt1;
-        pt2.x=25;
-        System.out.println(pt1.x);
+	Point p1=new Point(3,4);
+        Point p2=p1;
 ```
 
-pt2 refers to the same object as pt1, and so when we make pt2.x=25, pt1's value is also changing (well, pt1 didn't change, it still refers to the same object, but that object has changed :). When two variables refer to the same object we say they *alias* each other.
+Our memory now looks like this:
+![Aliasing of objects](pics/Aliasing.png)
+
+So, if we do something like:
+
+```java
+	p2.x=25;
+```
+
+p2 refers to the same object as p1, and so when we make p2.x=25, p1's value is also changing (well, p1 didn't change, it still refers to the same object, but that object has changed :). When two variables refer to the same object we say they *alias* each other.
 
 ### Aliasing Exercise
 Given the following code:
