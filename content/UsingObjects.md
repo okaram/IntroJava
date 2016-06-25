@@ -35,11 +35,13 @@ int i=3;
 int j=4;
 ```
 We would end up with something like this:
+
 ![Primitive variables in memory](pics/IntVariables.png)
 
 the variables directly contain the values.
 
 When we create object variables, we have to create them with `new`; the variable contains a *reference* to the object, and the objects are created in a different location in memory; so, for the code above, where we created two points, p1 and p2, our memory looks more like this:
+
 ![Object variables are references to objects in memory](pics/ObjectVariables.png)
 
 ### Constructor arguments
@@ -80,6 +82,7 @@ For example, if we have:
 ```
 
 Our memory now looks like this:
+
 ![Aliasing of objects](pics/Aliasing.png)
 
 So, if we do something like:
