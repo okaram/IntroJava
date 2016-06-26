@@ -67,6 +67,33 @@ Constructors allow us to define how instances of our classes are initialized. If
 
 ## Access Modifiers
 
-By default, fields and methods in a class have *package* access, meaning only classes within the same package can access them; we can also explicitly specify what kind of access we want; if we specify a field is `private`, then it can 
+By default, fields and methods (members in general) in a class have *package* access, meaning only classes within the same package can access them; we can also explicitly specify what kind of access we want; we can use the following access modifiers:
+
++ `private`: members can only be accessed by methods within this class
++ `public`: members can be accessed by anybody
++ `protected`: members can be accessed by methods withhin this class and its subclasses.
+
+## Static modifier
+
+We can also mark members with `static`; static variables belong to the whole class, and all instances of the class share the same variable. Static methods are not associated with a particular instance (they don't have a pseudo-variable `this`). 
 
 ## getters and setters
+
+It is common practice to define all your fields private and have methods named getXXXX and setXXXX to read and write those values. So, for example, if you have a field age, rather than doing:
+
+```java
+	public int age;
+```
+you'd do:
+```java
+	private int age;
+	public getAge() { return age;}
+	private setAge(int age) { this.age=age;}
+```
+
+The advantage of this is that, if you were to ever change how you implement this (say, store the year a person is born, instead of its age), then you could still support the same public interface (getAge and setAge), and so the clients of the class would not need to change. This seldom happens, but this is still common practice.
+
+## Encapsulation
+
+
+
