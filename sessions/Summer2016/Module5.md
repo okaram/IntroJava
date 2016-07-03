@@ -6,8 +6,8 @@ Module 5: Inheritance, Interfaces and Collections
 + [Class inheritance](../../content/ClassInheritance.md) - And [Inheritance video](https://youtu.be/v-AfBPkpy1w)
 + [Boxed Values](../../content/BoxedValues.md) - and [Boxed values video](https://youtu.be/LB-9DEcm7Oc)
 + [Collections](../../content/GenericsAndCollections.md) - and [Lists video](https://youtu.be/U5U0CCihr_Y), [Maps video](https://youtu.be/oAzDXMMYG6Q)
-	+ Example - Map and Frequencies - [Video](https://youtu.be/L62ldfAunoc) and [Code](../../Samples/src/main/karamo/MapFrequencyExample.java)
-	+ Example - Map and Directory[Video](https://youtu.be/sBLP03qBvyQ) and [Code](../../../Samples/src/main/karamo/DirectoryExample.java)
+	+ Example - Map and Frequencies - [Video](https://youtu.be/L62ldfAunoc) and [Code](../../Samples/src/main/java/karamo/MapFrequencyExample.java)
+	+ Example - Map and Directory[Video](https://youtu.be/sBLP03qBvyQ) and [Code](../../../Samples/src/main/java/karamo/DirectoryExample.java)
 
 + Book chapters
     + [Chapter 15 - OOP](http://greenteapress.com/thinkjava5/html/thinkjava017.html)
