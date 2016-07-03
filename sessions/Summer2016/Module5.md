@@ -2,10 +2,10 @@ Module 5: Inheritance, Interfaces and Collections
 ===
 ## Materials
 
-+ [Interfaces and Polymorphism](../../content/InterfacesAndPolymorphism.md)
-+ [Class inheritance](../../content/ClassInheritance.md)
-+ [Boxed Values](../../content/BoxedValues.md)
-+ [Collections](../../content/GenericsAndCollections.md)
++ [Interfaces and Polymorphism](../../content/InterfacesAndPolymorphism.md) - and [Interface video](https://youtu.be/ILVYnwbB96o)
++ [Class inheritance](../../content/ClassInheritance.md) - And [Inheritance video](https://youtu.be/v-AfBPkpy1w)
++ [Boxed Values](../../content/BoxedValues.md) - and [Boxed values video](https://youtu.be/LB-9DEcm7Oc)
++ [Collections](../../content/GenericsAndCollections.md) - and [Lists video](https://youtu.be/U5U0CCihr_Y), [Maps video](https://youtu.be/oAzDXMMYG6Q)
 
 + Book chapters
     + [Chapter 15 - OOP](http://greenteapress.com/thinkjava5/html/thinkjava017.html)
@@ -15,7 +15,7 @@ Module 5: Inheritance, Interfaces and Collections
 
 + Videos
     + [Inheritance](https://www.youtube.com/watch?v=LA1InXN0hgQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-    + [Polymorphism](https://www.youtube.com/watch?v=v_ZBH1RsJqU&list=UUSH2TieRlco7uQOGU8Vppnw) = From Dr Chastine
+    + [Polymorphism](https://www.youtube.com/watch?v=v_ZBH1RsJqU&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Boxed values](https://youtu.be/gldyTRi0ODA)
     + [Lists](https://youtu.be/PwPCKGuSUNg)
     + [old Lecture](https://youtu.be/eqZGT2ADm7U) - Inheritance and interfaces
