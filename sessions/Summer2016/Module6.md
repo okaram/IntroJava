@@ -1,8 +1,8 @@
 Module 6: Exceptions, IO and Unit Testing
 ===
 ## Materials
-+ [Exceptions](../content/Exceptions.md)
-+ [File Input and Output](../content/FileIO.md)
++ [Exceptions](../../content/Exceptions.md)
++ [File Input and Output](../../content/FileIO.md)
 + Other sources
     + [Oracle Java Tutorial - Exceptions trail](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
     + [Oracle Java Tutorial - File I/O](https://docs.oracle.com/javase/tutorial/essential/io/index.html)
