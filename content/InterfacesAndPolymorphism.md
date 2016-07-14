@@ -32,7 +32,7 @@ class Circle  {
 }
 ```
 
-As you can see, these classes have several methods in common; `double getArea()`, `double getPerimeter()` and `String toString()`; every object has a toString method, so we don't really need to worry about it, but we may want to give a name to the notion of 'certain classes should have a getArrea and getPerimeter methods'. In Java, this is called an interface. A decent name for this interface could be *Shape*; I like to give special names to my interfaces, starting with a capital I, so let me call it IShape.
+As you can see, these classes have several methods in common; `double getArea()`, `double getPerimeter()` and `String toString()`; every object has a toString method, so we don't really need to worry about it, but we may want to give a name to the notion of 'certain classes should have a getArea and getPerimeter methods'. In Java, this is called an interface. A decent name for this interface could be *Shape*; I like to give special names to my interfaces, starting with a capital I, so let me call it IShape.
 In Java, we can define an interface like this:
 ```java
 interface IShape {
@@ -82,7 +82,7 @@ If the situation arises, you can define your class as implementing more than one
 
 ## Polymorphism
 
-Besides enforcing we have the right methods, defining an interface allows us to define variables and parameters with the type of the interface, and this variable can hold a reference any instance of a class that implements the interface. On this variable, we can call the interface's methods, and the methods of the underlying class will be calles.
+Besides enforcing we have the right methods, defining an interface allows us to define variables and parameters with the type of the interface, and this variable can hold a reference any instance of a class that implements the interface. On this variable, we can call the interface's methods, and the methods of the underlying class will be called.
 
 For example, given our interface and classes above, we can write code like:
 ```java
@@ -92,13 +92,13 @@ For example, given our interface and classes above, we can write code like:
 		System.out.println("Area: "+shp.getArea()+ " perimeter:" +shp.getPerimeter());
 ```
 
-And we can define functions using the interface as parameres; for example, if we define:
+And we can define functions using the interface as parameters; for example, if we define:
 ```java
 	public static String formatAreaAndPerimeter( IShape s) {
 		return s.toString()+" - Area: "+s.getArea()+" Perimeter: "+s.getPerimeter();
 	}
 ```
-And call such a function with an instance of any class that implements the interface (a Rectangle or a Circle in our example).
+We can call this function with an instance of any class that implements the interface (a Rectangle or a Circle in our example).
 
 We can also define arrays of the interface type, and put references to any of the implementing classes inside the array.
 
