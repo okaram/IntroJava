@@ -1,24 +1,20 @@
-Module 4: Classes and Arrays
+Module 2: Conditionals and Recursion
 ===
 ## Materials
-+ [Intro to Classes](../../content/IntroClasses.md) 
-+ [Arrays](../../content/Arrays.md) 
-
-+ Book chapters
-    + [Chapter 11 - Classes](http://greenteapress.com/thinkjava6/html/thinkjava6012.html)
-    + [Chapter 8 - Arrays](http://greenteapress.com/thinkjava6/html/thinkjava6009.html)
-    + [Chapter 12 - Arrays of objects](http://greenteapress.com/thinkjava6/html/thinkjava6013.html)
-    + [Chapter 13 - Objects of Arrays](http://greenteapress.com/thinkjava6/html/thinkjava6014.html)
-    
-+ Videos
-    + [OOP Coding](https://www.youtube.com/watch?v=l1OsA5Q6Acs&list=UUSH2TieRlco7uQOGU8Vppnw) - from Dr Chastine
-    + [Intro to arrays](https://youtu.be/qUtyWGWvHFE) 
-    + [Arrays](https://www.youtube.com/watch?v=tYEHPJ1pDrY&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-    + [1D Arrays](https://www.youtube.com/watch?v=dJ1-vjKs-Ec&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-    + [2D Arrays](https://www.youtube.com/watch?v=7R4lAUJ3tDI&list=UUSH2TieRlco7uQOGU8Vppnw) = From Dr Chastine
-    + [Old lecture](https://youtu.be/9X7-8Gro7rg) - classes
-    + [Old lecture](https://youtu.be/b-7-Rj0qfiM) - arrays
-
+* [Conditionals](../../content/Conditionals.md)
++ [Switch statement](../../content/Switch.md)
+* [Recursion](../../content/Recursion.md)
+* Videos
+	+ [Lecture (Jun 8)](https://youtu.be/lmH3fjaW8e4) - We talked about git,gradle,eclipse and similar stuff at the beginning, then we covered if/else, switch and recursion
+	+ [Recorded Lecture](https://youtu.be/y4fTxQ125Kc) - Spring 16 lecture, we talked about A2 and bitbucket at the beginning, and then about conditionals (if and switch) and recursion.
+    + [Lecture Feb 8](https://youtu.be/Q4n6_9yo8_Q) - more conditionals and recursion
+    + [Conditionals](https://www.youtube.com/watch?v=dlwcV3WPtsc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
+    + [Switch Statement](https://www.youtube.com/watch?v=LizCC2SD_Pc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine 
+    + [The Function Stack]( https://www.youtube.com/watch?v=jRcll9qY6b0&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
+    + [Recursion](https://www.youtube.com/watch?v=PORo1ut9kMs&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
+* Book Chapters
+    + [Chapter 5 - Conditionals and Logic](http://greenteapress.com/thinkjava6/html/thinkjava6006.html)
+    + [Chapter 6 - Value methods](http://greenteapress.com/thinkjava6/html/thinkjava6007.html)
 + Assignment
-    + [Assignment 7 - Classes](Assignments/A7.md)
-    + [Assignment 8 - Arrays](Assignments/A8.md)
+    + [Assignment 3 - Conditionals](Assignments/A3.md)
+    + [Assignment 4 - Recursion](Assignments/A4.md)

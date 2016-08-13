@@ -1,20 +1,24 @@
-Module 2: Conditionals and Recursion
+Module 1: Introduction, variables and functions(methods)
 ===
+
 ## Materials
-* [Conditionals](../../content/Conditionals.md)
-+ [Switch statement](../../content/Switch.md)
-* [Recursion](../../content/Recursion.md)
-* Videos
-	+ [Lecture (Jun 8)](https://youtu.be/lmH3fjaW8e4) - We talked about git,gradle,eclipse and similar stuff at the beginning, then we covered if/else, switch and recursion
-	+ [Recorded Lecture](https://youtu.be/y4fTxQ125Kc) - Spring 16 lecture, we talked about A2 and bitbucket at the beginning, and then about conditionals (if and switch) and recursion.
-    + [Lecture Feb 8](https://youtu.be/Q4n6_9yo8_Q) - more conditionals and recursion
-    + [Conditionals](https://www.youtube.com/watch?v=dlwcV3WPtsc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-    + [Switch Statement](https://www.youtube.com/watch?v=LizCC2SD_Pc&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine 
-    + [The Function Stack]( https://www.youtube.com/watch?v=jRcll9qY6b0&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-    + [Recursion](https://www.youtube.com/watch?v=PORo1ut9kMs&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
-* Book Chapters
-    + [Chapter 5 - Conditionals and Logic](http://greenteapress.com/thinkjava6/html/thinkjava6006.html)
-    + [Chapter 6 - Value methods](http://greenteapress.com/thinkjava6/html/thinkjava6007.html)
-+ Assignment
-    + [Assignment 3 - Conditionals](Assignments/A3.md)
-    + [Assignment 4 - Recursion](Assignments/A4.md)
++ Notes
+    * IO and full programs
+        + [First full program](../../content/FirstProgram.md)
+* Book chapters
+    + [Chapter 3 - IO](http://greenteapress.com/thinkjava6/html/thinkjava6004.html)
+    + [Chapter 4 - Void methods](http://greenteapress.com/thinkjava6/html/thinkjava6005.html)
+    + [Chapter 5 - Value methods](http://greenteapress.com/thinkjava6/html/thinkjava6005.html) - until 6.6
+* Longer Videos
+	+ [Lecture 1 Playlist](https://www.youtube.com/playlist?list=PLK5RwQeVk5YwszV6P2rCkNWabgpS89Hy-)
+    + [Java Bootcamp](https://www.youtube.com/watch?v=8nOg6mtH-oo&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine, 20 minutes or so
+    + [Basic IO](https://www.youtube.com/watch?v=W1oA5kOdqXQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
+    + [Jan 25 (Old) Lecture - functions](https://www.youtube.com/watch?v=SXe5dPM8N5A)
++ Other resources
+    + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
+    
+Assignments:
+If you haven't done so, the first thing is to create a [bitbucket](http://bitbucket.org) account and email your instructor with it immediately.
+
+* [Assignment 2- IO, main](Assignments/A2.md)
+
