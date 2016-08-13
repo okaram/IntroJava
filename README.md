@@ -1,7 +1,10 @@
 # IntroJava
 Materials for an Intro to Programming with java class
 
-The current session is for Summer 2016.
+The upcoming session is for [Fall 2016](sessions/Fall2016).
+
+
+The Last session is for Summer 2016, linked here.
 
 ## [Module 1](sessions/Summer2016/Module1.md) - Introduction and functions
 ## [Module 2](sessions/Summer2016/Module2.md) - Conditionals and Recursion
