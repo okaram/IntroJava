@@ -1,4 +1,4 @@
-Module 1: Introduction, variables and functions(methods)
+Module 1: Full programs
 ===
 
 ## Materials
