@@ -1,9 +1,8 @@
-Module 2: Conditionals and Recursion
+Module 4: Recursion
 ===
 ## Materials
-* [Conditionals](../../content/Conditionals.md)
-+ [Switch statement](../../content/Switch.md)
 * [Recursion](../../content/Recursion.md)
+* [Conditionals](../../content/Conditionals.md) (if you need to review)
 * Videos
 	+ [Lecture (Jun 8)](https://youtu.be/lmH3fjaW8e4) - We talked about git,gradle,eclipse and similar stuff at the beginning, then we covered if/else, switch and recursion
 	+ [Recorded Lecture](https://youtu.be/y4fTxQ125Kc) - Spring 16 lecture, we talked about A2 and bitbucket at the beginning, and then about conditionals (if and switch) and recursion.

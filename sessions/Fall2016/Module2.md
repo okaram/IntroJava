@@ -1,4 +1,4 @@
-Module 1: Full programs
+Module 2: Full programs
 ===
 
 ## Materials
@@ -14,8 +14,8 @@ Module 1: Full programs
     + [Basic IO](https://www.youtube.com/watch?v=W1oA5kOdqXQ&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
     + [Jan 25 (Old) Lecture - functions](https://www.youtube.com/watch?v=SXe5dPM8N5A)
 + Other resources
-    + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
-    
+    + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.    
+
 Assignments:
 If you haven't done so, the first thing is to create a [bitbucket](http://bitbucket.org) account and email your instructor with it immediately.
 

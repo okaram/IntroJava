@@ -1,4 +1,4 @@
-Module 2: Conditionals 
+Module 3: Conditionals 
 ===
 ## Materials
 * [Conditionals](../../content/Conditionals.md)
