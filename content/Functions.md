@@ -93,10 +93,24 @@ Here a call to it, say `sumEven(3,4)`, would start an activation frame, with num
     boolean ans=isEven(add(x,1));
     ```
     
+## Functions and purity
+
+Functions can affect the world outside the function by either:
+1. returning a value (and then the caller may do things with it, or not, the function doesn't care)
+2. altering its parameters (when they are objects) by calling methods that affect their state
+3. changing global state directly (the screen, System.in, System.out etc)
+ 
+Ideally, most of your functions would be  *pure*, that is, functions that just return a value, and don't affect the outside world except by returning that value. This functions are easy to understand as 'black boxes', and easy to test; just pass the arguments, check the return value is right.
+
+Sometimes, you need functions that alter their arguments by the methods they call on them; these functions are somewhat harder to use and test, since when using them sequencing is important; however, to change the world, you need this sometimes.
+
+Ideally, only main should alter global state, and it should pass that state (even System.in, System.out) as a parameter to other functions; functions that directly affect global state are error prone and hard to reason with and I will avoid them in this class. 
+
 ## More function examples
 
 ### Boolean expressions and functions
 One skill you need to master as a programmer is to think of bolean values (true or false) as values that can be combined by operators; just as numbers can be added, subtracted etc, booleans can be 'or-ed' and 'and-ed' and negated ('not-ed' :). Let's practice some examples
+
 ### isInBetween
 
 Let's define a function that takes 3 ints, and returns a boolean; it returns true if the first number is between the other two; let's call our parameters number, high, and low; we can define the function as:
@@ -140,7 +154,6 @@ boolean bobWouldLike(String category, int length, int rating){
     return (category=="Drama" || category=="Murder") && length<=90 && rating>3;  
 }
 ```
-
 
 ### Movies Alice likes
 Alice likes movies in Drama, Action or Romantic, and that are not too long (120 minutes or less)

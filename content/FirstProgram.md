@@ -78,16 +78,21 @@ We could want to encapsulate how do we say Hello; so we can later change the act
 And we could also replace the first part, when we ask for the name and read it; those two lines are related (we wouldn't do one without the other), so let's define a function that writes the message, then reads and *returns* the name read. It would look like this:
 
 ```java
-	public static void sayHi(String name, PrintStream out){
-		out.println("Hello "+name +"");
+	public static String getNameFromUser(PrintStream out, Scanner in){
+        out.println("Please enter your name");
+        String name=in.nextLine();
+		return name;
 	}
 ```
 
-And main would now look like this:
+And main would now look a little cleaner:
 ```java
-	public static void sayHi(String name, PrintStream out){
-		out.println("Hello "+name +"");
-	}
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+
+        String name=getNameFromUser(System.out, input);
+        sayHi(name,System.out);
+    }
 ```
 
 ## Full program with functions
@@ -103,7 +108,7 @@ public class Hello{
 	}
 	
 	public static String getNameFromUser(PrintStream out, Scanner in){
-        System.out.println("Please enter your name");
+        out.println("Please enter your name");
         String name=in.nextLine();
 		return name;
 	}
