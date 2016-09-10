@@ -16,6 +16,5 @@ Module 5: Loops
         + [while loops](https://www.youtube.com/watch?v=RxgSQGFO4Yg&list=UUSH2TieRlco7uQOGU8Vppnw)
     + Old lectures
         + [Old Lecture](https://youtu.be/t5fZQSt_PTg) - loops; recorded lecture from Feb 15
-
 + Assignment
     + [Assignment 5 - Loops](Assignments/A5.md)
