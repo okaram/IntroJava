@@ -10,6 +10,6 @@ Tentative due Dates
 + [Assignment 7](Assignments/A7.md) - Sunday Oct 16 @ 11:59 pm
 + [Assignment 8](Assignments/A7.md) - Sunday Oct 23 @ 11:59 pm
 + [Assignment 9](Assignments/A7.md) - Sunday Oct 30 @ 11:59 pm
-+ [Assignment 10](Assignments/A7.md) - Sunday Nov 7 @ 11:59 pm
-+ [Assignment 11](Assignments/A7.md) - Sunday Nov 14 @ 11:59 pm
++ [Assignment 10](Assignments/A7.md) - Sunday Nov 6 @ 11:59 pm
++ [Assignment 11](Assignments/A7.md) - Sunday Nov 13 @ 11:59 pm
 + [Final Exam](ModleF.md) - Dec 5, last day of classes
