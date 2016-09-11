@@ -1,4 +1,4 @@
-Module 4: Arrays
+Module 8: Arrays
 ===
 ## Materials
 + [Arrays](../../content/Arrays.md) 
