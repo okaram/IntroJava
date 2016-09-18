@@ -97,3 +97,5 @@ In the initialization part we could actually define a variable, and if we do so 
 Notice all 3 loops are very similar and we can always rewrite our programs (maybe by adding a variable or repeat a few statements) to use a particular kind of loop. It is mostly a matter of style which loop to use.
 
 ## break and continue
+
+Within a loop, the keyworkd `break` gets you out of the loop immediately, and the keyworkd `continue` skips the rest of the body and takes you to the next iteration of the loop.

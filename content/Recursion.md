@@ -51,7 +51,7 @@ Or in Java:
 
 ## Counting and printing
 
-As another example, let's define a function that prints all numbers counting down to 0; it takes one parameter, so if we call it with 10 it would do the standard countdown: 10,9,8,7,6,5,4,3,2,1,0.
+As another example, let's define a function that prints all numbers counting down to 0; it takes one parameter, so if we call it with 10 it would do the standard countdown: 10,9,8,7,6,5,4,3,2,1,0. If we reach 0, we know we're done. Otherwise, we print the current number, and call again with the next number down, until we reach 0.
 
 ```java
 	public static void printCountDown(int from)
@@ -64,6 +64,20 @@ As another example, let's define a function that prints all numbers counting dow
 		}
 	}
 ```
+
+
+### More counting
+As another example, here's counting up, from a given number, by a given step. We stop when we reach *to*.
+
+```java
+void PrintCountUp(PrintStream out, int from, int to, int step) {
+    if(from<=to) {
+        out.println(from);
+        PrintCountUp(out, from+step, to, step);
+    }
+}
+```
+
 
 ## Accumulators
 Many times, when we use recursive functions to calculate values, we can pass our function an extra parameter, and use it to accumulate the current value (we call this extra parameter an accumulator). For example, we could write the power function with an accumulator as follows (changing the name so we can distinguish between them):

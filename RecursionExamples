@@ -1,0 +1,31 @@
+More Recursion examples
+
+- Power (again)
+- Power - Accumulator
+- Fibonacci
+- CountUpFromToStep
+- CountDownFromToStep
+- gcd(a,b)
+  if b==0
+    return a;
+  else
+    return gcd(b, a%b)
+- sum-squares, sum-cubes
+- Compound interest
+- square root (Newton)
+(define (sqrt-iter guess x)
+  (if (good-enough? guess x)
+      guess
+      (sqrt-iter (improve guess x)
+                 x)))
+
+A guess is improved by averaging it with the quotient of the radicand and the old guess:
+
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+where
+
+(define (average x y)
+  (/ (+ x y) 2))
+

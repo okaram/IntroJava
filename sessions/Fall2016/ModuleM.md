@@ -2,7 +2,8 @@ Midterm Review
 ===
 
 + [Lecture](https://youtu.be/UtyX2cd0yuo) - We discussed the review (below)
-+ [Review paper](MidtermReview.pdf), do until Question 9 only (different versions of the class have the midterm at different stages :)  and (almost complete)[Solutions](MidtermReview-WithSolutions.pdf) 
++ [Review paper](MidtermReview.pdf) and (almost complete)[Solutions](MidtermReview-WithSolutions.pdf) 
++ [Previous midtemr](../../content/CS5000Midterm-Sunday.pdf) from Spring 16, I think.
 
 ## Codingbat problems
 Here are some good problems from CodingBat for you to try, as studying for the test (try them with different loops, recursion, etc)
