@@ -11,7 +11,7 @@ The Last full session was for Summer 2016.
 ## [Module 3](sessions/Fall2016/Module3.md) - Conditionals (if, switch)
 ## [Module 4](sessions/Fall2016/Module4.md) - Recursion
 ## [Module 5](sessions/Fall2016/Module5.md) - Loops
-## [Midterm review](sessions/Fall2016/Modulem.md) 
+## [Midterm review](sessions/Fall2016/ModuleM.md) 
 
 
 ## Other Resources
