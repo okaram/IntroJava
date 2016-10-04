@@ -154,7 +154,7 @@ And a function to calculate the area of a rectangle:
 ```java
 	public static int getArea(Rectangle r)
 	{
-		return r.width+r.height;
+		return r.width * r.height;
 	}
 ```
 
