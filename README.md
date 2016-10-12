@@ -10,9 +10,11 @@ The upcoming session is for [Fall 2016](sessions/Fall2016)
 ## [Module 5](sessions/Fall2016/Module5.md) - Loops
 ## [Midterm review](sessions/Fall2016/ModuleM.md) 
 ## [Module 6](sessions/Fall2016/Module6.md) - Using Objects
-## [Module 7](sessions/Fall2016/Module7.md) - Arays
-## [Module 8](sessions/Fall2016/Module8.md) - Inheritance and Interfaces
-## [Module 9](sessions/Fall2016/Module9.md) - Collections
+## [Module 7](sessions/Fall2016/Module7.md) - Classes
+
+## [Module 8](sessions/Fall2016/Module8.md) - Arrays
+## [Module 9](sessions/Fall2016/Module9.md) - Inheritance and Interfaces
+## [Module 10](sessions/Fall2016/Module10.md) - Collections
 
 ## Other Resources
 * [Resources](content/Resources.md)
