@@ -97,6 +97,20 @@ The first one, is a function to calculate the minimum value in an array of ints;
 	}
 ```
 
+# Arrays of objects and Multidimensional arrays
+
+The elements of an array may be objects of any complexity; in particular, they can also be other arrays !
+
+For example we could have arrays of points:
+```java
+Point[] points={ new Point(1,2), new Point(3,4)};
+```
+
+or arrays of arrays of ints
+```java
+int[][] arr={ {1,2}, {3,4}}
+```
+
 # Array Problem patterns
 + do something with all the elements
 + do something to all the elements
