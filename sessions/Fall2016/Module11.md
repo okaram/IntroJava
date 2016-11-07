@@ -1,4 +1,4 @@
-Module 6: Exceptions, IO and Unit Testing
+Module 11: Exceptions, IO and Unit Testing
 ===
 ## Materials
 + [Exceptions](../../content/Exceptions.md) - and [Video](https://youtu.be/Ja97F71AXSc)
