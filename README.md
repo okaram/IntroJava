@@ -1,7 +1,8 @@
 # IntroJava
 Materials for an Intro to Programming with java class
 
-The upcoming session is for [Fall 2016](sessions/Fall2016) 
+## [Module F](sessions/Fall2016/ModuleF.md) - Preparing for the final exam
+
 
 ## [Module 1](sessions/Fall2016/Module1.md) - Introduction and functions
 ## [Module 2](sessions/Fall2016/Module2.md) - Full programs and IO
@@ -15,6 +16,8 @@ The upcoming session is for [Fall 2016](sessions/Fall2016)
 ## [Module 8](sessions/Fall2016/Module8.md) - Arrays
 ## [Module 9](sessions/Fall2016/Module9.md) - Inheritance and Interfaces
 ## [Module 10](sessions/Fall2016/Module10.md) - Collections
+## [Module 11](sessions/Fall2016/Module11.md) - Exceptions and files
+## [Module F](sessions/Fall2016/ModuleF.md) - Preparing for the final exam
 
 ## Other Resources
 * [Resources](content/Resources.md)
