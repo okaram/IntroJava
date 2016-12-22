@@ -1,0 +1,54 @@
+Assignment #n
+===
+
+# Instructions
+
+Open the a#n project in eclipse, and modify the file in src/main/java/assignment/Assignment#n.java so it complies with the instructions. Use src/test/java/assignment/Grader.java (and src/test/java/assignment/DetailedTests.java if present) to guide your testing, making sure you eventually pass the unit test.
+
+### Submissions
+Assignments are submitted by pull-request.
+
+This assignment is due Wednesday, June 8 @ 6:00 pm. You will lose 10%, but still get credit if you submit before Monday June 13 @ 11:59 pm.
+
+# Verifying and submitting
+Open git-bash (or your terminal), and then
+
+### Navigate to project folder
+```cd ~Documents/projects/cs5000```
+
+### load any changes
+```git checkout master```
+
+```git pull origin master```
+
+### Navigate to assignment folder
+```cd ~/Documents/projects/cs5000/a#n```   (or simply ```cd a#n``` if you're already in cs5000)
+
+### Open in eclipse and modify assignment file
+in src/main/java/assignment/Assignment#n.java
+
+### Verify it works
+```./gradlew grade```
+If you dont get all the points, then you may want to modify until it does
+
+
+### Checkout a new branch
+```git checkout -b a#n``` 
+You may already be in this branch; if this branch already exists but you are on a different one, you may need to do ```git checkout a#n```
+
+### add and commit
+type
+
+```git add a#n/src/main/java/assignment/Assignment#n.java```
+
+to add the file (you can also do ```git status``` to check nothing else needs to be added) 
+
+```git commit -am "some comment"```
+You can use the comment to specify what you did, especially if you did not finish
+
+### push
+```git push origin a#n```
+
+### submit pull request
+Either on bitbucket, or by following the link in the message git prints.
+
