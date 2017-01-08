@@ -23,10 +23,10 @@ cd projects
 # clone your repo
 We'll use the `git clone` command to clone our repository. I am assuming you want to use https to connect to your repository, and that you want to store the password in cleartext (if you're paranoid, you want to setup keys and use ssh, or not store the password in cleartext).
 
-In the following command you need to replace USERNAME with your github username (notice it appears twice), and REPONAME and REPOPATH with the name and path to your repo (you should receive an email with the name of your repo). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux do. I will type all my folder names in lowercase.
+In the following command you need to replace USERNAME with your github username (notice it appears twice), and REPONAME  with the name of your repo (this will be your KSU username). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux do. I will type all my folder names in lowercase.
 
 ```
-git clone https://USERNAME:PASSWORD@bitbucket.org/REPOPATH/REPONAME.git   cs5000
+git clone https://USERNAME:PASSWORD@gitlab.com/CS5kSprint17/REPONAME.git   cs5000
 ```
 This will create a folder named cs5000, with the contents of your repo. We then change to that folder 
 
@@ -43,10 +43,5 @@ should now look very similar to this:
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
-```
-
-We will be using eclipse as our IDE; you need to recreate the eclipse projects in your machine, so they get a reference to the right compiler etc for your machine. I provided a script that will do it for all our projects; type:
-```
-./mkeclipse.sh
 ```
 After this, continue onto Assignment 0.
