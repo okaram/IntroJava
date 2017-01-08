@@ -6,7 +6,7 @@ I am assuming you are on a Windows machine, and you have git-bash installed (ins
 Open git-bash and execute the following steps:
 
 # Go to documents folder
-In Windows, we tend to store our files in the Documents folder; I will do the same here, so we need to go there firs. cd changes our folder.
+In Windows, we tend to store our files in the Documents folder; I will do the same here, so we need to go there first. cd changes our folder.
 
 ```
 cd ~/Documents
@@ -23,7 +23,7 @@ cd projects
 # clone your repo
 We'll use the `git clone` command to clone our repository. I am assuming you want to use https to connect to your repository, and that you want to store the password in cleartext (if you're paranoid, you want to setup keys and use ssh, or not store the password in cleartext).
 
-In the following command you need to replace USERNAME with your github username (notice it appears twice), and REPONAME  with the name of your repo (this will be your KSU username). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux do. I will type all my folder names in lowercase.
+In the following command you need to replace USERNAME with your github username, PASSWORD with your github password, and REPONAME  with the name of your repo (this will be your KSU username). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux might. I will type all my folder names in lowercase.
 
 ```
 git clone https://USERNAME:PASSWORD@gitlab.com/CS5kSprint17/REPONAME.git   cs5000
