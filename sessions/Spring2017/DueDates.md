@@ -7,7 +7,7 @@ All assignments are due Sunday before midnight; For all assignments, you have a 
 + [Assignment 2](Assignments/A2.md) - Sunday Jan 29 @ 11:59 pm 
 + [Assignment 3](Assignments/A3.md) - Sunday Feb 5 @ 11:59 pm 
 + [Assignment 4](Assignments/A4.md) - Sunday Feb 12 @ 11:59 pm
-+ [Midterm](ModuleM.md) - Wednesday Feb 22 @ 6:30
++ [Midterm](ModuleM.md) - Monday Feb 20 @ 6:30
     + Date for online students TBA
     + Last Day to Withdraw With WF is Mar 5th
 + [Assignment 5](Assignments/A5.md) - Sunday Sep 25 @ 11:59 pm
