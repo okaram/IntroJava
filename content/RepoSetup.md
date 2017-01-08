@@ -44,4 +44,19 @@ On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
+
+# testing
+
+You should also be able to test whether your command-line stuff works, by typing:
+```
+cd a0
+```
+To go to the folder a0 (for assignment 0), and then typing:
+```
+./gradlew test
+```
+to run the automated tests (they should all fail :)
+
 After this, continue onto Assignment 0.
+
+
