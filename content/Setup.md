@@ -28,7 +28,7 @@ Go to [IntelliJ's site](https://www.jetbrains.com/idea/), download the appropria
 
 We will use GitLab as our code repository, but you still need a git client. The command line client is available at [www.git-scm.com](http://www.git-scm.com/downloads). I assume you have a command line client, like git-bash.
 
-# BitBucket setup
+# GitLab setup
 
 Go to [GitLab](https://gitlab.com/) and create an account. After that, email me the account name (and add in d2l) from your kennesaw email (so I know who you are); I will create a repo for the assignments and give you access, so you can create pull requests.
 
