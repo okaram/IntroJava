@@ -91,7 +91,7 @@ b--; // instead of b-=1, meaning b=b-1
 Notice you do not need to use the shorthand operators, but since many people use them, you want to make sure you can read them.
 
 # Exercises 
-* hint: feel free to use [JavaRepl](http://javarepl.com) to verify these. Make sure you understand why they work; try other combinations
+* hint: feel free to use [JavaRepl](http://www.javarepl.com) to verify these. Make sure you understand why they work; try other combinations
 
 1. What would be the value of *x* at the end of this code fragment ?
     ```java
