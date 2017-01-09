@@ -25,10 +25,8 @@ Module 1: Functions and Methods
         + [frontBack](http://codingbat.com/prob/p123384)
         + [hasTeen](http://codingbat.com/prob/p178986)
     + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
-    
-Assignments:
-If you haven't done so, the first thing is to create a [bitbucket](http://bitbucket.org) account and email your instructor with it immediately.
+    + [Ry's git tutorial](http://rypress.com/tutorials/git/index) - learn more about git
 
-* [Assignment 0- Setup](Assignments/A0.md)
+* [Assignment 0- Setup](Assignments/A0.md) (if you haven't done it)
 * [Assignment 1- Simple functions](Assignments/A1.md)
 

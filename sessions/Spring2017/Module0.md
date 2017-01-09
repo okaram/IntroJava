@@ -1,4 +1,4 @@
-Module 1: Introduction, variables and functions(methods)
+Module 1: Introduction, variables 
 ===
 
 ## Materials
@@ -10,9 +10,9 @@ Module 1: Introduction, variables and functions(methods)
             + [Boolean variables and Operators](https://youtu.be/h7ss6NgYB5M)
             + [Relational (comparison) operators](https://youtu.be/ZIjRLlcHL4w)
         + [Strings](../../content/Strings.md) - and [Video](https://youtu.be/5NVH_mSiDdg)
-    + Setup - [Video](https://youtu.be/yu1ktwKXJWo)
-        + [Machine Setup](../../content/Setup.md) 
-        + [Repo setup](../../content/RepoSetup.md)    
+    + Setup - 
+        + [Machine Setup](../../content/Setup.md) - [Video](https://youtu.be/0HKQmnVcTNY)
+        + [Repo setup](../../content/RepoSetup.md) - [Video](https://youtu.be/YWMs-PHFKK0)   
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
     + [Chapter 2 - Variables and types](http://greenteapress.com/thinkjava6/html/thinkjava6003.html)
@@ -23,9 +23,11 @@ Module 1: Introduction, variables and functions(methods)
     + [Simple Eclipse project](https://www.youtube.com/watch?v=RBlFk61eQX4) - very simple project in eclipse
 + Other resources
     + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
+    + [Ry's git tutorial](http://rypress.com/tutorials/git/index)
     
 Assignments:
 If you haven't done so, the first thing is to create a [GitLab](http://gitlab.com) account and email your instructor with it immediately.
 
-* [Assignment 0- Setup](Assignments/A0.md)
+* [Assignment 0- Setup](Assignments/A0.md) 
+    * [Video](https://youtu.be/xeJCZLrgXQw) - (using Eclipse)
 
