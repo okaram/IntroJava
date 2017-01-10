@@ -29,5 +29,6 @@ Assignments:
 If you haven't done so, the first thing is to create a [GitLab](http://gitlab.com) account and email your instructor with it immediately.
 
 * [Assignment 0- Setup](Assignments/A0.md) 
-    * [Video](https://youtu.be/xeJCZLrgXQw) - (using Eclipse)
+    * [Video](https://youtu.be/xeJCZLrgXQw) - Using Eclipse
+    * [Video](https://youtu.be/ByfjaWjDvRo) - Usung IntelliJ/IDEA
 
