@@ -32,6 +32,6 @@ You need to install a few programs for this class:
 * The Java Development Kit - JDK (from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Make sure to install the JDK, not just the JRE. Java 8 is the current version, so just install the latest minor number for java 8.
 * A Git client (you can find good ones at [http://www.git-scm.com/downloads](http://www.git-scm.com/downloads)).
 * [Eclipse](http://www.eclipse.org/). This is an IDE, and all my videos etc will use it; if you prefer to use a different one it is OK.
-* You need to create an account on [Bitbucket](http://bitbucket.org).
+* You need to create an account on [GitLab](http://gitlab.com).
 
     

@@ -84,7 +84,7 @@ a+=5;
 ```
 We can also use:
 ```java
-b*=3; // instead of b=b+3
+b*=3; // instead of b=b*3
 b++; // instead of b+=1, meaning b=b+1
 b--; // instead of b-=1, meaning b=b-1
 ```
