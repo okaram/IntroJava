@@ -26,7 +26,7 @@ We'll use the `git clone` command to clone our repository. I am assuming you wan
 In the following command you need to replace USERNAME with your github username (notice it appears twice), PASSWORD with your github password and REPONAME with the name of your repo (cs5000 if you followed my setup advise :). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux do. I will type all my folder names in lowercase.
 
 ```
-git clone https://USERNAME:PASSWORD@bitbucket.org/USERNAME/REPONAME.git
+git clone https://USERNAME:PASSWORD@GitLab.org/USERNAME/REPONAME.git
 ```
 This will create a folder with the same name as your repo. We then change to that folder (change the name if you have a different repo name):
 
@@ -75,7 +75,7 @@ to commit the file (the -m is a comment for you to describe what the commit is a
 ```
 git status
 ```
-should now show nothing to commit, but should say your branch is ahead of origin/master (origin is the repo on bitbucket).
+should now show nothing to commit, but should say your branch is ahead of origin/master (origin is the repo on GitLab).
 
 ## push
 

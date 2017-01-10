@@ -24,7 +24,7 @@ Many times you end up with more than one file, and you need to compile them in a
 
 ## Version control and git
 
-When you work on a program, you will make many revisions; in order to keep track of all your revision (and if you work as a team, to keep track of who changed what), you normally use a version control system. One of the most popular ones is git, and we will use it in this class. I will ask you to create an account on [BitBucket](http://bitbucket.org) to share your code with me, and I will use bitbucket to share my code with everybody. Bitbucket is a free git server, which allows for private and public repositories.
+When you work on a program, you will make many revisions; in order to keep track of all your revision (and if you work as a team, to keep track of who changed what), you normally use a version control system. One of the most popular ones is git, and we will use it in this class. I will ask you to create an account on [GitLab](http://GitLab.org) to share your code with me, and I will use GitLab to share my code with everybody. GitLab is a free git server, which allows for private and public repositories.
 
 # Getting started
 
