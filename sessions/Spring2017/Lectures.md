@@ -6,4 +6,5 @@ I try to record all lectures, and upload to youtube. The playlist for this term 
 I will try to create a more detailed list below.
 
 * [Mon Jan 9 - Intro to the class](https://youtu.be/VXJej8rnAnA) - Introduction to the class (part of module 0)
-* Jan 11 - 
+* [Wed, Jan 11 - Variables and types](https://youtu.be/Sp5W1rh-xLk)
+ 

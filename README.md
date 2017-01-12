@@ -1,9 +1,9 @@
 # IntroJava
 Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). Current session is [Spring 2017](sessions/Spring2017)
 
-
 + Part 1
-    + [Module 1](sessions/Spring2017/Module1.md) - Introduction and functions
+    + [Module 0](sessions/Spring2017/Module0.md) - Introduction and variables
+    + [Module 1](sessions/Spring2017/Module1.md) - Functions
     + [Module 2](sessions/Spring2017/Module2.md) - Full programs and IO
     + [Module 3](sessions/Spring2017/Module3.md) - Conditionals (if, switch)
     + [Module 4](sessions/Spring2017/Module4.md) - Recursion
@@ -21,3 +21,4 @@ Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). 
 ## Other Resources
 * [Resources](content/Resources.md)
 * [Samples](Samples/src/main/java)
+* [Lecture Videos](sessions/Spring2017/Lectures.md)
