@@ -163,4 +163,9 @@ boolean bobWouldLike(String category, int length, int rating){
 }
 ```
 
+## Functions with doubles
+* areClose(double d1, double d2, double delta) - whether the numbers are closer than the delta 
+
+
+
 
