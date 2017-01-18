@@ -76,7 +76,7 @@ boolean isSumEven(int number1, int number2)
 }
 ```
 
-Here a call to it, say `sumEven(3,4)`, would start an activation frame, with number1=3 and number2=4; then, inside an activation frame is created, for add, and another for isEven.
+Here a call to it, say `isSumEven(3,4)`, would start an activation frame, with number1=3 and number2=4; then, inside an activation frame is created, for add, and another for isEven.
 
 ## Exercises (assume we have the functions above)
 
@@ -116,7 +116,7 @@ One skill you need to master as a programmer is to think of bolean values (true 
 Let's define a function that takes 3 ints, and returns a boolean; it returns true if the first number is between the other two; let's call our parameters number, high, and low; we can define the function as:
 ```java
     public static boolean isInBetween(int number, int high, int low) {
-        return number>=high && number<=low;
+        return number>=low && number<=high;
     }
 ```
 
@@ -137,13 +137,13 @@ boolean anyTrue(boolean b1, boolean b2, boolean b3, boolean b4){
 ### exclusiveOr
 ```java
 boolean exclusiveOr(boolean b1, boolean b2){
-    return b1 || b2 && !( b1 && b2 )
+    return b1 || b2 && !( b1 && b2 );
 }
 ```
 
 ```java
 boolean exclusiveOr2(boolean b1, boolean b2){
-    return b1 || b2 && (!b1 || !b2 )
+    return b1 || b2 && (!b1 || !b2 );
 }
 ```
 
