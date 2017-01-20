@@ -22,3 +22,4 @@ Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). 
 * [Resources](content/Resources.md)
 * [Samples](Samples/src/main/java)
 * [Lecture Videos](sessions/Spring2017/Lectures.md)
+* [Due dates](sessions/Spring2017/DueDates.md) - Spring 17
