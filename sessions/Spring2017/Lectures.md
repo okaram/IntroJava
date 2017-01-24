@@ -8,4 +8,5 @@ I will try to create a more detailed list below.
 * [Mon Jan 9 - Intro to the class](https://youtu.be/VXJej8rnAnA) - Introduction to the class (part of module 0)
 * [Wed, Jan 11 - Variables and types](https://youtu.be/Sp5W1rh-xLk)
 * [Wed, Jan 18 - Functions](https://youtu.be/TwSHkGxBSaI)
+* [Mon, Jna 23](https://youtu.be/QJZiYrn5I4o) - Full programs and IO
  
