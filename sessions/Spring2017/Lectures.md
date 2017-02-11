@@ -11,4 +11,6 @@ I will try to create a more detailed list below.
 * [Mon, Jan 23](https://youtu.be/QJZiYrn5I4o) - Full programs and IO
 * [Wed, Jan 25](https://youtu.be/o10VCtDaIis) - Solutions to a1, more on programs and IO
 * [Mon, Jan 30](https://youtu.be/I5W9Hpotlao) - Conditionals (if, switch and ternary operator)
-* [Wed Feb 2](https://youtu.be/BDNDTnpChPw) - more if/switch examples 
+* [Wed Feb 1](https://youtu.be/BDNDTnpChPw) - more if/switch examples 
+* [Mon Feb 6](https://youtu.be/9diAKfH5SKo) - Introduction to Recursion
+* [Wed Feb 8](https://youtu.be/_YrwWlBKPFo) - more recursion examples
