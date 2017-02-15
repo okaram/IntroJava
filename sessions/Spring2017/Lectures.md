@@ -14,3 +14,4 @@ I will try to create a more detailed list below.
 * [Wed Feb 1](https://youtu.be/BDNDTnpChPw) - more if/switch examples 
 * [Mon Feb 6](https://youtu.be/9diAKfH5SKo) - Introduction to Recursion
 * [Wed Feb 8](https://youtu.be/_YrwWlBKPFo) - more recursion examples
+* [Mon Feb 13](https://youtu.be/L4ePOOd4vjk) - Midterm Review I
