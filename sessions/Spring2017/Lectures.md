@@ -15,3 +15,4 @@ I will try to create a more detailed list below.
 * [Mon Feb 6](https://youtu.be/9diAKfH5SKo) - Introduction to Recursion
 * [Wed Feb 8](https://youtu.be/_YrwWlBKPFo) - more recursion examples
 * [Mon Feb 13](https://youtu.be/L4ePOOd4vjk) - Midterm Review I
+* [Wed Feb 15](https://youtu.be/TVrT1AAUggY) - More review, recursion, and solutions to Assignment 4
