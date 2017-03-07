@@ -16,3 +16,6 @@ I will try to create a more detailed list below.
 * [Wed Feb 8](https://youtu.be/_YrwWlBKPFo) - more recursion examples
 * [Mon Feb 13](https://youtu.be/L4ePOOd4vjk) - Midterm Review I
 * [Wed Feb 15](https://youtu.be/TVrT1AAUggY) - More review, recursion, and solutions to Assignment 4
+* [Mon Feb 27](https://youtu.be/UaYq4bfEjy4) - Loops
+* [Wed Mar 1](https://youtu.be/4WrSLoIu2wA) - More loop examples
+* [Mon Mar 6](https://youtu.be/g9nurLST3tQ) - Using objects
