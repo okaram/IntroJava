@@ -19,3 +19,4 @@ I will try to create a more detailed list below.
 * [Mon Feb 27](https://youtu.be/UaYq4bfEjy4) - Loops
 * [Wed Mar 1](https://youtu.be/4WrSLoIu2wA) - More loop examples
 * [Mon Mar 6](https://youtu.be/g9nurLST3tQ) - Using objects
+* [Wed Mar 8](https://youtu.be/RRp9I6qNsWY) - Objects and simple classes
