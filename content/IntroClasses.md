@@ -100,3 +100,6 @@ Encapsulation refers to the combination of data and methods (or state and behavi
 Encapsulation is one of the bases of object-oriented programming (along with inheritance, and polymorphism, which we cover later).
 
 
+## System an example of static variables
+
+We have been using a few static fields of the System class, without really knowing why they worked; System.in and System.out are static fields or variables of the System class (which are made public).
