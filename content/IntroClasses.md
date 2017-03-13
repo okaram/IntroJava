@@ -95,5 +95,8 @@ The advantage of this is that, if you were to ever change how you implement this
 
 ## Encapsulation
 
+Encapsulation refers to the combination of data and methods (or state and behavior) into one unit, the class. It also refers to the facilities to only allow the data to be accessed by the method (basically, declaring variables as private).
+
+Encapsulation is one of the bases of object-oriented programming (along with inheritance, and polymorphism, which we cover later).
 
 
