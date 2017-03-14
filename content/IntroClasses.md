@@ -103,3 +103,7 @@ Encapsulation is one of the bases of object-oriented programming (along with inh
 ## System an example of static variables
 
 We have been using a few static fields of the System class, without really knowing why they worked; System.in and System.out are static fields or variables of the System class (which are made public).
+
+## Enums
+
+Enumerated types allow us to 
