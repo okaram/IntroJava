@@ -23,3 +23,4 @@ I will try to create a more detailed list below.
 * [Mon Mar 13](https://youtu.be/SdWzSHGRYhE) - Classes and Arrays
 * [Wed, Mar 15](https://youtu.be/wunM3BlMsQ0) - More examples of classes and arrays
 * [Mon, Mar 20](https://youtu.be/H1OA3eNpYRk) - Example of array containing objects, Inheritance and Interfaces
+* [Wed Mar 22](https://youtu.be/BlDIKJ4eTu4) - More inheritance examples
