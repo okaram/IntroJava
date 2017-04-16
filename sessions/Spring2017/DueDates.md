@@ -14,8 +14,8 @@ All assignments are due Sunday before midnight; For all assignments, you have a 
 + [Assignment 6](Assignments/A6.md) - Sunday Mar 12 @ 11:59 pm
 + [Assignment 7](Assignments/A7.md) - Sunday Mar 19 @ 11:59 pm
 + [Assignment 8](Assignments/A8.md) - Sunday *Mar 19* @ 11:59 pm
-+ [Assignment 9](Assignments/A9.md) - Sunday Apr 2 @ 11:59 pm
-+ [Assignment 10](Assignments/A10.md) - Sunday Apr 2 @ 11:59 pm
-+ [Assignment 11](Assignments/A11.md) - Sunday Apr 9 @ 11:59 pm
-+ [Final Exam](ModuleF.md) - May  , 
++ [Assignment 9](Assignments/A9.md) - Sunday Apr 9 @ 11:59 pm
++ [Assignment 10](Assignments/A10.md) - Sunday Apr 9 @ 11:59 pm
++ [Assignment 11](Assignments/A11.md) - Sunday Apr 23 @ 11:59 pm
++ [Final Exam](ModuleF.md) - May  ,
     + Date for online students TBA
