@@ -25,4 +25,5 @@ I will try to create a more detailed list below.
 * [Mon, Mar 20](https://youtu.be/H1OA3eNpYRk) - Example of array containing objects, Inheritance and Interfaces
 * [Wed Mar 22](https://youtu.be/BlDIKJ4eTu4) - More inheritance examples
 * [Mon, Mar 27](https://youtu.be/JuMoIaQaUjE) - Collections (maps and lists)
-* [Wed, Apr 12](https://youtu.be/6bpc-wzT9nI) - Exceptions and file IO
+* [Wed, Apr 12](https://youtu.be/6bpc-wzT9nI) - Exceptions and file IO - sorry, no sound :(
+* [Mon, Apr 17](https://youtu.be/pspDUi4yS8U) - Exceptions again, and examples
