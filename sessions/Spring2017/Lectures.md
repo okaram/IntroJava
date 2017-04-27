@@ -27,3 +27,6 @@ I will try to create a more detailed list below.
 * [Mon, Mar 27](https://youtu.be/JuMoIaQaUjE) - Collections (maps and lists)
 * [Wed, Apr 12](https://youtu.be/6bpc-wzT9nI) - Exceptions and file IO - sorry, no sound :(
 * [Mon, Apr 17](https://youtu.be/pspDUi4yS8U) - Exceptions again, and examples
+* [Wed Apr 19](https://youtu.be/cMrxo6g1YmY)
+* [Mon Apr 24](https://www.youtube.com/watch?v=I2fd68ViySw) - Final exam review
+* [Wed Apr 26](https://youtu.be/NVjU9nZTOZY)- More examples for fina;
