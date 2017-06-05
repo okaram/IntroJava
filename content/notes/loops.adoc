@@ -1,0 +1,22 @@
+= Loops
+:sourcedir: /Users/curri/IntroJava/Samples/src/main/java/okaram/notes
+:source-highlighter: pygments
+
+We have now seen how to iterate by using recursion; recursion is a powerful tool, but Java also supports loops for iteration. A loop lets you go back and execute the same code over and over again depending on a condition.
+
+== The do-while loop
+The `do-while` loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn't true, or you get into an infinite loop). The statements are executed at least once.
+
+It's syntax is as follows:
+[source,java]
+----
+do {
+    // stuff here
+} while(condition) ;
+----
+
+[source,java]
+.readAndSum using a loop
+----
+include::{sourcedir}/Loops.java[tags=readAndSum]
+----
