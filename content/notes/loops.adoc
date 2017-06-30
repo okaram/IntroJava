@@ -5,18 +5,101 @@
 We have now seen how to iterate by using recursion; recursion is a powerful tool, but Java also supports loops for iteration. A loop lets you go back and execute the same code over and over again depending on a condition.
 
 == The do-while loop
-The `do-while` loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn't true, or you get into an infinite loop). The statements are executed at least once.
+The `do-while` loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn't true, or you get into an infinite loop). The statements are executed at least once. before checking the condition.
 
 It's syntax is as follows:
 [source,java]
 ----
 do {
-    // stuff here
+    // body of the loop
 } while(condition) ;
 ----
 
+Notice that the semicolon at the end is part of the syntax and needed.
+
+For example, we could write a function that reads numbers from the keyboard, until it reads a 0, and returns its sum. The function would be:
 [source,java]
-.readAndSum using a loop
+.readAndSum using a do-while loop
 ----
-include::{sourcedir}/Loops.java[tags=readAndSum]
+include::{sourcedir}/Loops.java[tags=readAndSumDoWhile]
 ----
+
+The do-while loop is not commonly used (most people use while or for loops, shown below), but can be useful when we always want to execute the body of the loop at least once.
+
+== The while loop 
+The while loop puts the condition at the top, and so it checks whether it is true *before* doing the body of the loop; if the condition is not initially true, it never gets executed at all.
+
+The syntax for the while loop is as follows:
+It's syntax is as follows:
+[source,java]
+----
+while(condition){
+    // body of the loop
+} 
+----
+notice that, unlike the do-while loop, we do not need a semicolon at the end.
+
+A common trick, if we want the body to run at least once, is to either copy the body of the loop or to set up the condition so it is initially true.
+
+For example, the following function would read numbers until 0 (as in the do-while example) and return their sum, but using a while loop.
+
+[source,java]
+.readAndSum using a while loop
+----
+include::{sourcedir}/Loops.java[tags=readAndSumDoWhile]
+----
+
+=== counting with while loops
+
+Many times we need to go through a range of numbers; basically to count, and so something with the numbers as we count; we can count with a while loop by creating a variable that will sequentially take all the values we need, compare the variable with our upper bound, and increment it inside the loop (usually after doing whatever we were doing).
+
+So, for example, a function 
+[source,java]
+.counting and printing using a while loop
+----
+include::{sourcedir}/Loops.java[tags=countAndPrintWhile]
+----
+
+And we can raise a base to a certain power by counting all numbers from 1 to the desired power, and multiplying by the original number each time; as follows: 
+
+[source,java]
+.power using a while loop
+----
+include::{sourcedir}/Loops.java[tags=powerWhile]
+----
+
+Notice we could be counting down (and we would decrement our variable), or do something different, like adding 2 (to get all even numbers) each time. Incrementing and counting up are the most common, though.
+
+[source,java]
+.counting down using a while loop
+----
+include::{sourcedir}/Loops.java[tags=countDownWhile]
+----
+
+== for loop
+This counting pattern is so common that Java (borrowing from C) has a special loop for this, the `for` loop.
+
+The for loop is basically a while loop, but with the initialization, condition and increment written in the same line. 
+
+Its syntax is:
+[source,java]
+----
+for(nitialization; condition; increment){
+    // body of the loop
+} 
+----
+
+For example, we can count up with a for loop as follows:
+[source,java]
+.counting and printing using a for loop
+----
+include::{sourcedir}/Loops.java[tags=countAndPrintFor]
+----
+
+And we can raise a number to a given power as follows:
+[source,java]
+.Raising a number to a given power using a for loop
+----
+include::{sourcedir}/Loops.java[tags=powerFor]
+----
+

@@ -503,10 +503,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_do_while_loop">The do-while loop</h2>
+<h2 id="_the_do_while_loop">1. The do-while loop</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <code>do-while</code> loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn&#8217;t true, or you get into an infinite loop). The statements are executed at least once.</p>
+<p>The <code>do-while</code> loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn&#8217;t true, or you get into an infinite loop). The statements are executed at least once. before checking the condition.</p>
 </div>
 <div class="paragraph">
 <p>It&#8217;s syntax is as follows:</p>
@@ -514,12 +514,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><span class="tok-k">do</span> <span class="tok-o">{</span>
-    <span class="tok-c1">// stuff here</span>
+    <span class="tok-c1">// body of the loop</span>
 <span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">)</span> <span class="tok-o">;</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Notice that the semicolon at the end is part of the syntax and needed.</p>
+</div>
+<div class="paragraph">
+<p>For example, we could write a function that reads numbers from the keyboard, until it reads a 0, and returns its sum. The function would be:</p>
+</div>
 <div class="listingblock">
-<div class="title">readAndSum using a loop</div>
+<div class="title">readAndSum using a do-while loop</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSum</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
     <span class="tok-o">{</span>
@@ -534,12 +540,163 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
     <span class="tok-o">}</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>The do-while loop is not commonly used (most people use while or for loops, shown below), but can be useful when we always want to execute the body of the loop at least once.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_while_loop">2. The while loop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The while loop puts the condition at the top, and so it checks whether it is true <strong>before</strong> doing the body of the loop; if the condition is not initially true, it never gets executed at all.</p>
+</div>
+<div class="paragraph">
+<p>The syntax for the while loop is as follows:
+It&#8217;s syntax is as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">){</span>
+    <span class="tok-c1">// body of the loop</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>notice that, unlike the do-while loop, we do not need a semicolon at the end.</p>
+</div>
+<div class="paragraph">
+<p>A common trick, if we want the body to run at least once, is to either copy the body of the loop or to set up the condition so it is initially true.</p>
+</div>
+<div class="paragraph">
+<p>For example, the following function would read numbers until 0 (as in the do-while example) and return their sum, but using a while loop.</p>
+</div>
+<div class="listingblock">
+<div class="title">readAndSum using a while loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSum</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
+        <span class="tok-k">do</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (0 to stop)&quot;</span><span class="tok-o">);</span>
+            <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
+            <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">!=</span><span class="tok-mi">0</span><span class="tok-o">);</span>
+        <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_counting_with_while_loops">2.1. counting with while loops</h3>
+<div class="paragraph">
+<p>Many times we need to go through a range of numbers; basically to count, and so something with the numbers as we count; we can count with a while loop by creating a variable that will sequentially take all the values we need, compare the variable with our upper bound, and increment it inside the loop (usually after doing whatever we were doing).</p>
+</div>
+<div class="paragraph">
+<p>So, for example, a function</p>
+</div>
+<div class="listingblock">
+<div class="title">counting and printing using a while loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countAndPrintWhile</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">low</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">high</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">low</span><span class="tok-o">;</span>
+        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">&lt;=</span><span class="tok-n">to</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
+            <span class="tok-o">++</span><span class="tok-n">i</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And we can raise a base to a certain power by counting all numbers from 1 to the desired power, and multiplying by the original number each time; as follows:</p>
+</div>
+<div class="listingblock">
+<div class="title">power using a while loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">counter</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">counter</span><span class="tok-o">&lt;</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+            <span class="tok-o">++</span><span class="tok-n">counter</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice we could be counting down (and we would decrement our variable), or do something different, like adding 2 (to get all even numbers) each time. Incrementing and counting up are the most common, though.</p>
+</div>
+<div class="listingblock">
+<div class="title">counting down using a while loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countDownWhile</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">high</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">low</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">high</span><span class="tok-o">;</span>
+        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">&gt;=</span><span class="tok-n">low</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
+            <span class="tok-o">--</span><span class="tok-n">i</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_for_loop">3. for loop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This counting pattern is so common that Java (borrowing from C) has a special loop for this, the <code>for</code> loop.</p>
+</div>
+<div class="paragraph">
+<p>The for loop is basically a while loop, but with the initialization, condition and increment written in the same line.</p>
+</div>
+<div class="paragraph">
+<p>Its syntax is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-n">nitialization</span><span class="tok-o">;</span> <span class="tok-n">condition</span><span class="tok-o">;</span> <span class="tok-n">increment</span><span class="tok-o">){</span>
+    <span class="tok-c1">// body of the loop</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example, we can count up with a for loop as follows:</p>
+</div>
+<div class="listingblock">
+<div class="title">counting and printing using a for loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countAndPrint</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">from</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">to</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+        <span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">from</span><span class="tok-o">;</span> <span class="tok-n">i</span><span class="tok-o">&lt;=</span><span class="tok-n">to</span><span class="tok-o">;</span> <span class="tok-o">++</span><span class="tok-n">i</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
+        <span class="tok-o">}</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And we can raise a number to a given power as follows:</p>
+</div>
+<div class="listingblock">
+<div class="title">Raising a number to a given power using a for loop</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-05-13 15:48:50 EDT
+Last updated 2017-06-30 18:26:31 EDT
 </div>
 </div>
 </body>

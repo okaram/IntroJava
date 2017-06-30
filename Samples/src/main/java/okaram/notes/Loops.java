@@ -4,7 +4,7 @@ import java.io.PrintStream;
 
 class Loops {
 
-    // tag::readAndSum[]
+    // tag::readAndSumDoWhile[]
     public static int readAndSum(PrintStream out, Scanner in)
     {
         int sum=0;
@@ -16,7 +16,9 @@ class Loops {
         } while(input!=0);
         return sum;
     }
-    // end::readAndSum[]
+    // end::readAndSumDoWhile[]
+
+    // tag::readAndSumWhile[]
     public static int readAndSumW(PrintStream out, Scanner in)
     {
         int sum=0;
@@ -28,7 +30,42 @@ class Loops {
         } 
         return sum;
     }
+    //end::readAndSumWhile[]
 
+    //tag::countAndPrintWhile[]
+    static void countAndPrintWhile(int low, int high, PrintStream out) {
+        int i=low;
+        while(i<=to) {
+            out.println(i);
+            ++i;
+        }
+    }
+    //end::countAndPrintWhile[]
+
+    //tag::countDownWhile[]
+    static void countDownWhile(int high, int low, PrintStream out) {
+        int i=high;
+        while(i>=low) {
+            out.println(i);
+            --i;
+        }
+    }
+    //end::countDownWhile[]
+
+    //tag::powerWhile[]
+    int power(int base, int exponent)
+    {
+        int pow=1;
+        int counter=0;
+        while(counter<exponent) {
+            pow*=base;
+            ++counter;
+        }
+        return pow;
+    }
+    //end::powerWhile[]
+
+    //tag::powerWhile1[]
     int power(int base, int exponent)
     {
         int pow=1;
@@ -38,7 +75,9 @@ class Loops {
         }
         return pow;
     }
+    //end::powerWhile1[]
 
+    //tag::powerFor[]
     int power_for(int base, int exponent)
     {
         int pow;
@@ -47,6 +86,7 @@ class Loops {
         }
         return pow;
     }
+    //end::powerFor[]
 
     public static boolean containsDigit(int number, int digit)
     {
@@ -115,11 +155,13 @@ class Loops {
         } while(input != target);
     }
 
+    //tag::countAndPrintFor[]
     static void countAndPrint(int from, int to, PrintStream out) {
         for(int i=from; i<=to; ++i) {
             out.println(i);
         }
     }
+    //end::countAndPrintFor[]
 
     static void printMulTable(PrintStream ps)
     {
