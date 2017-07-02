@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Loops</title>
+<title>Introduction to Functions</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -492,211 +492,305 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Loops</h1>
+<h1>Introduction to Functions</h1>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>We have now seen how to iterate by using recursion; recursion is a powerful tool, but Java also supports loops for iteration. A loop lets you go back and execute the same code over and over again depending on a condition.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_the_do_while_loop">1. The do-while loop</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The <code>do-while</code> loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn&#8217;t true, or you get into an infinite loop). The statements are executed at least once. before checking the condition.</p>
+<p>+ <a href="https://youtu.be/65cSKj8FpHA)">Video</a> - Intro to functions</p>
 </div>
 <div class="paragraph">
-<p>It&#8217;s syntax is as follows:</p>
+<p>One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.</p>
+</div>
+<div class="paragraph">
+<p>For example, imagine that we need to find whether numbers are even; we can easily do the calculation, using % ; however, it will be much nicer if we encapsulate this into its own function. We could write the function as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">do</span> <span class="tok-o">{</span>
-    <span class="tok-c1">// body of the loop</span>
-<span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">)</span> <span class="tok-o">;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notice that the semicolon at the end is part of the syntax and needed.</p>
-</div>
-<div class="paragraph">
-<p>For example, we could write a function that reads numbers from the keyboard, until it reads a 0, and returns its sum. The function would be:</p>
-</div>
-<div class="listingblock">
-<div class="title">readAndSum using a do-while loop</div>
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSum</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
-    <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
-        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-k">do</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (0 to stop)&quot;</span><span class="tok-o">);</span>
-            <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
-            <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">!=</span><span class="tok-mi">0</span><span class="tok-o">);</span>
-        <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
-    <span class="tok-o">}</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The do-while loop is not commonly used (most people use while or for loops, shown below), but can be useful when we always want to execute the body of the loop at least once.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_the_while_loop">2. The while loop</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The while loop puts the condition at the top, and so it checks whether it is true <strong>before</strong> doing the body of the loop; if the condition is not initially true, it never gets executed at all.</p>
-</div>
-<div class="paragraph">
-<p>The syntax for the while loop is as follows:
-It&#8217;s syntax is as follows:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">){</span>
-    <span class="tok-c1">// body of the loop</span>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">isEven</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">number</span><span class="tok-o">)</span>
+<span class="tok-o">{</span>
+    <span class="tok-k">return</span> <span class="tok-o">(</span><span class="tok-n">number</span><span class="tok-o">%</span><span class="tok-mi">2</span><span class="tok-o">)</span> <span class="tok-o">==</span> <span class="tok-mi">0</span><span class="tok-o">;</span>
 <span class="tok-o">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>notice that, unlike the do-while loop, we do not need a semicolon at the end.</p>
+<p>When defining a function, we write its return type, then the name and the parameters, and then the code, within braces (well, actually many times we will precede the function name with <strong>public static</strong>, which will be explained later). Within the function we can include as many statements as we want (for now, we will do simple functions, with just one line).</p>
 </div>
 <div class="paragraph">
-<p>A common trick, if we want the body to run at least once, is to either copy the body of the loop or to set up the condition so it is initially true.</p>
+<p>In the function above, the return type is boolean, so the function will return either true or false; it takes one parameter, an int, which will be referred as <strong>number</strong> from within the function. The function just returns one expression, which is whether the remainder of the number divided by two is zero (which is the definition of even :).</p>
 </div>
 <div class="paragraph">
-<p>For example, the following function would read numbers until 0 (as in the do-while example) and return their sum, but using a while loop.</p>
+<p>We can call the function inside an expression as follows:</p>
 </div>
 <div class="listingblock">
-<div class="title">readAndSum using a while loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSum</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
-    <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
-        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-k">do</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (0 to stop)&quot;</span><span class="tok-o">);</span>
-            <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
-            <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">!=</span><span class="tok-mi">0</span><span class="tok-o">);</span>
-        <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
-    <span class="tok-o">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-n">is7Even</span><span class="tok-o">=</span><span class="tok-n">isEven</span><span class="tok-o">(</span><span class="tok-mi">7</span><span class="tok-o">);</span> <span class="tok-c1">// what would be the value ?</span>
+<span class="tok-kt">boolean</span> <span class="tok-n">is</span><span class="tok-o">*</span><span class="tok-n">Even</span><span class="tok-o">=</span><span class="tok-n">isEven</span><span class="tok-o">(</span><span class="tok-mi">8</span><span class="tok-o">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we call a function, with an expression like <code>isEven(7)</code>, the function gets executed; first the actual parameter (7 in this case) gets evaluated, then the code for the function gets executed, with the formal parameter (number) replaced with the actual value (you can imagine the formal parameter, number, is like a variable inside the function; finally, the return value gets substituted instead of the function call.</p>
+</div>
+<div class="paragraph">
+<p>Unfortunately, Java does not actually supports functions; it supports <strong>methods</strong>, which are attached to a class; Java requires you to always declare a class, and declare your functions as static methods; due to this, we normally will put the keywords 'public static' before our function definitions; we will study more in depth what those things mean; for now, just put them before your functions :)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_local_variables_and_scope">1. Local variables and scope</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Within a function, we can define variables if we need them; this variables are only visible within the function (and only keep their value within that function call), so we could also define isEven as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">boolean</span> <span class="tok-nf">isEven</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">number</span><span class="tok-o">)</span>
+<span class="tok-o">{</span>
+    <span class="tok-kt">int</span> <span class="tok-n">remainderBy2</span><span class="tok-o">=</span><span class="tok-n">number</span><span class="tok-o">%</span><span class="tok-mi">2</span><span class="tok-o">;</span>
+    <span class="tok-k">return</span> <span class="tok-n">remainderBy2</span><span class="tok-o">==</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The local variable, <code>remainderBy2</code>, can only be accessed within the function, and every call to the function gets its own copy of the variable; each function call gets its own independent context (or <strong>activation frame</strong>) in which it is executed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nested_function_calls">2. Nested Function calls</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We can define functions that take as many parameters as we need (although they can only return one value), and you can include and combine the function calls in any ways you want; for example (although it would be overkill in real life), let us define the following function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">int</span> <span class="tok-nf">add</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">number1</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">number2</span><span class="tok-o">)</span>
+<span class="tok-o">{</span>
+    <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-n">number1</span><span class="tok-o">+</span><span class="tok-n">number2</span><span class="tok-o">;</span>
+    <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This function adds two numbers (WOW !!! :). It allows us to show how we can combine function calls as in the following code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">int</span> <span class="tok-n">n</span><span class="tok-o">=</span><span class="tok-n">add</span><span class="tok-o">(</span><span class="tok-mi">3</span><span class="tok-o">,</span><span class="tok-mi">7</span><span class="tok-o">);</span> <span class="tok-c1">// what&#39;s the answer</span>
+<span class="tok-kt">int</span> <span class="tok-n">n2</span><span class="tok-o">=</span><span class="tok-n">add</span><span class="tok-o">(</span><span class="tok-n">n</span><span class="tok-o">,</span> <span class="tok-mi">3</span><span class="tok-o">);</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>OK, everything seems normal here; lets look at the next one:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">int</span> <span class="tok-n">n3</span><span class="tok-o">=</span><span class="tok-n">add</span><span class="tok-o">(</span> <span class="tok-n">add</span><span class="tok-o">(</span><span class="tok-mi">2</span><span class="tok-o">,</span><span class="tok-mi">3</span><span class="tok-o">),</span> <span class="tok-n">add</span><span class="tok-o">(</span><span class="tok-mi">5</span><span class="tok-o">,</span><span class="tok-mi">7</span><span class="tok-o">));</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate <code>add(2,3)</code>, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates <code>add(5,7)</code> in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_function_composition">3. Function composition</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We can also call functions within other functions; for example, we can define the following function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">isSumEven</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">number1</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">number2</span><span class="tok-o">)</span>
+<span class="tok-o">{</span>
+    <span class="tok-k">return</span> <span class="tok-n">isEven</span><span class="tok-o">(</span> <span class="tok-n">add</span><span class="tok-o">(</span><span class="tok-n">number1</span><span class="tok-o">,</span> <span class="tok-n">number2</span><span class="tok-o">)</span> <span class="tok-o">);</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here a call to it, say <code>isSumEven(3,4)</code>, would start an activation frame, with number1=3 and number2=4; then, inside an activation frame is created, for add, and another for isEven.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercises_assume_we_have_the_functions_above">4. Exercises (assume we have the functions above)</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What would be the value of <code>ans</code> at the end of the following code fragment:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int a=10;
+int b=add(a,a);
+int ans=add(5, add(a,b));</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What would be the value of <code>ans</code> at the end of the following code fragment:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int x=add(10,5);
+boolean ans=isEven(add(x,1));</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions_and_purity">5. Functions and purity</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Functions can affect the world outside the function by either:
+1. returning a value (and then the caller may do things with it, or not, the function doesn&#8217;t care)
+2. altering its parameters (when they are objects) by calling methods that affect their state
+3. changing global state directly (the screen, System.in, System.out etc)</p>
+</div>
+<div class="paragraph">
+<p>Ideally, most of your functions would be  <strong>pure</strong>, that is, functions that just return a value, and don&#8217;t affect the outside world except by returning that value. This functions are easy to understand as 'black boxes', and easy to test; just pass the arguments, check the return value is right.</p>
+</div>
+<div class="paragraph">
+<p>Sometimes, you need functions that alter their arguments by the methods they call on them; these functions are somewhat harder to use and test, since when using them sequencing is important; however, to change the world, you need this sometimes.</p>
+</div>
+<div class="paragraph">
+<p>Ideally, only main should alter global state, and it should pass that state (even System.in, System.out) as a parameter to other functions; functions that directly affect global state are error prone and hard to reason with and I will avoid them in this class. We will see how to do this soon, when we talk about using objects.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_more_function_examples">6. More function examples</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_boolean_expressions_and_functions">6.1. Boolean expressions and functions</h3>
+<div class="paragraph">
+<p>One skill you need to master as a programmer is to think of bolean values (true or false) as values that can be combined by operators; just as numbers can be added, subtracted etc, booleans can be 'or-ed' and 'and-ed' and negated ('not-ed' :). Let&#8217;s practice some examples</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_counting_with_while_loops">2.1. counting with while loops</h3>
+<h3 id="_isinbetween">6.2. isInBetween</h3>
 <div class="paragraph">
-<p>Many times we need to go through a range of numbers; basically to count, and so something with the numbers as we count; we can count with a while loop by creating a variable that will sequentially take all the values we need, compare the variable with our upper bound, and increment it inside the loop (usually after doing whatever we were doing).</p>
-</div>
-<div class="paragraph">
-<p>So, for example, a function</p>
+<p>Let&#8217;s define a function that takes 3 ints, and returns a boolean; it returns true if the first number is between the other two; let&#8217;s call our parameters number, high, and low; we can define the function as:</p>
 </div>
 <div class="listingblock">
-<div class="title">counting and printing using a while loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countAndPrintWhile</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">low</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">high</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">low</span><span class="tok-o">;</span>
-        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">&lt;=</span><span class="tok-n">to</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
-            <span class="tok-o">++</span><span class="tok-n">i</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span>
-    <span class="tok-o">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">boolean</span> <span class="tok-nf">isInBetween</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">number</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">low</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">high</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+    <span class="tok-k">return</span> <span class="tok-n">number</span><span class="tok-o">&gt;=</span><span class="tok-n">low</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">number</span><span class="tok-o">&lt;=</span><span class="tok-n">high</span><span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>And we can raise a base to a certain power by counting all numbers from 1 to the desired power, and multiplying by the original number each time; as follows:</p>
+<p>Given this function, what would <code>isInBetween(5,0,10)</code> return ? How about <code>isInBetween(10,0,10)</code> ?</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_alltrue">6.3. allTrue</h3>
 <div class="listingblock">
-<div class="title">power using a while loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
-    <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span>
-        <span class="tok-kt">int</span> <span class="tok-n">counter</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
-        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">counter</span><span class="tok-o">&lt;</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
-            <span class="tok-o">++</span><span class="tok-n">counter</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span>
-        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
-    <span class="tok-o">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">allTrue</span><span class="tok-o">(</span><span class="tok-kt">boolean</span> <span class="tok-n">b1</span><span class="tok-o">,</span> <span class="tok-kt">boolean</span> <span class="tok-n">b2</span><span class="tok-o">,</span> <span class="tok-kt">boolean</span> <span class="tok-n">b3</span><span class="tok-o">){</span>
+    <span class="tok-k">return</span> <span class="tok-n">b1</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">b2</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">b3</span><span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Notice we could be counting down (and we would decrement our variable), or do something different, like adding 2 (to get all even numbers) each time. Incrementing and counting up are the most common, though.</p>
+<p>Given this function, what would <code>allTrue(true, true, false)</code> return ?
+=== anyTrue</p>
 </div>
 <div class="listingblock">
-<div class="title">counting down using a while loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countDownWhile</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">high</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">low</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">high</span><span class="tok-o">;</span>
-        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">&gt;=</span><span class="tok-n">low</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
-            <span class="tok-o">--</span><span class="tok-n">i</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span>
-    <span class="tok-o">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">anyTrue</span><span class="tok-o">(</span><span class="tok-kt">boolean</span> <span class="tok-n">b1</span><span class="tok-o">,</span> <span class="tok-kt">boolean</span> <span class="tok-n">b2</span><span class="tok-o">,</span> <span class="tok-kt">boolean</span> <span class="tok-n">b3</span><span class="tok-o">){</span>
+    <span class="tok-k">return</span> <span class="tok-n">b1</span> <span class="tok-o">||</span> <span class="tok-n">b2</span> <span class="tok-o">||</span> <span class="tok-n">b3</span> <span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Given this function, what would <code>anyTrue(true, true, false)</code> return ?</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exclusiveor">6.4. exclusiveOr</h3>
+<div class="paragraph">
+<p>We have seen that in Java (as in logic, and most programming languages), the or operator is inclusive; that is, if both sides are true, the expression is true ( true || true == true). Sometimes we want exclusive or; one or the other, but not both. We can define that function, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">exclusiveOr</span><span class="tok-o">(</span><span class="tok-kt">boolean</span> <span class="tok-n">b1</span><span class="tok-o">,</span> <span class="tok-kt">boolean</span> <span class="tok-n">b2</span><span class="tok-o">){</span>
+    <span class="tok-k">return</span> <span class="tok-o">(</span><span class="tok-n">b1</span> <span class="tok-o">||</span> <span class="tok-n">b2</span><span class="tok-o">)</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-o">!(</span> <span class="tok-n">b1</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">b2</span> <span class="tok-o">);</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_movies_bob_likes">6.5. Movies Bob likes</h3>
+<div class="paragraph">
+<p>Assuming Bob likes movies that are not long (90 minutes or less), are either Drama or Murder, and have decent ratings.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">bobWouldLike</span><span class="tok-o">(</span><span class="tok-n">String</span> <span class="tok-n">category</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">length</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">rating</span><span class="tok-o">){</span>
+    <span class="tok-k">return</span> <span class="tok-o">(</span><span class="tok-n">category</span><span class="tok-o">==</span><span class="tok-s">&quot;Drama&quot;</span> <span class="tok-o">||</span> <span class="tok-n">category</span><span class="tok-o">==</span><span class="tok-s">&quot;Murder&quot;</span><span class="tok-o">)</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">length</span><span class="tok-o">&lt;=</span><span class="tok-mi">90</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">rating</span><span class="tok-o">&gt;</span><span class="tok-mi">3</span><span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_movies_alice_likes">6.6. Movies Alice likes</h3>
+<div class="paragraph">
+<p>Alice likes movies in Drama, Action or Romantic, and that are not too long (120 minutes or less)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">aliceWouldLike</span><span class="tok-o">(</span><span class="tok-n">String</span> <span class="tok-n">category</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">length</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">rating</span><span class="tok-o">){</span>
+    <span class="tok-k">return</span> <span class="tok-o">(</span><span class="tok-n">category</span><span class="tok-o">==</span><span class="tok-s">&quot;Drama&quot;</span> <span class="tok-o">||</span> <span class="tok-n">category</span><span class="tok-o">==</span><span class="tok-s">&quot;Action&quot;</span> <span class="tok-o">||</span> <span class="tok-n">category</span><span class="tok-o">==</span><span class="tok-s">&quot;Romantic&quot;</span><span class="tok-o">)</span> <span class="tok-o">&amp;&amp;</span> <span class="tok-n">length</span><span class="tok-o">&lt;=</span><span class="tok-mi">120</span> <span class="tok-o">;</span>
+<span class="tok-o">}</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_for_loop">3. for loop</h2>
+<h2 id="_functions_with_doubles">7. Functions with doubles</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This counting pattern is so common that Java (borrowing from C) has a special loop for this, the <code>for</code> loop.</p>
-</div>
-<div class="paragraph">
-<p>The for loop is basically a while loop, but with the initialization, condition and increment written in the same line.</p>
-</div>
-<div class="paragraph">
-<p>Its syntax is:</p>
+<p>One standard issue with doubles, is that the == operator is not very useful, since two opearions may yield results that should be equal, but due to floating point operations being inherently imprecise, would not end up with the exact same value; a common operation is to check whether two floating point numbers are equal, within a given tolerance. We could write such a function:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-n">nitialization</span><span class="tok-o">;</span> <span class="tok-n">condition</span><span class="tok-o">;</span> <span class="tok-n">increment</span><span class="tok-o">){</span>
-    <span class="tok-c1">// body of the loop</span>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kt">boolean</span> <span class="tok-nf">areClose</span><span class="tok-o">(</span><span class="tok-kt">double</span> <span class="tok-n">d1</span><span class="tok-o">,</span> <span class="tok-kt">double</span> <span class="tok-n">d2</span><span class="tok-o">,</span> <span class="tok-kt">double</span> <span class="tok-n">tolerance</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+    <span class="tok-k">return</span> <span class="tok-o">(</span><span class="tok-n">d1</span><span class="tok-o">-</span><span class="tok-n">d2</span>  <span class="tok-o">&lt;=</span> <span class="tok-n">tolerance</span><span class="tok-o">)</span> <span class="tok-o">||</span> <span class="tok-o">(</span><span class="tok-n">d2</span><span class="tok-o">-</span><span class="tok-n">d1</span> <span class="tok-o">&lt;=</span><span class="tok-n">tolerance</span><span class="tok-o">);</span>
 <span class="tok-o">}</span></code></pre>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_function_overloading">8. Function overloading</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>For example, we can count up with a for loop as follows:</p>
-</div>
-<div class="listingblock">
-<div class="title">counting and printing using a for loop</div>
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">countAndPrint</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">from</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">to</span><span class="tok-o">,</span> <span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-        <span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">i</span><span class="tok-o">=</span><span class="tok-n">from</span><span class="tok-o">;</span> <span class="tok-n">i</span><span class="tok-o">&lt;=</span><span class="tok-n">to</span><span class="tok-o">;</span> <span class="tok-o">++</span><span class="tok-n">i</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">i</span><span class="tok-o">);</span>
-        <span class="tok-o">}</span>
-    <span class="tok-o">}</span></code></pre>
-</div>
+<p>It seems obvious you should not define functions with the same name <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>, since the compiler would not be able to distinguish which one you mean when you call the function.</p>
 </div>
 <div class="paragraph">
-<p>And we can raise a number to a given power as follows:</p>
-</div>
-<div class="listingblock">
-<div class="title">Raising a number to a given power using a for loop</div>
-<div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
-    <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
-        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span>
-        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
-    <span class="tok-o">}</span></code></pre>
+<p>However, Java allows you to <strong>overload</strong> functions, by defining functions with the same name, but different <strong>parameters</strong>; the functions need to vary in either the number or the type of the parameters. Java will be able to distinguish which function you mean when calling it, by the parameters you pass.</p>
 </div>
 </div>
 </div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. Since functions belong to a class, their full name is the full name of the class plus the name of the function
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-01 10:58:12 EDT
+Last updated 2017-07-01 23:51:23 EDT
 </div>
 </div>
 </body>

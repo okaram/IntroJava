@@ -1,0 +1,317 @@
+= Using Objects
+:sourcedir: /Users/curri/IntroJava/Samples/src/main/java/okaram/notes
+:source-highlighter: pygments
+
+
+We will see how to *use* objects (later we will see how to define our own classes, which are types of objects).
+
+Every object has 3 things:
+
+- An *identity* which uniquely distinguishes this objects from any other objects
+- A *type* (or class), which defines all the operations it can do, and
+- A *state*, which is unique to this particular objects (although other objects may have the same state)
+
+Notice you will need to distinguish between *objects* and *variables*, which hold references to those objects; most simple examples have one variable referring the same object all the time, but variables could reference different objects, and several variables could refer to the same object.
+
+== Simple examples
+
+We will see:
+
+. How to create objects (with the keyword new)
+. How to assign objects to variables
+. How to call methods on objects
+
+For our initial examples, we will use:
+
+- The https://docs.oracle.com/javase/8/docs/api/java/awt/Point.html[java.awt.Point] class footnote:[Remember java classes have full names, like java.awt.Point, since they live in packages; we can use an import statement so we don't have to write their full name; so, if we write `import java.awt.Point;` somewhere in our program, we can just refer to the Point class instead of java.awt.Point], which represents a point in two dimensions; it has an x and a y coordinates.
+- The https://docs.oracle.com/javase/8/docs/api/java/awt/Dimension.html[java.awt.Dimension] class, which represents 2D dimensions; it has a width and a height
+- The https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html[java.awt.Rectangle] class, which combines a position (a point) and a size (a dimension)
+
+=== Creating objects 
+
+Imagine you're at a store, and want to order different kinds stuff, one at a time; you'd say things like 'Give me a Box that is 2 in wide and 3 inches tall' or, 'give me a Point with x 3 and y 5' (OK, you probably don't say that at a store); in Java, we have something similar to create objects.
+
+We crete an object with the `new` keyword; We write `new', then the *class* of the object we want to create, parenthesis and any parameters we want to pass to the *constructor* of the object. In a way, you're asking java 'create a *new* Point, with x 3 and y 5', in a slightly weird way :)
+
+So, to create a Point, you'd use:
+[source,java]
+----
+    new Point(2,5)
+----
+and this expression would yield a new Point, with x=2 and y=5.
+
+=== variables and objects
+Now, normally you want to *do* something with the objects you create; and in most cases, we want to store a reference to that object to do something with it later.
+
+So, we can create a variable of type Point, and assign to it a newly created point, by writing:
+[source,java]
+----
+Point p=new Point(2,5);
+----
+
+Notice you don't *always* assign an object to a variable immediately; sometimes you just pass it directly to some other function or method; however, in most of our examples we will do so.
+
+We can create a Dimension object and assign it to a variable with:
+[source,java]
+----
+Dimension d=new Dimension(20,30);
+----
+which will create a new object, of type Dimension, with width 20 and height 30. Notice in general you need to look at the documentation for a given class, to know what parameters to pass to the constructor and in which order.
+
+We can create a Rectangle by passing it an x, y and also a width and height; so we could create a Rectangle (and assign it to a variable r) with:
+[source,java]
+----
+Rectangle r=new Rectangle(2,5,20,30);
+----
+
+Classes sometimes have several constructors; a Rectangle has one that takes 4 ints, but also one that takes a Point and a Dimension; so, if we reuse our p and r variables from above footnote:[We would need to have them in the same program and in the same scope, so we can refer to those variables], we could create the variable and assing it like this:
+[source,java]
+----
+Rectangle r=new Rectangle( p, r );
+----
+
+Notice the new keyword yields a newly created object; if we were creating the point and dimension just for the Rectangle, we could create the objects directly when calling the constructor, as follows:
+[source,java]
+----
+Rectangle r=new Rectangle( new Point(2,5), new Dimension(20,30) );
+----
+In this statement, we created 3 new objects !
+
+Notice we don't always have to create a new object to assign it to a variable; we could also use an existing object to assign it to a new variable:
+[source,java]
+----
+Rectangle r2=r;
+----
+
+==== null
+We can also create a variable and assign it the value of `null`; this special value guarantees that the variable refers to no object. Notice that referencing a field or calling a method on a variable which is null will generate an exception at runtime. The Java compiler will sometimes be able to detect that a variable will always be null and catch some of these errors.
+
+
+=== referencing fields
+
+We mentioned objects have *state* ; objects keep that state in *fields*, which are something like variables, except each object has its own; sometimes, objects give us direct access to those fields (most clases declare their fields as private, which means we don't get direct access to them). We reference those fields by putting a period between the object reference and the field name.
+
+For example, the `Point` class exposes its x and y fields, which are integers; so if we have a point p, we can use `p.x` and `p.y`  (and even assign to them !)
+
+=== Calling methods
+
+Most objects provide methods, which we can call to get things done (in OO parlance, we send a message to the Object, telling it what to do). Like with fields, we use a period to call a method.
+
+For example, the `Point` class has getX and getY, which return the coordinates of a point, as `double` (the Point class is supposed to fit with other classes that need these methods), so, if we have a Point p, we can use `p.getX()` to get its X coordinate.
+
+The `point` class also has a `translate` method, that allows us to move a point relatively to where we start (or translate it, using geometry parlance).
+
+So, we can do:
+[source,java]
+----
+Point p=new Point(2,5);
+p.translate(3,-4);
+----
+and the coordinates of p would be 5,-1.
+
+The Rectangle class has some more interesting methods; for example, it has several `contains` methods that check whether a Point or Rectangle is inside a given Rectangle; so we can write:
+[source,java]
+----
+Point p=new Point(3,5);
+Dimension d=new Dimension(10,10); 
+Rectangle r=new Rectangle(p,d);
+
+System.out.println(  r.contains(p) ); // should print true
+
+p.translate(5,5);
+System.out.println(  r.contains(p) ); // what would this print ?
+----
+
+==== Exercises
+
+Go to http://www.javarepl.com[JavaRepl] and enter the following code:
+
+[source,java]
+----
+import java.awt.Point;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+Point p=new Point(3,5);
+Dimension d=new Dimension(10,10); 
+Rectangle r=new Rectangle(p,d);
+----
+. enter: `r.contains(p)` ; what does it print ?
+
+. Now use p.translate to move the point so it is outside the rectangle; enter r.contains(p), what do you get ?
+. Look at documentation for the https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#grow-int-int-[Rectangle.grow] method; grow your rectangle until the points is back in, and verify it with r.contains
+. Create a new Point, which is NOT in the rectangle, and store it in the variable p2; verify with r.contains
+. Create a new Rectangle (and store it in variable r2), which is completely inside r; verify with r.contains (there's a version of contains that takes rectangles !)
+. Use the https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#intersects-java.awt.Rectangle-[Rectangle.intersects] method to verify that r and r2 intersect. Is there a difference between calling r.intersects(r2) and r2.intersects(r) ? Why or why not ? How about contains ?
+. Grow r2 so that it is not entirely contained in r; verify with intersects and contains
+. Use the https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html#intersection-java.awt.Rectangle-[Rectangle.intersection] method to generate the intersection of r and r2. What does this method return if there's no intersection ?
+. Keep playing ! Look at more methods of Rectangle, what else can you do ?
+
+=== common methods and operators footnote:[When we talk about inheritance we will see that the Object class defines this methdods, and, since every class in Java eventually inherits from Object, every class ends up implementing these methods, either by overriding them or by using Object's version] footnote:[Check the https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html[documentation for Object class] for other methods common to all objects]
+
+
+==== == operator
+We can use the == operator to compare two objects. This operator returns true if its two parameters refer to the same object and false otherwise. 
+
+=== equals method 
+Every object defines an equals methods that takes another object, and returns true if the two objects are *equal*; What exactly does it mean to be equal for those objects is defined by each class, but it *should* footnote:[hopefully] be that they are of the same class, and have the same *state*. 
+
+For example, we can write:
+[source,java]
+----
+Point p1=new Point(3,5);
+Point p2=new Point(3,5);
+
+System.out.println(  p1==p2 ); // should print false ! not the same object
+System.out.println(  p1.equals(p2) ); // should print true; same state
+System.out.println(  p2.equals(p1) ); // should print true; same state
+----
+
+=== toString
+Every object also implements a toString method, which returns some String representation of the object; this method is what is called when you write code like: System.out.println( p );
+
+You can directly call the toString method of an object, and also Java will call it when it needs to convert an object to a String; Notice every class can override this and decide how to 'print' its objects, so you should use this mostly for debugging, and create your own methods for printing your objects in specific formats.
+
+=== clone
+
+
+=== garbage collection
+We have seen how to create objects, and also that variables can reference those objects; when we create an object, we are allocating some memory (RAM) in the computer to store its state; if we keep all objects ever created in memory, we will eventually run out of space !
+
+Java performs *garbage collection* ; since it knows about all the variables (and all the fields inside objects) it can detect when an object is not referenced by anybody anymore; it will then deallocate these objects (at some point in time; not necessarily right when they are not referenced). This way, we don't run out of memory.
+
+Notice this only works for memory; there may be other resources (like open files, or connections over the network) that need to be disposed of when an object is not going to be used anymore; you may still need to call close or similar methods on some objects, and be careful not to waste resources.
+
+== Functions, Methods and objects
+
+We can define functions (static methods) that take objects as parameters, do things with them, and return objects as the result of their calculations.
+
+=== Objects are passed by *reference*
+
+The most important things to understand is that objects are passed by reference; when we pass an object as an argument to a function, Java does not make a copy of the object; it passes a reference to the object. If we change a parameter directly, the outside reference doesn't change; however, if we change the *state* of the object it references, the outside caller *will* be able to see the change.
+
+This is different that what happens when we use primitives, like ints.
+
+For example, if we define a function tryToChangePrimitive, that takes an int and changes it, as follows:
+[source,java]
+.Function that tries to change a primitive
+----
+include::{sourcedir}/UsingObjects.java[tags=tryToChangePrimitive]
+----
+
+And then call it with some int variable:
+[source,java]
+.calling tryToChangePrimitive
+----
+include::{sourcedir}/UsingObjects.java[tags=passingPrimitives]
+----
+the call has no effect; the variable b is not changed by the function, since primitives are passed *by value* ; that is, a copy of the value is made.
+
+If we pass an object to a function, the parameter will contain a *reference* to the object; we make a copy of the reference, but not of the object.
+
+If we try to directly change the reference that is given to the function, the outside caller won't notice either; we have our own copy of the reference. For example, if we define the following function:
+[source,java]
+.Function that tries to change a reference (doesn't actually do anything)
+----
+include::{sourcedir}/UsingObjects.java[tags=tryToChangeReference]
+----
+
+And then we call it with code like:
+[source,java]
+.calling tryToChangePrimitive
+----
+include::{sourcedir}/UsingObjects.java[tags=passReference]
+----
+again, the outside variable (p2) will not be affected at all; the function gets its own copy of the reference.
+
+However, the function does not get a copy of the object; it gets a reference to *the same object* referenced outside; so, if the function calls any methods that change the *state* of the object, the outside caller can see those changes, since it is the same state !
+
+So, if we define a function that takes an object and modifies its state, like:
+[source,java]
+.Function that translates a point by 10 units in x and y
+----
+include::{sourcedir}/UsingObjects.java[tags=translatePoint]
+----
+and we call it:
+[source,java]
+.calling translatePoint ; the parameter gets affected outside !
+----
+include::{sourcedir}/UsingObjects.java[tags=callTranslatePoint]
+----
+The parameter gets affected outside; p.x will now be 15 and p.y will be 20.
+
+=== returning objects
+Our functions can also return objects; usually objects they create with the `new` keyboard (although they can be other objects they already had).
+
+For example, we could define a function that returns a Point, given a point and some coordinates to translate by:
+[source,java]
+.calling translatePoint ; the parameter gets affected outside !
+----
+include::{sourcedir}/UsingObjects.java[tags=makeTranslatedPoint]
+----
+
+== Strings
+
+Strings in Java are a kind of object, not a primitive; however, they are special because we have a special notation to create String constants, writing characters inside double quotes, like `"abc"`. 
+
+Strings are also *immutable*, that is, we cannot change their state once we have created; so in many cases it doesn't matter whether we are talking about the same object, or two objects with the same state; due to this, Java optimizes string constants; if we reuse the same constant, `"abc"`, Java will NOT create two different String objects, but will yield *the same* string, which makes the == operator return true if we reuse string constants.
+
+If we want to create a new String object, we can call the `new` operator, and pass it an already existing string; this will create a new String instance, with the same state but different identity.
+
+For example, if we define the following variables:
+[source,java]
+.String variables from constants, new and methods
+----
+include::{sourcedir}/UsingObjects.java[tags=stringIdentity]
+----
+`s1` and `s2` will both refer to the same object, since Java does magic to avoid creating two objects; so s1==s2 would return true; s3, however, will NOT refer to the same object, but to a different String object with the same values; so s1==s3 would return false, but s1.equals(s3) would return true.
+
+Similarly, ps1 and ps2 are coming from methods which dynamically create Strings, so Java will not be able to optimize them, and so ps1 != ps2.
+
+=== String.format
+
+== PrintStream
+Another class that we will be using is https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html[java.io.PrintStream] . The simplest way to print in Java is by calling the println method of the PrintStream class. The System class has a static field, called out, which gets initialized to a PrintStream that would print to the console before our program runs, so we can write code like:
+[source,java]
+.String variables from constants, new and methods
+----
+System.out.println( "Life is good" );
+----
+The println method takes a String, but Java will automatically call the toString() method of an object if needed; We can use the String concatenation operator (+) to combine strings, and we can also use the String.format method to create prettier output (String.format returns a string, which we can print with println).
+
+Notice that can pass PrintStream objects as parameters, which can make our methods more general, since they would be able to work on PrintStreams that print to files or the network.
+
+For example, a function that takes a point and a PrintStream and prints the point would be:
+[source,java]
+.Function to print a point to a given  PrintStream
+----
+include::{sourcedir}/UsingObjects.java[tags=printPoint]
+----
+And we could call it like:
+[source,java]
+----
+printPoint(new Point(3,2), System.out);
+----
+The advantages of writing our functions like this are that we make the parameters explicit (instead of using global variables), and that we can later print to other places.
+
+== InputStream and Scanner classes
+
+Another class we will use a lot is the [Scanner] class, which we use to read Strings, ints and such from the console footnote:[Or from files, the network or other devices, if we use a different InputStream]
+
+The `System` class has a field, called `in`, which is actually an InputStream ; the InputStream class is not that useful (it only allows you to read bytes), so Java created the Scanner class, which allows you to read Strings etc.
+
+We can create an instance of Scanner by passing it an InputStream (many times we pass System.in). Once you have a Scanner, you can call its nextString() method to get a line (or nextInt() nextDouble() etc to read an int, or a double or ...). 
+
+So you can do something like:
+[source,java]
+----
+Scanner sc=new Scanner( System.in );
+String s=sc.nextLine();
+----
+to read a string (a full line, may contain spaces etc).
+
+Again, many times we will make functions that take a Scanner as arguments; for example, we could write a function that takes a PrintStream and a Scanner, writes a nice message to the user, reads 2 integers, and returns their sum, as follows:
+[source,java]
+.Function to 
+----
+include::{sourcedir}/UsingObjects.java[tags=readAndAdd]
+----

@@ -1,0 +1,192 @@
+= Introduction to Functions
+:sourcedir: /Users/curri/IntroJava/Samples/src/main/java/okaram/notes
+:source-highlighter: pygments
+
++ https://youtu.be/65cSKj8FpHA)[Video] - Intro to functions
+
+One of the most important things we do as programmers is manage complexity; functions allow us to encapsulate complex calculations into a black box, and call it when needed.
+
+For example, imagine that we need to find whether numbers are even; we can easily do the calculation, using % ; however, it will be much nicer if we encapsulate this into its own function. We could write the function as follows:
+
+[source,java]
+----
+boolean isEven(int number)
+{
+    return (number%2) == 0;    
+}
+----
+
+When defining a function, we write its return type, then the name and the parameters, and then the code, within braces (well, actually many times we will precede the function name with *public static*, which will be explained later). Within the function we can include as many statements as we want (for now, we will do simple functions, with just one line). 
+ 
+In the function above, the return type is boolean, so the function will return either true or false; it takes one parameter, an int, which will be referred as *number* from within the function. The function just returns one expression, which is whether the remainder of the number divided by two is zero (which is the definition of even :).
+
+We can call the function inside an expression as follows:
+[source,java] 
+----
+boolean is7Even=isEven(7); // what would be the value ?
+boolean is*Even=isEven(8);
+----
+
+When we call a function, with an expression like `isEven(7)`, the function gets executed; first the actual parameter (7 in this case) gets evaluated, then the code for the function gets executed, with the formal parameter (number) replaced with the actual value (you can imagine the formal parameter, number, is like a variable inside the function; finally, the return value gets substituted instead of the function call. 
+
+Unfortunately, Java does not actually supports functions; it supports *methods*, which are attached to a class; Java requires you to always declare a class, and declare your functions as static methods; due to this, we normally will put the keywords 'public static' before our function definitions; we will study more in depth what those things mean; for now, just put them before your functions :)
+
+== Local variables and scope
+
+Within a function, we can define variables if we need them; this variables are only visible within the function (and only keep their value within that function call), so we could also define isEven as follows:
+[source,java] 
+----
+public static boolean isEven(int number)
+{
+    int remainderBy2=number%2;
+    return remainderBy2==0;   
+} 
+----
+
+The local variable, `remainderBy2`, can only be accessed within the function, and every call to the function gets its own copy of the variable; each function call gets its own independent context (or *activation frame*) in which it is executed.
+
+== Nested Function calls
+We can define functions that take as many parameters as we need (although they can only return one value), and you can include and combine the function calls in any ways you want; for example (although it would be overkill in real life), let us define the following function:
+
+[source,java] 
+----
+int add(int number1, int number2)
+{
+    int sum=number1+number2;
+    return sum;   
+}
+----
+
+This function adds two numbers (WOW !!! :). It allows us to show how we can combine function calls as in the following code:
+
+[source,java]
+----
+int n=add(3,7); // what's the answer
+int n2=add(n, 3); 
+----
+
+OK, everything seems normal here; lets look at the next one:
+
+[source,java] 
+----
+int n3=add( add(2,3), add(5,7));
+----
+Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.
+ 
+== Function composition
+We can also call functions within other functions; for example, we can define the following function:
+[source,java] 
+----
+boolean isSumEven(int number1, int number2)
+{
+    return isEven( add(number1, number2) );   
+}
+----
+
+Here a call to it, say `isSumEven(3,4)`, would start an activation frame, with number1=3 and number2=4; then, inside an activation frame is created, for add, and another for isEven.
+
+== Exercises (assume we have the functions above)
+
+1. What would be the value of `ans` at the end of the following code fragment:
+[source,java] 
+----
+int a=10;
+int b=add(a,a);
+int ans=add(5, add(a,b));
+----
+    
+1. What would be the value of `ans` at the end of the following code fragment:
+[source,java]
+----
+int x=add(10,5);
+boolean ans=isEven(add(x,1));
+----
+    
+== Functions and purity
+
+Functions can affect the world outside the function by either:
+1. returning a value (and then the caller may do things with it, or not, the function doesn't care)
+2. altering its parameters (when they are objects) by calling methods that affect their state
+3. changing global state directly (the screen, System.in, System.out etc)
+ 
+Ideally, most of your functions would be  *pure*, that is, functions that just return a value, and don't affect the outside world except by returning that value. This functions are easy to understand as 'black boxes', and easy to test; just pass the arguments, check the return value is right.
+
+Sometimes, you need functions that alter their arguments by the methods they call on them; these functions are somewhat harder to use and test, since when using them sequencing is important; however, to change the world, you need this sometimes.
+
+Ideally, only main should alter global state, and it should pass that state (even System.in, System.out) as a parameter to other functions; functions that directly affect global state are error prone and hard to reason with and I will avoid them in this class. We will see how to do this soon, when we talk about using objects.
+
+== More function examples
+
+=== Boolean expressions and functions
+One skill you need to master as a programmer is to think of bolean values (true or false) as values that can be combined by operators; just as numbers can be added, subtracted etc, booleans can be 'or-ed' and 'and-ed' and negated ('not-ed' :). Let's practice some examples
+
+=== isInBetween
+
+Let's define a function that takes 3 ints, and returns a boolean; it returns true if the first number is between the other two; let's call our parameters number, high, and low; we can define the function as:
+[source,java] 
+----
+public static boolean isInBetween(int number, int low, int high) {
+    return number>=low && number<=high;
+}
+----
+Given this function, what would `isInBetween(5,0,10)` return ? How about `isInBetween(10,0,10)` ?
+
+=== allTrue
+[source,java] 
+----
+boolean allTrue(boolean b1, boolean b2, boolean b3){
+    return b1 && b2 && b3;
+}
+----
+Given this function, what would `allTrue(true, true, false)` return ?
+=== anyTrue
+[source,java] 
+----
+boolean anyTrue(boolean b1, boolean b2, boolean b3){
+    return b1 || b2 || b3 ;
+}
+----
+Given this function, what would `anyTrue(true, true, false)` return ?
+
+=== exclusiveOr
+We have seen that in Java (as in logic, and most programming languages), the or operator is inclusive; that is, if both sides are true, the expression is true ( true || true == true). Sometimes we want exclusive or; one or the other, but not both. We can define that function, as follows:
+[source,java] 
+----
+boolean exclusiveOr(boolean b1, boolean b2){
+    return (b1 || b2) && !( b1 && b2 );
+}
+----
+
+
+=== Movies Bob likes
+Assuming Bob likes movies that are not long (90 minutes or less), are either Drama or Murder, and have decent ratings.
+[source,java] 
+----
+boolean bobWouldLike(String category, int length, int rating){
+    return (category=="Drama" || category=="Murder") && length<=90 && rating>3;  
+}
+----
+
+=== Movies Alice likes
+Alice likes movies in Drama, Action or Romantic, and that are not too long (120 minutes or less)
+[source,java] 
+----
+boolean aliceWouldLike(String category, int length, int rating){
+    return (category=="Drama" || category=="Action" || category=="Romantic") && length<=120 ;  
+}
+----
+
+== Functions with doubles
+One standard issue with doubles, is that the == operator is not very useful, since two opearions may yield results that should be equal, but due to floating point operations being inherently imprecise, would not end up with the exact same value; a common operation is to check whether two floating point numbers are equal, within a given tolerance. We could write such a function:
+[source,java] 
+----
+boolean areClose(double d1, double d2, double tolerance) {
+    return (d1-d2  <= tolerance) || (d2-d1 <=tolerance);
+}
+----
+
+== Function overloading
+
+It seems obvious you should not define functions with the same name footnote:[Since functions belong to a class, their full name is the full name of the class plus the name of the function], since the compiler would not be able to distinguish which one you mean when you call the function.
+
+However, Java allows you to *overload* functions, by defining functions with the same name, but different *parameters*; the functions need to vary in either the number or the type of the parameters. Java will be able to distinguish which function you mean when calling it, by the parameters you pass.
