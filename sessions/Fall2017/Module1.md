@@ -3,10 +3,9 @@ Module 1: Functions and Methods
 
 ## Materials
 + Notes
-    * [Functions](../../content/Functions.md) - And [Video](https://youtu.be/65cSKj8FpHA)
+    * [Functions](../../html/notes/Functions.html) - And [Video](https://youtu.be/65cSKj8FpHA)
         + [Extra video = Intro - add](https://youtu.be/Wg1zXRuZUck)
         + [Extra video - isEven in CodingBat](https://youtu.be/IHFXy_5Zp68)
-    * [Void Functions](../../content/VoidFunctions.md)
     * [Functions on Strings](../../content/FunctionsOnStrings.md)   
 * Book chapters
     + [Chapter 4 - Void methods](http://greenteapress.com/thinkjava6/html/thinkjava6005.html)
