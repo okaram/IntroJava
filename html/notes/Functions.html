@@ -781,6 +781,40 @@ boolean ans=isEven(add(x,1));</pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_void_functions">9. void functions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Although functions should return a value, we sometimes want to create a function or method that does not return a value, and just modify its parameters or the global state; for example, we could want to define a method that just prints something to the screen.</p>
+</div>
+<div class="paragraph">
+<p>If we want to define a method that does not return a value, we use <code>void</code> as the return type (instead of int or double); if we need to return from the function, we still use a <code>return</code> statement, but with no value specified; if we do not specify a <code>return</code> statement, then the method will finish on its last line.</p>
+</div>
+<div class="paragraph">
+<p>For example, a method that prints its argument 3 times would look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-nf">print3Times</span><span class="tok-o">(</span><span class="tok-n">String</span> <span class="tok-n">line</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+    <span class="tok-n">System</span><span class="tok-o">.</span><span class="tok-na">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">line</span><span class="tok-o">);</span>
+    <span class="tok-n">System</span><span class="tok-o">.</span><span class="tok-na">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">line</span><span class="tok-o">);</span>
+    <span class="tok-n">System</span><span class="tok-o">.</span><span class="tok-na">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-n">line</span><span class="tok-o">);</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we call such a function, we do not <strong>do</strong> anything with the returned value (since there&#8217;s no value returned). So the function call is a statement on its own right (just like calling System.out.printl)</p>
+</div>
+<div class="paragraph">
+<p>For example, we could call the print3Times function above, as follows:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-n">print3Times</span><span class="tok-o">(</span><span class="tok-s">&quot;Hello&quot;</span><span class="tok-o">);</span></code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footnotes">
 <hr>
@@ -790,7 +824,7 @@ boolean ans=isEven(add(x,1));</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-01 23:51:23 EDT
+Last updated 2017-07-02 00:23:17 EDT
 </div>
 </div>
 </body>

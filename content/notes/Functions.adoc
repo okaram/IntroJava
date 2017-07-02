@@ -190,3 +190,26 @@ boolean areClose(double d1, double d2, double tolerance) {
 It seems obvious you should not define functions with the same name footnote:[Since functions belong to a class, their full name is the full name of the class plus the name of the function], since the compiler would not be able to distinguish which one you mean when you call the function.
 
 However, Java allows you to *overload* functions, by defining functions with the same name, but different *parameters*; the functions need to vary in either the number or the type of the parameters. Java will be able to distinguish which function you mean when calling it, by the parameters you pass.
+
+== void functions
+
+Although functions should return a value, we sometimes want to create a function or method that does not return a value, and just modify its parameters or the global state; for example, we could want to define a method that just prints something to the screen.
+
+If we want to define a method that does not return a value, we use `void` as the return type (instead of int or double); if we need to return from the function, we still use a `return` statement, but with no value specified; if we do not specify a `return` statement, then the method will finish on its last line.
+
+For example, a method that prints its argument 3 times would look like this:
+
+```java
+public static print3Times(String line) {
+    System.out.println(line);
+    System.out.println(line);
+    System.out.println(line);
+}
+```
+
+When we call such a function, we do not *do* anything with the returned value (since there's no value returned). So the function call is a statement on its own right (just like calling System.out.printl)
+
+For example, we could call the print3Times function above, as follows:
+```java
+print3Times("Hello");
+```
