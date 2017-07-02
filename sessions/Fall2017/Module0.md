@@ -1,4 +1,4 @@
-Module 1: Introduction, variables 
+Module 0: Introduction and variables 
 ===
 
 ## Materials
