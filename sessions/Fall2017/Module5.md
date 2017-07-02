@@ -1,7 +1,7 @@
 Module 5: Loops 
 ===
 ## Materials
-+ [Loops](../../content/Loops.md)
++ [Loops](http://okaram.github.io/IntroJava/html/notes/loops.html)
 + [Sample code - Loops](../../Samples/src/main/java/okaram/samples/LoopSamples.java)
 + Book Chapters:
     + [Ch 7 - Loops](http://greenteapress.com/thinkjava6/html/thinkjava6008.html)

@@ -3,7 +3,7 @@ Module 1: Functions and Methods
 
 ## Materials
 + Notes
-    * [Functions](../../html/notes/Functions.html) - And [Video](https://youtu.be/65cSKj8FpHA)
+    * [Functions](http://okaram.github.io/IntroJava/html/notes/Functions.html) - And [Video](https://youtu.be/65cSKj8FpHA)
         + [Extra video = Intro - add](https://youtu.be/Wg1zXRuZUck)
         + [Extra video - isEven in CodingBat](https://youtu.be/IHFXy_5Zp68)
     * [Functions on Strings](../../content/FunctionsOnStrings.md)   
