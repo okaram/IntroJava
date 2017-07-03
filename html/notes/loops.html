@@ -500,6 +500,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>We have now seen how to iterate by using recursion; recursion is a powerful tool, but Java also supports loops for iteration. A loop lets you go back and execute the same code over and over again depending on a condition.</p>
 </div>
+<div class="paragraph">
+<p>When talkin about loops we have:
+* the <strong>loop condition</strong> which determines whether the loops keeps executing
+* the <strong>body of the loop</strong>, which is the statements we want to execute several times (it is good practice to put the body between braces, even if it is just one statement)</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -657,7 +662,7 @@ It&#8217;s syntax is as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-n">nitialization</span><span class="tok-o">;</span> <span class="tok-n">condition</span><span class="tok-o">;</span> <span class="tok-n">increment</span><span class="tok-o">){</span>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-n">initialization</span><span class="tok-o">;</span> <span class="tok-n">condition</span><span class="tok-o">;</span> <span class="tok-n">increment</span><span class="tok-o">){</span>
     <span class="tok-c1">// body of the loop</span>
 <span class="tok-o">}</span></code></pre>
 </div>
@@ -691,12 +696,46 @@ It&#8217;s syntax is as follows:</p>
     <span class="tok-o">}</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>The for loop is basically equivalent to the while loop; the only difference is that, if you declare a variable in the initialization clause, its scope is only within the loop, not outside of it.</p>
+</div>
+<div class="paragraph">
+<p>Notice that all 3 parts of the loop, initialization, condition and increment are optional; you just need to put the corresponding ; and leave it blank (we will see some examples later).</p>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_break_and_continue">4. break and continue</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop.</p>
+</div>
+<div class="listingblock">
+<div class="title">Reading with an 'infinite' while loop, and a break</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Reading with an 'for-ever' loop, and a break</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+        <span class="tok-o">}</span>
+        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+    <span class="tok-o">}</span></code></pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -708,7 +747,67 @@ It&#8217;s syntax is as follows:</p>
 <div class="sect1">
 <h2 id="_summary">6. Summary</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>Loops allow you to execute code a bunch of times, while a condition is true.</p>
+</li>
+<li>
+<p>Loops have a <strong>condition</strong> and a <strong>body</strong>. The loop will execute the body while the condition is true.</p>
+</li>
+<li>
+<p>The do-while syntax is as follows:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">do</span> <span class="tok-o">{</span>
+    <span class="tok-c1">// body of the loop</span>
+<span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">)</span> <span class="tok-o">;</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <code>while</code> syntax is as follows:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">condition</span><span class="tok-o">){</span>
+    <span class="tok-c1">// body of the loop</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the <code>for</code> loop is like a while loop, with the initialization, condition and increment in the same line; its syntax is as follows (the semicolons are part of the syntax), and each one of the parts is optional</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-k">for</span><span class="tok-o">(</span><span class="tok-n">initialization</span><span class="tok-o">;</span> <span class="tok-n">condition</span><span class="tok-o">;</span> <span class="tok-n">increment</span><span class="tok-o">){</span>
+    <span class="tok-c1">// body of the loop</span>
+<span class="tok-o">}</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inside a loop, the <code>break</code> keyword will get you out of the loop</p>
+</li>
+<li>
+<p>Inside a loop, the <code>continue</code> keyword will skip the rest of the body of the loop (and send you to check the condition again).</p>
+</li>
+<li>
+<p>You normally guard any <code>break</code> and <code>continue</code> inside if statements, as a different way to get out of the loop.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -720,7 +819,7 @@ It&#8217;s syntax is as follows:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-02 00:44:40 EDT
+Last updated 2017-07-02 15:11:37 EDT
 </div>
 </div>
 </body>

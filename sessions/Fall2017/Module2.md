@@ -3,7 +3,7 @@ Module 2: Using Objects and our first Full program
 
 ## Materials
 + Notes
-    * [Using objects](../../html/notes/UsingObjects.html)
+    * [Using objects](http://okaram.github.io/IntroJava/html/notes/usingObjects.html)
     * [First full program](../../content/FirstProgram.md)
 * Book chapters
     + [Chapter 3 - IO](http://greenteapress.com/thinkjava6/html/thinkjava6004.html)

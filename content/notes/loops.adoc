@@ -4,6 +4,10 @@
 
 We have now seen how to iterate by using recursion; recursion is a powerful tool, but Java also supports loops for iteration. A loop lets you go back and execute the same code over and over again depending on a condition.
 
+When talkin about loops we have:
+* the *loop condition* which determines whether the loops keeps executing
+* the *body of the loop*, which is the statements we want to execute several times (it is good practice to put the body between braces, even if it is just one statement)
+
 == The do-while loop
 The `do-while` loop allows you to execute a block of statements while a condition is true (your statements inside the loop should change the condition so that it eventually isn't true, or you get into an infinite loop). The statements are executed at least once. before checking the condition.
 
@@ -84,7 +88,7 @@ The for loop is basically a while loop, but with the initialization, condition a
 Its syntax is:
 [source,java]
 ----
-for(nitialization; condition; increment){
+for(initialization; condition; increment){
     // body of the loop
 } 
 ----
@@ -103,10 +107,58 @@ And we can raise a number to a given power as follows:
 include::{sourcedir}/Loops.java[tags=powerFor]
 ----
 
+The for loop is basically equivalent to the while loop; the only difference is that, if you declare a variable in the initialization clause, its scope is only within the loop, not outside of it.
+
+Notice that all 3 parts of the loop, initialization, condition and increment are optional; you just need to put the corresponding ; and leave it blank (we will see some examples later).
+
 == break and continue
+
+When you are inside a loop, the keyword `break` gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop.
+
+[source,java]
+.Reading with an 'infinite' while loop, and a break
+----
+include::{sourcedir}/Loops.java[tags=powerFor]
+----
+
+[source,java]
+.Reading with an 'for-ever' loop, and a break
+----
+include::{sourcedir}/Loops.java[tags=powerFor]
+----
 
 == More examples
 
 == Summary
+
+* Loops allow you to execute code a bunch of times, while a condition is true. 
+* Loops have a *condition* and a *body*. The loop will execute the body while the condition is true.
+* The do-while syntax is as follows:
+
+[source,java]
+----
+do {
+    // body of the loop
+} while(condition) ;
+----
+* The `while` syntax is as follows:
+
+[source,java]
+----
+while(condition){
+    // body of the loop
+} 
+----
+* the `for` loop is like a while loop, with the initialization, condition and increment in the same line; its syntax is as follows (the semicolons are part of the syntax), and each one of the parts is optional
+
+[source,java]
+----
+for(initialization; condition; increment){
+    // body of the loop
+} 
+----
+* Inside a loop, the `break` keyword will get you out of the loop
+* Inside a loop, the `continue` keyword will skip the rest of the body of the loop (and send you to check the condition again).
+* You normally guard any `break` and `continue` inside if statements, as a different way to get out of the loop.
 
 == Exercises

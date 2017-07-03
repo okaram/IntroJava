@@ -4,13 +4,12 @@ Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). 
 + Part 1
     + [Module 0](sessions/Fall2017/Module0.md) - Introduction and variables
     + [Module 1](sessions/Fall2017/Module1.md) - Functions
-    + [Module 2](sessions/Fall2017/Module2.md) - Full programs and IO
+    + [Module 2](sessions/Fall2017/Module2.md) - Full programs and using objects
     + [Module 3](sessions/Fall2017/Module3.md) - Conditionals (if, switch)
     + [Module 4](sessions/Fall2017/Module4.md) - Recursion
     + [Midterm review](sessions/Fall2017/ModuleM.md) - notice this term the Midterm does not include loops.
 + Part 2
     + [Module 5](sessions/Fall2017/Module5.md) - Loops
-    + [Module 6](sessions/Fall2017/Module6.md) - Using Objects
     + [Module 7](sessions/Fall2017/Module7.md) - Classes
     + [Module 8](sessions/Fall2017/Module8.md) - Arrays
     + [Module 9](sessions/Fall2017/Module9.md) - Inheritance and Interfaces
