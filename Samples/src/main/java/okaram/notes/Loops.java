@@ -109,7 +109,8 @@ class Loops {
     }
 
     // read numbers until you read -1 and return their sum
-    public static int readAndSum2(PrintStream out, Scanner in)
+    //tag::readBreak[]
+    public static int readAndSumBreak(PrintStream out, Scanner in)
     {
         int sum=0;
         int input;
@@ -122,6 +123,23 @@ class Loops {
         } 
         return sum;
     }
+    //end::readBreak[]
+
+    //tag::readBreakFor[]
+    public static int readAndSumBreak(PrintStream out, Scanner in)
+    {
+        int sum=0;
+        int input;
+        for( ; ; ) {
+            out.println("Please enter a number (-1 to stop)");
+            input=in.nextInt();
+            if(input==-1) 
+                break;
+            sum+=input;
+        } 
+        return sum;
+    }
+    //end::readBreakFor[]
 
     static boolean isEven(int n) { return n%2==0;}
 

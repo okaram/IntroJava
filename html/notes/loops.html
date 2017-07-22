@@ -708,18 +708,26 @@ It&#8217;s syntax is as follows:</p>
 <h2 id="_break_and_continue">4. break and continue</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop.</p>
+<p>When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out <strong>in the middle</strong> of a loop; this can be convenient, but also confusing, so use with some caution.</p>
+</div>
+<div class="paragraph">
+<p>For example, we could write a function that reads numbers until it gets -1 and return their sum, using a while statement with <code>true</code> as the condition (this would be an infinite loop without a break, as the condition never changes) and a break, as follows:</p>
 </div>
 <div class="listingblock">
 <div class="title">Reading with an 'infinite' while loop, and a break</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSumBreak</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
     <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
-        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
+        <span class="tok-k">while</span><span class="tok-o">(</span> <span class="tok-kc">true</span> <span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (-1 to stop)&quot;</span><span class="tok-o">);</span>
+            <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
+            <span class="tok-k">if</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">==-</span><span class="tok-mi">1</span><span class="tok-o">)</span>
+                <span class="tok-k">break</span><span class="tok-o">;</span>
+            <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
         <span class="tok-o">}</span>
-        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+        <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
     <span class="tok-o">}</span></code></pre>
 </div>
 </div>
@@ -819,7 +827,7 @@ It&#8217;s syntax is as follows:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-02 15:11:37 EDT
+Last updated 2017-07-21 21:22:43 EDT
 </div>
 </div>
 </body>

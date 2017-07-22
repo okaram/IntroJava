@@ -113,12 +113,13 @@ Notice that all 3 parts of the loop, initialization, condition and increment are
 
 == break and continue
 
-When you are inside a loop, the keyword `break` gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop.
+When you are inside a loop, the keyword `break` gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out *in the middle* of a loop; this can be convenient, but also confusing, so use with some caution.
 
+For example, we could write a function that reads numbers until it gets -1 and return their sum, using a while statement with `true` as the condition (this would be an infinite loop without a break, as the condition never changes) and a break, as follows:
 [source,java]
 .Reading with an 'infinite' while loop, and a break
 ----
-include::{sourcedir}/Loops.java[tags=powerFor]
+include::{sourcedir}/Loops.java[tags=readBreak]
 ----
 
 [source,java]
