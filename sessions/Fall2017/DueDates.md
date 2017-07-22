@@ -2,20 +2,21 @@ Tentative due Dates
 ===
 
 All assignments are due Sunday before midnight; For all assignments, you have a grace period until the following Wednesday, losing 10% of your grade.
-+ [Assignment 0](Assignments/A0.md) - Sunday Jan 15 @ 11:59 pm 
-+ [Assignment 1](Assignments/A1.md) - Sunday Jan 22 @ 11:59 pm 
-+ [Assignment 2](Assignments/A2.md) - Sunday Jan 29 @ 11:59 pm 
-+ [Assignment 3](Assignments/A3.md) - Sunday Feb 5 @ 11:59 pm 
-+ [Assignment 4](Assignments/A4.md) - Sunday Feb 12 @ 11:59 pm
-+ [Midterm](ModuleM.md) - Monday Feb 20 @ 6:30
++ [Assignment 0](Assignments/A0.md) - Sunday Aug 13 @ 11:59 pm (lenient with this deadline, if you joined late) 
++ [Assignment 1](Assignments/A1.md) - Sunday Aug 20 @ 11:59 pm  (possibly lenient with this deadline)
++ [Assignment 2](Assignments/A2.md) - Sunday Aug 27 @ 11:59 pm (deadlines become hard now :)
++ [Assignment 3](Assignments/A3.md) - Sunday Sep 3 @ 11:59 pm 
++ [Assignment 4](Assignments/A4.md) - Sunday Sep 17 @ 11:59 pm
++ [Assignment 5](Assignments/A5.md) - Sunday Sep 24 @ 11:59 pm
++ [Midterm](ModuleM.md) - Wednesday Sep 27 @ 6:30
     + Date for online students TBA
-    + Last Day to Withdraw With WF is Mar 1st
-+ [Assignment 5](Assignments/A5.md) - Sunday Mar 5 @ 11:59 pm
-+ [Assignment 6](Assignments/A6.md) - Sunday Mar 12 @ 11:59 pm
-+ [Assignment 7](Assignments/A7.md) - Sunday Mar 19 @ 11:59 pm
-+ [Assignment 8](Assignments/A8.md) - Sunday *Mar 19* @ 11:59 pm
-+ [Assignment 9](Assignments/A9.md) - Sunday Apr 9 @ 11:59 pm
-+ [Assignment 10](Assignments/A10.md) - Sunday Apr 9 @ 11:59 pm
-+ [Assignment 11](Assignments/A11.md) - Sunday Apr 23 @ 11:59 pm
-+ [Final Exam](ModuleF.md) - May  ,
+    + Last Day to Withdraw With WP is Oct  4th
++ NOTICE - No assignment due Oct 1
++ [Assignment 6](Assignments/A6.md) - Sunday Oct 8 @ 11:59 pm 
++ [Assignment 7](Assignments/A7.md) - Sunday Oct 15 @ 11:59 pm
++ [Assignment 8](Assignments/A8.md) - Sunday Oct 22 @ 11:59pm
++ [Assignment 9](Assignments/A9.md) - Sunday Oct 29 @ 11:59 pm
++ [Assignment 10](Assignments/A10.md) - Sunday Nov 6 @ 11:59 pm
++ Assignment 11 ? Lists and other data structures
++ [Final Exam](ModuleF.md) - TBA,
     + Date for online students TBA
