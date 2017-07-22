@@ -122,11 +122,14 @@ For example, we could write a function that reads numbers until it gets -1 and r
 include::{sourcedir}/Loops.java[tags=readBreak]
 ----
 
+As an interesting aside, we mentioned in a for loop all parts (initialization, condition and increment) are optional; in particular, if we make *all* empty, we get an equivalent of `while(true)`, as in the following example:
 [source,java]
 .Reading with an 'for-ever' loop, and a break
 ----
-include::{sourcedir}/Loops.java[tags=powerFor]
+include::{sourcedir}/Loops.java[tags=readBreakFor]
 ----
+
+=== continue
 
 == More examples
 
@@ -163,3 +166,7 @@ for(initialization; condition; increment){
 * You normally guard any `break` and `continue` inside if statements, as a different way to get out of the loop.
 
 == Exercises
+
+1. What would the following piece of code write ?
+
+2. Given the

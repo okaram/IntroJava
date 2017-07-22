@@ -731,18 +731,30 @@ It&#8217;s syntax is as follows:</p>
     <span class="tok-o">}</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>As an interesting aside, we mentioned in a for loop all parts (initialization, condition and increment) are optional; in particular, if we make <strong>all</strong> empty, we get an equivalent of <code>while(true)</code>, as in the following example:</p>
+</div>
 <div class="listingblock">
 <div class="title">Reading with an 'for-ever' loop, and a break</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kt">int</span> <span class="tok-nf">power_for</span><span class="tok-o">(</span><span class="tok-kt">int</span> <span class="tok-n">base</span><span class="tok-o">,</span> <span class="tok-kt">int</span> <span class="tok-n">exponent</span><span class="tok-o">)</span>
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSumBreak</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
     <span class="tok-o">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
-        <span class="tok-k">for</span><span class="tok-o">(</span>  <span class="tok-n">pow</span><span class="tok-o">=</span><span class="tok-mi">1</span><span class="tok-o">;</span> <span class="tok-n">exponent</span><span class="tok-o">&gt;</span><span class="tok-mi">0</span><span class="tok-o">;</span> <span class="tok-o">--</span><span class="tok-n">exponent</span><span class="tok-o">)</span> <span class="tok-o">{</span>
-            <span class="tok-n">pow</span><span class="tok-o">*=</span><span class="tok-n">base</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
+        <span class="tok-k">for</span><span class="tok-o">(</span> <span class="tok-o">;</span> <span class="tok-o">;</span> <span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (-1 to stop)&quot;</span><span class="tok-o">);</span>
+            <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
+            <span class="tok-k">if</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">==-</span><span class="tok-mi">1</span><span class="tok-o">)</span>
+                <span class="tok-k">break</span><span class="tok-o">;</span>
+            <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
         <span class="tok-o">}</span>
-        <span class="tok-k">return</span> <span class="tok-n">pow</span><span class="tok-o">;</span>
+        <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
     <span class="tok-o">}</span></code></pre>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_continue">4.1. continue</h3>
+
 </div>
 </div>
 </div>
@@ -821,13 +833,22 @@ It&#8217;s syntax is as follows:</p>
 <div class="sect1">
 <h2 id="_exercises">7. Exercises</h2>
 <div class="sectionbody">
-
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What would the following piece of code write ?</p>
+</li>
+<li>
+<p>Given the</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-21 21:22:43 EDT
+Last updated 2017-07-21 21:38:16 EDT
 </div>
 </div>
 </body>
