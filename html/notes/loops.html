@@ -708,7 +708,9 @@ It&#8217;s syntax is as follows:</p>
 <h2 id="_break_and_continue">4. break and continue</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out <strong>in the middle</strong> of a loop; this can be convenient, but also confusing, so use with some caution.</p>
+<p>initially, loops were promoted as having only one way to get out of it (see <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>)
+=== break
+When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out <strong>in the middle</strong> of a loop; this can be convenient, but also confusing, so use with some caution.</p>
 </div>
 <div class="paragraph">
 <p>For example, we could write a function that reads numbers until it gets -1 and return their sum, using a while statement with <code>true</code> as the condition (this would be an infinite loop without a break, as the condition never changes) and a break, as follows:</p>
@@ -846,9 +848,15 @@ It&#8217;s syntax is as follows:</p>
 </div>
 </div>
 </div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. <a href="http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF">Goto statement considered harmful</a>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-21 21:38:16 EDT
+Last updated 2017-07-21 21:42:43 EDT
 </div>
 </div>
 </body>
