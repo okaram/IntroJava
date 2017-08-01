@@ -14,7 +14,7 @@ It is perfectly OK if you have none :)
 ## (M2) I want to write a program to ...
 Do you have any particular programs or kinds of programs you'd like to write ? Please describe them here.
 
-## Questions for midterm
-What would be a good question for our midterm exam ?
+## Good practice / midterm questions
+What would be a good question for our midterm exam ? Just for practice ?
 
 
