@@ -1,0 +1,80 @@
+= CS5000 Foundations of Programming - Syllabus
+
+== Instructor Information
+
+Name: Orlando Karam
+See D2L for contact info.
+
+== Course Description (from catalog)
+The object-oriented programming language Java is presented with emphasis on core programming topics and OOP features including inheritance and polymorphism. The course presents and introduction to data structures including 1D and 2D arrays and the ArrayList and also discusses file I/O and exception handling.
+
+Prerequisite: None
+
+== Textbook
+Required (but freely available online): Think Java, by Allen B Downey - http://greenteapress.com/thinkapjava/
+
+== Course Objectives
+
+1. Demonstrate skills in the use of core programming concepts such as data types, arithmetic expressions, control structures, logical expressions, selection, and repetition 
+2. Master basic class and object oriented concepts including class definition, using classes, inheritance, and polymorphism 
+3. Solve programming problems which include 1D and 2D arrays and dynamic collections such as the ArrayList 
+4. Demonstrate an understanding of file I/O and exception handling techniques 
+
+== Assessment
+
+
+=== Grading scale
+
+[options="header"]
+|======================
+| Percentage range  | Letter grade
+| 90% - 100%        | A
+| 80% - 89.99%      | B
+| 70% - 79.99%      | C
+| 60% - 79.99%      | D
+| <60%              | F
+|======================
+
+=== Item weight
+
+[options="header"]
+|======================
+| Item   | Weight
+| Online discussions        | 5%
+| Programming Assignments   | 35%
+| Midterm                   | 25%
+| Final Exam                | 35%
+|======================
+
+== Class policies
+
+=== Deadlines 
+As much as possible, assignments will be due on Sunday @ 11:59 pm (with grace period until Wed @ 6:29pm). We will have things due practically every week.
+
+=== Academic Misconduct 
+If a student is found obtaining or granting inappropriate help in this course on any assignment (test, quiz, exam, homework, etc.) consequences can range from a 0 on the assignment/quiz in question, receiving a grade of 'F' for the course, or a recommendation of expulsion from the university. I encourage you to read and review the university's policies in the catalog (online).  NOTE: code that is copied from the Web will result in an automatic 0 and is considered an academic violation. 
+
+=== Assessment 
+Assignments are graded against a rubric - meaning that it is possible to receive at least some partial credit if something reasonable is turned in. However, it is expected that programs will at least compile. If you are having difficulty compiling portions of your code, comment them out and leave a note about your thought process. 
+Please note that no credit will be given for late assignments without the explicit permission of the instructor. If you have difficulties, please get in touch with me before the assignment is due. 
+
+=== Communication 
+Professional communication is important in presenting yourself.  You must use proper spelling, punctuation, grammar, etc. when communicating in your submissions and via email to me.  Do not use L337 or texting shorthand when emailing me.  I don't do this to be mean; rather, I want to encourage your professional development. 
+
+I try to respond to all emails within 48 hours if sent M-F, and within 72 hours on the weekends. Feel free to send another email or contact me through skype or text messaging if you need a faster response.  
+
+=== Make-up Policy 
+If a student must miss a test due to a legitimate reason (e.g. documented illness, family death, etc), then a make-up exam will be administered. It is the responsibility of the student to coordinate with the instructor as soon as possible.
+
+=== Religious Observance 
+If a student wishes to observe a religious holiday, they must notify the instructor at least two weeks in advance to discuss acceptable ways of making up any missed work because of the absence. It is the student's responsibility to be proactive and to handle this early in the semester. 
+
+=== Students with Disabilities 
+If you have a documented disability as described by the Rehabilitation Act of 1973 and the Americans with Disabilities Act (ADA) that may require you to need assistance attaining accessibility to instructional content to meet course requirements, we recommend that you contact the ATTIC at 678-915-7361 as soon as possible. It is then your responsibility to contact and meet with your instructor. The ATTIC can assist you and the instructor in formulating a reasonable accommodation plan and provide support in developing appropriate accommodations for your disability. Course requirements will not be waived but accommodations will be made, when appropriate, to assist you to meet the requirements. 
+
+=== Course Schedule 
+To help with pacing, the schedule is subject to change; this includes the dates on assignments and exams. If dates change, they will be announced in class, email and D2L. However, it is expected that students review the schedule periodically. 
+
+=== Proctored Exams 
+There will be two proctored exams (a midterm and a final). Ideally, you would come to KSU for those exams (either at the face-to-face time or at another time set up for online students). For online studetns, there will be alternate proctoring arrangements (either you arrange for proctoring at a library or university near you, or we can do online proctoring; the exam is the same and is filled on paper).
+
