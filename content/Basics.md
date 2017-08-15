@@ -15,7 +15,7 @@ The Java compiler is called *javac*. Usually we name our java files with the .ja
 Notice that at the very beginning we will use web sites like [JavaRepl](http://www.javarepl.com) and [CodingBat](http://codingbat.com) which directly interpret and print the results for java code. This is quite useful, but not the usual way.
 
 ## IDEs
-Many times, you want a program that does more than a simple text editor; we many times use an Integrated Development Environment, or IDE, which understands our programming langugage and can help us with syntax highlighting and auto-completing options.
+Many times, you want a program that does more than a simple text editor; we many times use an Integrated Development Environment, or IDE, which understands our programming language and can help us with syntax highlighting and auto-completing options.
 
 There are many IDEs available for java; the most popular educational IDEs are [DrJava](http://drjava.org) and JGrasp, and the most popular professional IDEs are [Eclipse](http://www.eclipse.org), [Netbeans](https://netbeans.org/) and [IntelliJ Idea](https://www.jetbrains.com/idea/). I will be using Eclipse in this class, but you're free to use whichever IDE or text editor you prefer.
 
@@ -30,8 +30,7 @@ When you work on a program, you will make many revisions; in order to keep track
 
 You need to install a few programs for this class:
 * The Java Development Kit - JDK (from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Make sure to install the JDK, not just the JRE. Java 8 is the current version, so just install the latest minor number for java 8.
-* A Git client (you can find good ones at [http://www.git-scm.com/downloads](http://www.git-scm.com/downloads)).
-* [Eclipse](http://www.eclipse.org/). This is an IDE, and all my videos etc will use it; if you prefer to use a different one it is OK.
+* A Git client (you can find good ones at [http://www.git-scm.com/downloads](http://www.git-scm.com/downloads)). In windows, this gives you git-bash.
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/). This is an IDE, and most of my videos etc will use it; if you prefer to use a different one it is OK.
 * You need to create an account on [GitLab](http://gitlab.com).
 
-    

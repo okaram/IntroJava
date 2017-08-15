@@ -67,7 +67,7 @@ There's a strong convention to start variables with a lowecase letter, and use c
 
 In Java we have the standard mathematical operators, with slight variations:
 * +, - (and unary minus) behave as in elementary school, with the operators being evaluated from left to right (in the order in which we read them). So, for example, 3+4-1-2 yields 4 (3+4=7, 7-1=6, 6-2=4)
-* * is the multiplication operator (instead of the x symbol, since it would be confused with the letter x)
+* \* is the multiplication operator (instead of the x symbol, since it would be confused with the letter x)
 * / is the integer division operator (it calculates the integer value, like in elementary school :), so 3/4 yields 0, and 4/3 yields 1, NOT 1.333)
 * % is the integer remainder or modulo operator, so 5%2 is 1, since 5 divided by 2 is 2 with a remainder of 1.
 
