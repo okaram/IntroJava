@@ -2,10 +2,10 @@ Tentative due Dates
 ===
 
 All assignments are due Sunday before midnight; For all assignments, you have a grace period until the following Wednesday, losing 10% of your grade.
-+ [Assignment 0](Assignments/A0.md) - Sunday Aug 13 @ 11:59 pm (lenient with this deadline, if you joined late) 
-+ [Assignment 1](Assignments/A1.md) - Sunday Aug 20 @ 11:59 pm  (possibly lenient with this deadline)
-+ [Assignment 2](Assignments/A2.md) - Sunday Aug 27 @ 11:59 pm (deadlines become hard now :)
-+ [Assignment 3](Assignments/A3.md) - Sunday Sep 3 @ 11:59 pm 
++ [Assignment 0](Assignments/A0.md) - Sunday Aug 20 @ 11:59 pm (lenient with this deadline, if you joined late) 
++ [Assignment 1](Assignments/A1.md) - Sunday Aug 27 @ 11:59 pm  (possibly lenient with this deadline)
++ [Assignment 2](Assignments/A2.md) - Sunday Sep 3 @ 11:59 pm (deadlines become hard now :)
++ [Assignment 3](Assignments/A3.md) - Sunday Sep 10 @ 11:59 pm 
 + [Assignment 4](Assignments/A4.md) - Sunday Sep 17 @ 11:59 pm
 + [Assignment 5](Assignments/A5.md) - Sunday Sep 24 @ 11:59 pm
 + [Midterm](ModuleM.md) - Wednesday Sep 27 @ 6:30
