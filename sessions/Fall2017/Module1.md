@@ -23,6 +23,7 @@ Module 1: Functions and Methods
         + [posNeg](http://codingbat.com/prob/p159227)
         + [frontBack](http://codingbat.com/prob/p123384)
         + [hasTeen](http://codingbat.com/prob/p178986)
+		+ [sameLastDigit](http://codingbat.com/prob/p125339)
     + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
     + [Ry's git tutorial](http://rypress.com/tutorials/git/index) - learn more about git
 
