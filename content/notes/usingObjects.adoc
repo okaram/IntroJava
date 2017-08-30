@@ -173,6 +173,15 @@ You can directly call the toString method of an object, and also Java will call 
 
 === clone
 
+The `clone` method of an object returns a new object, with the same data as its parameter (performs a shallow copy). Notice this method returns an instance of the class Object (since it is defined in the class Object), so we need to cast it to whatever we want.
+
+For example, if we have a point `p`, we can define a new variable of type Point, and assign it a clone of p, with the following code:
+[source,java]
+.cloning example
+----
+Point p1=(Point) p.clone();
+----
+
 
 === garbage collection
 We have seen how to create objects, and also that variables can reference those objects; when we create an object, we are allocating some memory (RAM) in the computer to store its state; if we keep all objects ever created in memory, we will eventually run out of space !
@@ -267,8 +276,34 @@ include::{sourcedir}/UsingObjects.java[tags=stringIdentity]
 
 Similarly, ps1 and ps2 are coming from methods which dynamically create Strings, so Java will not be able to optimize them, and so ps1 != ps2.
 
-=== String.format
+=== other string methods
+The String class contains many methods; among the most useful ones:
 
+* `length` - returns the lenght of the String
+* `substring(first, last+1)` - returns a piece of the string (another string) -- numbering starts at 0
+* `.toLowerCase`, `.toUpperCase` - return the string with all upper or all lowercase
+* `.charAt(place)` - returns the character at a given place (this is one character, not a String) -- remember numbering starts at 0
+* `.equals` - tells if the string is equal to another
+
+=== String.equals
+
+Strings are also special since Java will not create two strings if you use the same String constant, but will re-use the *same* string, so == would *sometimes* work.
+
+For example:
+[source,java]
+----
+"abc" == "abc"
+----
+
+Would return true, but
+
+[source,java]
+----
+"abc" == "ABC".toLowerCase() 
+----
+would return *false* ! 
+
+To be safe, we should compare strings with .equals, not ==
 == PrintStream
 Another class that we will be using is https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html[java.io.PrintStream] . The simplest way to print in Java is by calling the println method of the PrintStream class. The System class has a static field, called out, which gets initialized to a PrintStream that would print to the console before our program runs, so we can write code like:
 [source,java]
@@ -295,7 +330,7 @@ The advantages of writing our functions like this are that we make the parameter
 
 == InputStream and Scanner classes
 
-Another class we will use a lot is the [Scanner] class, which we use to read Strings, ints and such from the console footnote:[Or from files, the network or other devices, if we use a different InputStream]
+Another class we will use a lot is the [Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html) class, which we use to read Strings, ints and such from the console footnote:[Or from files, the network or other devices, if we use a different InputStream]
 
 The `System` class has a field, called `in`, which is actually an InputStream ; the InputStream class is not that useful (it only allows you to read bytes), so Java created the Scanner class, which allows you to read Strings etc.
 
