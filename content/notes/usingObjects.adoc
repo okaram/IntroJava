@@ -299,11 +299,13 @@ Would return true, but
 
 [source,java]
 ----
-"abc" == "ABC".toLowerCase() 
+"abc" == new String("abc")
 ----
 would return *false* ! 
 
 To be safe, we should compare strings with .equals, not ==
+
+
 == PrintStream
 Another class that we will be using is https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html[java.io.PrintStream] . The simplest way to print in Java is by calling the println method of the PrintStream class. The System class has a static field, called out, which gets initialized to a PrintStream that would print to the console before our program runs, so we can write code like:
 [source,java]

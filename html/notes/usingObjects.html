@@ -998,16 +998,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span class="tok-s">&quot;abc&quot;</span> <span class="tok-o">==</span> <span class="tok-s">&quot;ABC&quot;</span><span class="tok-o">.</span><span class="tok-na">toLowerCase</span><span class="tok-o">()</span></code></pre>
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-s">&quot;abc&quot;</span> <span class="tok-o">==</span> <span class="tok-k">new</span> <span class="tok-n">String</span><span class="tok-o">(</span><span class="tok-s">&quot;abc&quot;</span><span class="tok-o">)</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>would return <strong>false</strong> !</p>
 </div>
 <div class="paragraph">
-<p>To be safe, we should compare strings with .equals, not ==
-== PrintStream
-Another class that we will be using is <a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html">java.io.PrintStream</a> . The simplest way to print in Java is by calling the println method of the PrintStream class. The System class has a static field, called out, which gets initialized to a PrintStream that would print to the console before our program runs, so we can write code like:</p>
+<p>To be safe, we should compare strings with .equals, not ==</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_printstream">4. PrintStream</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Another class that we will be using is <a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html">java.io.PrintStream</a> . The simplest way to print in Java is by calling the println method of the PrintStream class. The System class has a static field, called out, which gets initialized to a PrintStream that would print to the console before our program runs, so we can write code like:</p>
 </div>
 <div class="listingblock">
 <div class="title">String variables from constants, new and methods</div>
@@ -1046,9 +1053,8 @@ Another class that we will be using is <a href="https://docs.oracle.com/javase/8
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="_inputstream_and_scanner_classes">4. InputStream and Scanner classes</h2>
+<h2 id="_inputstream_and_scanner_classes">5. InputStream and Scanner classes</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Another class we will use a lot is the [Scanner](<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html" class="bare">https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html</a>) class, which we use to read Strings, ints and such from the console <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup></p>
@@ -1113,7 +1119,7 @@ Another class that we will be using is <a href="https://docs.oracle.com/javase/8
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-30 18:30:31 EDT
+Last updated 2017-08-30 19:08:45 EDT
 </div>
 </div>
 </body>
