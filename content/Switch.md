@@ -1,7 +1,7 @@
 The `switch` statement
 ===
 
-Another conditional statement, the `swithc` statement, allows us to have more than one option; however, we have to use specific values, not conditions, and it only works on integral types (ints, char, long) and, since Java 7, on Strings.
+Another conditional statement, the `switch` statement, allows us to have more than one option; however, we have to use specific values, not conditions, and it only works on integral types (ints, char, long) and, since Java 7, on Strings.
 
 The syntax is as follows:
 ```java
