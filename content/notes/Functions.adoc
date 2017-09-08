@@ -71,7 +71,7 @@ OK, everything seems normal here; lets look at the next one:
 ----
 int n3=add( add(2,3), add(5,7));
 ----
-Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 12.
+Here, first we evaluate the arguments, in left-to-right order, so the compiler will first evaluate `add(2,3)`, in its own activation frame, number1=2, number2=3, sum=5 and returns 5; then evaluates `add(5,7)` in its own activation frame, returning 12, and finally evaluates the outer expression, which is equivalent to add(5,12), yielding 17.
  
 == Function composition
 We can also call functions within other functions; for example, we can define the following function:
