@@ -10,3 +10,4 @@ I try to record all lectures, and upload to youtube. The playlist for this term 
 * [Aug 28](https://youtu.be/SO-PxeWHGA4) - Using objects, including printstream and scanner
 * [Aug 30](https://youtu.be/Y4muNhKUvsg) - More on using objects, and if statements
 * [Sep 6](https://youtu.be/82vtKEnt74A) - if and switch statements (conditionals)
+* [Sep 13](https://youtu.be/1Hui-PF2cYs) - Recursion
