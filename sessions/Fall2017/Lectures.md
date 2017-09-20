@@ -11,3 +11,4 @@ I try to record all lectures, and upload to youtube. The playlist for this term 
 * [Aug 30](https://youtu.be/Y4muNhKUvsg) - More on using objects, and if statements
 * [Sep 6](https://youtu.be/82vtKEnt74A) - if and switch statements (conditionals)
 * [Sep 13](https://youtu.be/1Hui-PF2cYs) - Recursion
+* [Sep 18](https://youtu.be/TQf5VSWd2-g) - More recursion
