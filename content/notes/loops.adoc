@@ -50,7 +50,21 @@ For example, the following function would read numbers until 0 (as in the do-whi
 [source,java]
 .readAndSum using a while loop
 ----
-include::{sourcedir}/Loops.java[tags=readAndSumDoWhile]
+    public static int readAndSumWhile(PrintStream out, Scanner in)
+    {
+        int sum=0;
+        int input;
+
+        out.println("Please enter a number (0 to stop)");
+        input=in.nextInt();
+        sum=sum+input;
+        while(input!=0) {
+            out.println("Please enter another number (0 to stop)");
+            input=in.nextInt();
+            sum+=input;
+        }
+        return sum;
+    }
 ----
 
 === counting with while loops
@@ -113,7 +127,8 @@ Notice that all 3 parts of the loop, initialization, condition and increment are
 
 == break and continue
 
-initially, loops were promoted as having only one way to get out of it (see footnote:[http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF[Goto statement considered harmful -  Commun. ACM 11 (1968), 3: 147–148, By Edsger Dijkstra ]])
+Initially, loops were promoted as having only one way to get out of it (see footnote:[http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF[Goto statement considered harmful -  Commun. ACM 11 (1968), 3: 147–148, By Edsger Dijkstra ]]). Although this is a good idea, we sometimes want to exit in the *middle* of a loop. The keywords `break` and `continue` let us modify the execution of a loop.
+
 === break
 When you are inside a loop, the keyword `break` gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out *in the middle* of a loop; this can be convenient, but also confusing, so use with some caution.
 
@@ -132,6 +147,33 @@ include::{sourcedir}/Loops.java[tags=readBreakFor]
 ----
 
 === continue
+
+The keyword `continue` lets us skip the rest of the body of a loop (from when it is executed until the end of the body). The execution continues with the checking of the condition.
+
+For example, the following function uses continue to ensure only even numbers are added to the sum.
+
+[source,java]
+.continue example
+---
+    public static int readAndSumEven(PrintStream out, Scanner in)
+    {
+        int sum=0;
+        int input;
+
+        while( true ) {
+            out.println("Please enter a number (-1 to stop)");
+            input=in.nextInt();
+            if(input == -1) {
+                break;
+            }
+            if(!isEven(input)) {
+                continue;
+            }
+            sum += input;
+        }
+        return sum;
+    }
+---
 
 == More examples
 

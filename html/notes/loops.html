@@ -579,15 +579,19 @@ It&#8217;s syntax is as follows:</p>
 <div class="listingblock">
 <div class="title">readAndSum using a while loop</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSum</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
+<pre class="pygments highlight"><code data-lang="java">    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSumWhile</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
     <span class="tok-o">{</span>
         <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
         <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-k">do</span> <span class="tok-o">{</span>
-            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (0 to stop)&quot;</span><span class="tok-o">);</span>
+
+        <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter a number (0 to stop)&quot;</span><span class="tok-o">);</span>
+        <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
+        <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-n">sum</span><span class="tok-o">+</span><span class="tok-n">input</span><span class="tok-o">;</span>
+        <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">!=</span><span class="tok-mi">0</span><span class="tok-o">)</span> <span class="tok-o">{</span>
+            <span class="tok-n">out</span><span class="tok-o">.</span><span class="tok-na">println</span><span class="tok-o">(</span><span class="tok-s">&quot;Please enter another number (0 to stop)&quot;</span><span class="tok-o">);</span>
             <span class="tok-n">input</span><span class="tok-o">=</span><span class="tok-n">in</span><span class="tok-o">.</span><span class="tok-na">nextInt</span><span class="tok-o">();</span>
             <span class="tok-n">sum</span><span class="tok-o">+=</span><span class="tok-n">input</span><span class="tok-o">;</span>
-        <span class="tok-o">}</span> <span class="tok-k">while</span><span class="tok-o">(</span><span class="tok-n">input</span><span class="tok-o">!=</span><span class="tok-mi">0</span><span class="tok-o">);</span>
+        <span class="tok-o">}</span>
         <span class="tok-k">return</span> <span class="tok-n">sum</span><span class="tok-o">;</span>
     <span class="tok-o">}</span></code></pre>
 </div>
@@ -708,9 +712,12 @@ It&#8217;s syntax is as follows:</p>
 <h2 id="_break_and_continue">4. break and continue</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>initially, loops were promoted as having only one way to get out of it (see <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>)
-=== break
-When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out <strong>in the middle</strong> of a loop; this can be convenient, but also confusing, so use with some caution.</p>
+<p>Initially, loops were promoted as having only one way to get out of it (see <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>). Although this is a good idea, we sometimes want to exit in the <strong>middle</strong> of a loop. The keywords <code>break</code> and <code>continue</code> let us modify the execution of a loop.</p>
+</div>
+<div class="sect2">
+<h3 id="_break">4.1. break</h3>
+<div class="paragraph">
+<p>When you are inside a loop, the keyword <code>break</code> gets you out of the loop immediately(you normally put it inside the loop). Execution continues right after the body of the loop. This allows you to get out <strong>in the middle</strong> of a loop; this can be convenient, but also confusing, so use with some caution.</p>
 </div>
 <div class="paragraph">
 <p>For example, we could write a function that reads numbers until it gets -1 and return their sum, using a while statement with <code>true</code> as the condition (this would be an infinite loop without a break, as the condition never changes) and a break, as follows:</p>
@@ -754,9 +761,43 @@ When you are inside a loop, the keyword <code>break</code> gets you out of the l
     <span class="tok-o">}</span></code></pre>
 </div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_continue">4.1. continue</h3>
-
+<h3 id="_continue">4.2. continue</h3>
+<div class="paragraph">
+<p>The keyword <code>continue</code> lets us skip the rest of the body of a loop (from when it is executed until the end of the body). The execution continues with the checking of the condition.</p>
+</div>
+<div class="paragraph">
+<p>For example, the following function uses continue to ensure only even numbers are added to the sum.</p>
+</div>
+<div class="listingblock">
+<div class="title">continue example</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="java"><span class="tok-o">---</span>
+    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">int</span> <span class="tok-nf">readAndSumEven</span><span class="tok-o">(</span><span class="tok-n">PrintStream</span> <span class="tok-n">out</span><span class="tok-o">,</span> <span class="tok-n">Scanner</span> <span class="tok-n">in</span><span class="tok-o">)</span>
+    <span class="tok-o">{</span>
+        <span class="tok-kt">int</span> <span class="tok-n">sum</span><span class="tok-o">=</span><span class="tok-mi">0</span><span class="tok-o">;</span>
+        <span class="tok-kt">int</span> <span class="tok-n">input</span><span class="tok-o">;</span></code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>        while( true ) {
+            out.println("Please enter a number (-1 to stop)");
+            input=in.nextInt();
+            if(input == -1) {
+                break;
+            }
+            if(!isEven(input)) {
+                continue;
+            }
+            sum += input;
+        }
+        return sum;
+    }
+---</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -856,7 +897,7 @@ When you are inside a loop, the keyword <code>break</code> gets you out of the l
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-21 21:44:05 EDT
+Last updated 2017-09-20 19:58:39 EDT
 </div>
 </div>
 </body>
