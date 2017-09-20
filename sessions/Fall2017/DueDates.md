@@ -7,9 +7,9 @@ All assignments are due Sunday before midnight; For all assignments, you have a 
 + [Assignment 2](Assignments/A2.md) - Sunday Sep 3 @ 11:59 pm (deadlines become hard now :)
 + [Assignment 3](Assignments/A3.md) - Sunday Sep 10 @ 11:59 pm 
 + [Assignment 4](Assignments/A4.md) - Sunday Sep 17 @ 11:59 pm
-+ [Assignment 5](Assignments/A5.md) - Sunday Sep 24 @ 11:59 pm
++ [Assignment 5](Assignments/A5.md) - Sunday **SEP 31** @ 11:59 pm
 + [Midterm](ModuleM.md) - Wednesday Sep 27 @ 6:30
-    + Date for online students TBA
+    + Date for online students - Can come Wed, or Sunday Sep 31, or arrange for proctoring, or hangouts proctoring (hangouts preferably on those dates)
     + Last Day to Withdraw With WP is Oct  4th
 + NOTICE - No assignment due Oct 1
 + [Assignment 6](Assignments/A6.md) - Sunday Oct 8 @ 11:59 pm 
