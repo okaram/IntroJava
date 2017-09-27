@@ -13,3 +13,4 @@ I try to record all lectures, and upload to youtube. The playlist for this term 
 * [Sep 13](https://youtu.be/1Hui-PF2cYs) - Recursion
 * [Sep 18](https://youtu.be/TQf5VSWd2-g) - More recursion
 * [Sep 20](https://youtu.be/Ub3sEWL_W1w) - Loops (NOT in the midterm)
+* [Sep 25][https://youtu.be/WbL8kcFJxBw] - Midterm review
