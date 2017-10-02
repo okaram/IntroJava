@@ -5,6 +5,11 @@ Midterm Review
 + [Review paper](MidtermReview.pdf) and (almost complete)[Solutions](MidtermReview-WithSolutions.pdf) 
 + [Previous midterm](../../content/CS5000Midterm-Sunday.pdf) from Spring 16, I think.
 
++ Fall 17 Midterm
+	+ [V1 - Wednesday](../../content/exams/f17/midterm.pdf)
+	+ [V2 - Sunday](../../content/exams/f17/midterm_sunday.pdf)
+	+ [With solutions](../../content/exams/f17/midterm_with_solutions.pdf)
+
 ## Codingbat problems
 Here are some good problems from CodingBat for you to try, as studying for the test (try them with different loops, recursion, etc)
 ### Ifs
