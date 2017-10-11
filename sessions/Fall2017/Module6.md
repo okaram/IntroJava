@@ -1,15 +1,14 @@
-Module 6: Using Objects
+Module 7: Defining Classes 
 ===
 ## Materials
-+ [Using objects](../../content/UsingObjects.md) 
-+ Book Chapters:
-    + [Chapter 9 - Strings and things](http://greenteapress.com/thinkjava6/html/thinkjava6010.html)
-    + [Chapter 10 - Objects](http://greenteapress.com/thinkjava6/html/thinkjava6011.html)
-+ Videos 
-    + From Dr Chastine
-        + [Object Oriented Programming](https://www.youtube.com/watch?v=c3CVKinpGCE&list=UUSH2TieRlco7uQOGU8Vppnw)
-    + Old lectures
-        + [Old lecture](https://youtu.be/iohA0kYcFjo) - using objects
++ [Intro to Classes](../../content/IntroClasses.md) 
+
++ Book chapters
+    + [Chapter 11 - Classes](http://greenteapress.com/thinkjava6/html/thinkjava6012.html)
+    
++ Videos
+    + [OOP Coding](https://www.youtube.com/watch?v=l1OsA5Q6Acs&list=UUSH2TieRlco7uQOGU8Vppnw) - from Dr Chastine
+    + [Old lecture](https://youtu.be/9X7-8Gro7rg) - classes
 
 + Assignment
-    + [Assignment 6 - Objects](Assignments/A6.md)
+    + [Assignment 7 - Classes](Assignments/A7.md)

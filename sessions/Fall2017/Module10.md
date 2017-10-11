@@ -1,18 +1,16 @@
-Module 10: Collections
+Module 11: Exceptions, IO and Unit Testing
 ===
 ## Materials
-
-+ [Collections](../../content/GenericsAndCollections.md) - and [Lists video](https://youtu.be/U5U0CCihr_Y), [Maps video](https://youtu.be/oAzDXMMYG6Q)
-	+ Example - Map and Frequencies - [Video](https://youtu.be/L62ldfAunoc) and [Code](../../Samples/src/main/java/karamo/MapFrequencyExample.java)
-	+ Example - Map and Directory[Video](https://youtu.be/sBLP03qBvyQ) and [Code](../../Samples/src/main/java/karamo/DirectoryExample.java)
-
-+ Book chapters
-    + [Oracle Java tutorial - Collections trail](https://docs.oracle.com/javase/tutorial/collections/)
-
++ [Exceptions](../../content/Exceptions.md) - and [Video](https://youtu.be/Ja97F71AXSc)
++ [File Input and Output](../../content/FileIO.md) - and [Video](https://youtu.be/MRVaHRFwzdM)
++ Other sources
+    + [Oracle Java Tutorial - Exceptions trail](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
+    + [Oracle Java Tutorial - File I/O](https://docs.oracle.com/javase/tutorial/essential/io/index.html)
+    + [Book - Appendix B Input and Output](http://greenteapress.com/thinkjava5/html/thinkjava020.html)
 + Videos
-    + [Boxed values](https://youtu.be/gldyTRi0ODA)
-    + [Lists](https://youtu.be/PwPCKGuSUNg)
-    + [Old Lecture](https://youtu.be/e9-F0wG81fQ) - Collections
+    + [Old Lecture](https://youtu.be/QUPKpNGf8BU)
+    + [Exceptions](https://www.youtube.com/watch?v=iaPqtwA32Xk&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine
+    + [File I/O](https://www.youtube.com/watch?v=BwSUN--Fyl4&list=UUSH2TieRlco7uQOGU8Vppnw) - File I/O
 
 + Assignment
-    + [Assignment 10 - Collections](Assignments/A10.md)
+    + [Assignment 11 - Exceptions and IO](Assignments/A11.md)
