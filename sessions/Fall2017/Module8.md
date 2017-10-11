@@ -1,4 +1,4 @@
-Module 9: Inheritance and Interfaces 
+Module 8: Inheritance and Interfaces 
 ## Materials
 
 + [Interfaces and Polymorphism](../../content/InterfacesAndPolymorphism.md) - and [Interface video](https://youtu.be/ILVYnwbB96o)
