@@ -1,4 +1,4 @@
-Module 10: Collections
+Module 9: Collections
 ===
 ## Materials
 
@@ -15,4 +15,4 @@ Module 10: Collections
     + [Old Lecture](https://youtu.be/e9-F0wG81fQ) - Collections
 
 + Assignment
-    + [Assignment 10 - Collections](Assignments/A10.md)
+    + [Assignment 9 - Collections](Assignments/A9.md)

@@ -17,4 +17,4 @@ Module 8: Inheritance and Interfaces
     + [old Lecture](https://youtu.be/eqZGT2ADm7U) - Inheritance and interfaces
 
 + Assignment
-    + [Assignment 9 - Interfaces](Assignments/A9.md)
+    + [Assignment 8 - Interfaces](Assignments/A8.md)

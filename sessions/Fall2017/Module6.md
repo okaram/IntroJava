@@ -1,4 +1,4 @@
-Module 7: Defining Classes 
+Module 6: Defining Classes 
 ===
 ## Materials
 + [Intro to Classes](../../content/IntroClasses.md) 
@@ -11,4 +11,4 @@ Module 7: Defining Classes
     + [Old lecture](https://youtu.be/9X7-8Gro7rg) - classes
 
 + Assignment
-    + [Assignment 7 - Classes](Assignments/A7.md)
+    + [Assignment 6 - Classes](Assignments/A7.md)

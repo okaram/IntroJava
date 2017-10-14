@@ -16,4 +16,4 @@ Module 7: Arrays
     + [Old lecture](https://youtu.be/b-7-Rj0qfiM) - arrays
 
 + Assignment
-    + [Assignment 8 - Arrays](Assignments/A8.md)
+    + [Assignment 7 - Arrays](Assignments/A7.md)
