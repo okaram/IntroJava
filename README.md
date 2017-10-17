@@ -21,5 +21,6 @@ Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). 
 * [Resources](content/Resources.md)
 * [Samples](Samples/src/main/java)
 * [Lecture Videos](sessions/Fall2017/Lectures.md)
-* [Due dates](sessions/Fall2017/DueDates.md) - Spring 17
-* [Sample Programs](https://github.com/okaram/CS5kSamples/tree/master/src/main/java/ksu/cs5000/spring17) - From our lectures
+* [Due dates](sessions/Fall2017/DueDates.md) - Fall 17
+* [Lecture examples](https://gitlab.com/orlandokaram/cs5k-f17Examples/tree/master) for Fall 17 (current semester)
+* [Sample Programs](https://github.com/okaram/CS5kSamples/tree/master/src/main/java/ksu/cs5000/spring17) - From Spring 17 lectures
