@@ -11,4 +11,4 @@ Module 6: Defining Classes
     + [Old lecture](https://youtu.be/9X7-8Gro7rg) - classes
 
 + Assignment
-    + [Assignment 6 - Classes](Assignments/A7.md)
+    + [Assignment 6 - Classes](Assignments/A6.md)
