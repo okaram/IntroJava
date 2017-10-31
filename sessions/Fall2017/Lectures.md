@@ -21,4 +21,5 @@ Most (hopefully all) of the code we do will be posted at [https://gitlab.com/orl
 * [Oct 11](https://youtu.be/Vl-UgMFuOxM) - Arrays
 * [Oct 13](https://youtu.be/0_IEmX4p_XY) - More arrays
 * [Oct 18](https://youtu.be/9X_ro-zt71A) - Interfaces and behavior inheritance
-* [Oct 23](https://youtu.be/C46xqz_g_X8) - Class inheritance
+* [Oct 23](https://youtu.be/C46xqz_g_X8) - Class inheritance, collections
+* [Oct 30](https://youtu.be/xLgMmu2HvSw) - More collections
