@@ -21,3 +21,5 @@ Java Learning Resources
 
 # Programming exercises
 * [CodingBat](http://codingbat.com) - Nice, simple exercises (web based)
+* [HackerRank](https://www.hackerrank.com/) - Wide variety of topics and levels; good for interview prep
+* [LeetCode](https://leetcode.com/) - Another one for interview prep
