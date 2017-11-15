@@ -24,3 +24,6 @@ Most (hopefully all) of the code we do will be posted at [https://gitlab.com/orl
 * [Oct 23](https://youtu.be/C46xqz_g_X8) - Class inheritance, collections
 * [Oct 30](https://youtu.be/xLgMmu2HvSw) - More collections
 * [Nov 1](https://youtu.be/QEBSQhYm_uE) - Exceptions and File IO
+* [Nov 6](https://youtu.be/vDMd0fEfdsM) - Phone book example
+* [Nov 8](https://youtu.be/47huobVPzUo) - More on PhoneBook
+* [Nov 13](https://youtu.be/zSc7RHKsvrk) - DB Access and Spring MVC (Not on final)
