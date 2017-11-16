@@ -27,3 +27,4 @@ Most (hopefully all) of the code we do will be posted at [https://gitlab.com/orl
 * [Nov 6](https://youtu.be/vDMd0fEfdsM) - Phone book example
 * [Nov 8](https://youtu.be/47huobVPzUo) - More on PhoneBook
 * [Nov 13](https://youtu.be/zSc7RHKsvrk) - DB Access and Spring MVC (Not on final)
+* Nov 15 - [part1](https://youtu.be/G04xd7yafbc) and [part2](https://youtu.be/FYTev1-0yvs)
