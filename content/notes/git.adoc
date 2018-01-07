@@ -1,0 +1,11 @@
+= Version control and git
+
+When we write code, we are doing changes constantly; in programming, we figured out ways to name the changes and make them explicit; we call this *version control*. You will be using version control throughout your career, so you may want to make sure you learn it well.
+
+There are many version control systems; We will use `git`, one of the most popular ones.
+
+
+== Terminology
+- *commit* - A set of changes to a set of files.
+- *repository* - (commonly abbreviated as repo) a set of files and folders, with all their history, 
+- 
