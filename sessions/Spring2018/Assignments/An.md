@@ -1,0 +1,60 @@
+Assignment #n
+===
+
+# Instructions
+
+Open the a#n project in IntelliJ, and modify the file in src/main/java/assignment/Assignment#n.java (and any other files in that folder, according to the instructions) so it complies with the instructions. 
+
+Use `./gradlew test` and the files in src/test/features to guide your testing, making sure you eventually pass all unit tests.
+
+Remember you can submit several times with no grade penalty
+### Submissions
+Assignments are submitted by pull-request.
+
+Unless otherwise noticed, assignments are due Sunday before midnight (11:59pm) with grace period until Tuesday before class (6:30 pm).
+
+# Verifying and submitting
+Open git-bash (or your terminal), and then
+
+### Navigate to project folder
+```cd ~Documents/projects/cs5000```
+
+### load any changes
+```git checkout master```
+
+```git pull```
+
+### Create/Checkout a new branch
+```git checkout -b a#n``` 
+You may already be in this branch; if this branch already exists but you are on a different one, you may need to do ```git checkout a#n```
+
+### Navigate to assignment folder
+```cd ~/Documents/projects/cs5000/a#n```   (or simply ```cd a#n``` if you're already in cs5000)
+
+### Create the IntelliJ project
+```./gradlew idea```
+
+### Open in IntelliJ and modify assignment file
+ src/main/java/assignment/Assignment#n.java
+
+### Verify it works
+```./gradlew test```
+If you dont get all the points, then you may want to modify until it does
+
+
+### add and commit
+type
+
+```git add a#n/src/main/java/assignment```
+
+to add the file (you can also do ```git status``` to check nothing else needs to be added) 
+
+```git commit -m "some comment"```
+You can use the comment to specify what you did, especially if you did not finish
+
+### push
+```git push origin a#n```
+
+### submit pull request
+Either on GitLab, or by following the link in the message git prints.
+
