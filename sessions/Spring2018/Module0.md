@@ -11,8 +11,9 @@ Module 0: Introduction and variables
             + [Relational (comparison) operators](https://youtu.be/ZIjRLlcHL4w)
         + [Strings](../../content/Strings.md) - and [Video](https://youtu.be/5NVH_mSiDdg)
     + Setup - 
-        + [Machine Setup](../../content/Setup.md) - [Video](https://youtu.be/0HKQmnVcTNY)
-        + [Repo setup](../../content/RepoSetup.md) - [Video](https://youtu.be/YWMs-PHFKK0)   
+        + [Machine and repo setup overview](https://youtu.be/PRuTSVsYIzs)  
+        + [Machine Setup](../../content/Setup.md) - [Video](https://youtu.be/0HKQmnVcTNY) - Skip Eclipse, please use IntelliJ only
+        + [Repo setup](../../content/RepoSetup.md) - [Video](https://youtu.be/YWMs-PHFKK0)   - ./gradlew test will look slightly different now
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
     + [Chapter 2 - Variables and types](http://greenteapress.com/thinkjava6/html/thinkjava6003.html)
@@ -29,6 +30,5 @@ Assignments:
 If you haven't done so, the first thing is to create a [GitLab](http://gitlab.com) account and email your instructor with it immediately.
 
 * [Assignment 0- Setup](Assignments/A0.md) 
-    * [Video](https://youtu.be/xeJCZLrgXQw) - Using Eclipse
-    * [Video](https://youtu.be/ByfjaWjDvRo) - Usung IntelliJ/IDEA
+    * [Video](https://youtu.be/O0YJXXNqlYE) - Usung IntelliJ/IDEA
 
