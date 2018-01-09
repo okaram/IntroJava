@@ -7,5 +7,29 @@ There are many version control systems; We will use `git`, one of the most popul
 
 == Terminology
 - *commit* - A set of changes to a set of files.
-- *repository* - (commonly abbreviated as repo) a set of files and folders, with all their history, 
-- 
+- *repository* - (commonly abbreviated as repo) a set of files and folders, with all their history of changes.
+- *local repository* - a folder on the local machine, which also contains the history of changes to all files in that folder
+- *remore repository* - a git repository that is not stored on the local machine
+
+== Basic concepts
+image::git.png[width=100%,align="center"]
+
+In your machine, you keep your files in a folder, with some metadata, which makes it a *repository* (the metadata is stored in a folder called `.git`, in case you care).
+
+You make changes to those files, usually with a text editor, or IDE (or maybe by creating folders, or creating empty files, or using some other commands). At any time, you can see which files you've changed by running `git status`.
+
+Once you have a set of changes you like, you need to *commit* them into your local repo. When you create a commit, you need to provide a comment, which works like a title for the commit (most times, you want to use a meaningful comment, so you can later remember what you did).
+
+To allow for extra flexibility when committing, git first requires you to *stage* your changes; so committing is usually a two-step process.
+
+1. Use `git add` to stage some files (or the changes to them)
+2. Use `git commit` to commit those changes, adding a comment to them. Notice this creates a logical grouping of the changes.
+
+To allow for sharing your changes (and also as a backup), you want to have more than one copy of your repository; that is, you want to have one or more *remote repositories* (we will use gitlab.com to keep our remote repos; I create a shared remote repo for each student; shared between you and me). You use `git push` to push the changes to a remote repository.
+
+== Branches
+
+== Our branching model
+
+
+
