@@ -42,7 +42,13 @@ After we are done with a feature (or at other times, depending on practicality) 
 
 === merge conflicts
 
+When we try to merge two branches, they may have commits that conflict; that is, two commits say to make different changes to the same file. Many times, git can figure out how to automatically resolve these conflicts (by figuring out that the changes happened in different parts of the file), but not always. Some times, you need to manually merge changes (git will add special markers to the file, and you will manually edit them and then add them to a commit).
+
+It makes your life easier if you do not have merge conflicts. In cases where many people are collaborating on a set of files, this is not always avoidable, but, given you (and maybe myself) are the only one who will be changing the files, a little discipline can help you avoid them.
+
 == Our branching model
+
+The different assignments reside in different folders (a1, a2, etc). You will create a branch with the same name (a1, etc), and only add files in the corresponding folder. This way, I know what assignment a merge request is for, and we ensure there are no merge conflicts (since branch a1 will only contain changes to files in the a1 folder, a2 on a2 and so on).
 
 == Commands
 

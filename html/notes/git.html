@@ -512,14 +512,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_merge_conflicts">merge conflicts</h3>
-
+<div class="paragraph">
+<p>When we try to merge two branches, they may have commits that conflict; that is, two commits say to make different changes to the same file. Many times, git can figure out how to automatically resolve these conflicts (by figuring out that the changes happened in different parts of the file), but not always. Some times, you need to manually merge changes (git will add special markers to the file, and you will manually edit them and then add them to a commit).</p>
+</div>
+<div class="paragraph">
+<p>It makes your life easier if you do not have merge conflicts. In cases where many people are collaborating on a set of files, this is not always avoidable, but, given you (and maybe myself) are the only one who will be changing the files, a little discipline can help you avoid them.</p>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_our_branching_model">Our branching model</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>The different assignments reside in different folders (a1, a2, etc). You will create a branch with the same name (a1, etc), and only add files in the corresponding folder. This way, I know what assignment a merge request is for, and we ensure there are no merge conflicts (since branch a1 will only contain changes to files in the a1 folder, a2 on a2 and so on).</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -536,7 +543,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-01-08 23:58:55 EST
+Last updated 2018-01-09 00:18:01 EST
 </div>
 </div>
 </body>
