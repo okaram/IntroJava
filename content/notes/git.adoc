@@ -27,9 +27,28 @@ To allow for extra flexibility when committing, git first requires you to *stage
 
 To allow for sharing your changes (and also as a backup), you want to have more than one copy of your repository; that is, you want to have one or more *remote repositories* (we will use gitlab.com to keep our remote repos; I create a shared remote repo for each student; shared between you and me). You use `git push` to push the changes to a remote repository.
 
+If we make changes in the remote repository through another machine, then we can use `git pull` to bring those changes into the local repo.
+
 == Branches
+
+Many times we want to keep to keep different set of changes separate from each other. In git (and most other version control systems) we do this by creating *branches*. Every repo has at least one distinguished branch, called *master*. Many times, you will create branches to keep your work on different features separate.
+
+Notice your local and remote repositories may contain a different set of branches ! It is usually a good idea to keep these consistent, and map every local branch to a remote one with the same name.
+
+The command `git branch` lists all the existing branches in the local repo, and `git branch -r` lists the existing branches in the local repo.
+
+=== Merging 
+After we are done with a feature (or at other times, depending on practicality) we can *merge* our branch (usually into master). Merging one branch into another copies all the commits from the first one into the second one. Notice this is NOT a reflexive operation; merging branch a into branch b applies all of a's commits into b, but b may have other commits.
+
+=== merge conflicts
 
 == Our branching model
 
+== Commands
+
++ `git` - by itself will print help information about what you can do with git
++ `git status` - prints the current branch, files that have changed, and whether they are staged or not
++ `git log` - prints all the commits in the current branch
++ `git checkout` - changes branch. With the `-b` option creates a new branch.
 
 
