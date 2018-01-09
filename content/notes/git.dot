@@ -1,0 +1,12 @@
+ digraph git {
+     rankdir="LR"
+     lf [label="Local\nfolder"]
+     sa [label="staging\narea"]
+     lc [label="local\ncommits"]
+     rr [label="remote\nrepository\n(gitlab)"]
+
+     lf -> sa[label="git add"]
+     sa -> lc [label="git commit"]
+     lc -> rr [label="git push"]
+     rr -> lc [label="git pull"]
+ }
