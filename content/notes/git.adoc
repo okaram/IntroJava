@@ -52,9 +52,13 @@ The different assignments reside in different folders (a1, a2, etc). You will cr
 
 == Commands
 
-- `git` - by itself will print help information about what you can do with git
-- `git status` - prints the current branch, files that have changed, and whether they are staged or not
-- `git log` - prints all the commits in the current branch
+- `git` - by itself will print help information about what you can do with git.
+- `git status` - prints the current branch, files that have changed, and whether they are staged or not.
+- `git log` - prints all the commits in the current branch.
 - `git checkout` - changes branch. With the `-b` option creates a new branch.
+- `git add` - move files that have changed into the staging area
+- `git commit` - group staged changes into a commit.
+- `git push` - send commits to a remote repo
+- `git pull` - download commits from a remote repo
 
 
