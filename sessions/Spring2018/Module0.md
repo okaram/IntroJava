@@ -4,6 +4,7 @@ Module 0: Introduction and variables
 ## Materials
 + Notes
     * [Basics](../../content/Basics.md) - and [Video](https://youtu.be/FXqtJoo0FYo)
+    * [Git](http://okaram.github.io/IntroJava/html/notes/git.html)
     * Variables and operators
         + [Numeric Variables and Operators](../../content/IntVariablesAndOperators.md) - and [Video](https://youtu.be/1JEtmEthcS4)
         + [Boolean variables](../../content/Booleans.md) 
