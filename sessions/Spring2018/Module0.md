@@ -18,6 +18,8 @@ Module 0: Introduction and variables
 * Book chapters
     + [Chapter 1 - The way of the program](http://greenteapress.com/thinkjava6/html/thinkjava6002.html)
     + [Chapter 2 - Variables and types](http://greenteapress.com/thinkjava6/html/thinkjava6003.html)
+* Lecture videos
+    + [Jan 9](https://youtu.be/wBXDbou7As0)    
 * Longer Videos
 	+ [Lecture 1 Playlist](https://www.youtube.com/playlist?list=PLK5RwQeVk5YwszV6P2rCkNWabgpS89Hy-)
     + [Java Bootcamp](https://www.youtube.com/watch?v=8nOg6mtH-oo&list=UUSH2TieRlco7uQOGU8Vppnw) - From Dr Chastine, 20 minutes or so
@@ -26,6 +28,7 @@ Module 0: Introduction and variables
 + Other resources
     + [Learn the command line](https://www.codecademy.com/learn/learn-the-command-line) - a codecademy course (free). If you're not comfortable with the command line.
     + [Ry's git tutorial](http://rypress.com/tutorials/git/index)
+    + [Git parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html)
     
 Assignments:
 If you haven't done so, the first thing is to create a [GitLab](http://gitlab.com) account and email your instructor with it immediately.
