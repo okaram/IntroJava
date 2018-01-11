@@ -26,7 +26,7 @@ We'll use the `git clone` command to clone our repository. I am assuming you wan
 In the following command you need to replace USERNAME with your github username, PASSWORD with your github password, and REPONAME  with the name of your repo (this will be your KSU username). Github doesn't care about capitalization, and bash on Windows doesn't either, but Mac and Linux might. I will type all my folder names in lowercase.
 
 ```
-git clone "https://USERNAME:PASSWORD@gitlab.com/CS5KFall17/REPONAME.git"   cs5000
+git clone 'https://USERNAME:PASSWORD@gitlab.com/CS5KSpring18/REPONAME.git'   cs5000
 ```
 This will create a folder named cs5000, with the contents of your repo. We then change to that folder 
 
