@@ -1,5 +1,5 @@
 # IntroJava
-Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). Current (well, coming) session is [Spring 2018](sessions/Spring2018)
+Materials for an Intro to Programming with java class (CS5000 at Kennesaw.edu). Last session is [Spring 2018](sessions/Spring2018)
 
 + Part 1
     + [Module 0](sessions/Spring2018/Module0.md) - Introduction and variables
